@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>DBA DIY — your dehumidifier, in your pocket</title>
+<meta name="description" content="Mobile install &amp; care guide for DBA ceiling-mounted dehumidifiers. English &amp; 繁體中文." />
+<meta name="theme-color" content="#0ea5e9" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="canonical" href="https://www.dbadiy.com/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+</head>
+<body>
+
+<div id="app">
+
+<!-- ====== HEADER ====== -->
+<header id="app-header" data-on="home">
+  <button id="back-btn" aria-label="Back" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+  <div class="hdr-title">
+    <span class="hdr-crumb" id="hdr-crumb"></span>
+    <h1 id="app-title">dba<em>diy</em></h1>
+  </div>
+  <button id="lang-toggle" class="lang-toggle" aria-label="Language" type="button">
+    <span class="lang-opt lang-en" data-lang="en">EN</span>
+    <span class="lang-opt lang-zh" data-lang="zh">中</span>
+    <span class="lang-thumb" aria-hidden="true"></span>
+  </button>
+</header>
+
+<!-- ====== MAIN ====== -->
+<main id="app-main">
+
+<!-- ====== HOME ====== -->
+<section class="screen screen-home" data-screen="home">
+
+  <div class="home-hero">
+    <div class="logo-block">
+      <div class="logo-orbit" aria-hidden="true">
+        <span class="logo-pulse"></span>
+        <span class="logo-pulse logo-pulse-2"></span>
+      </div>
+      <span class="logo-mark">
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M11 27 q5 -9 13 -9 t13 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="2.8" fill="currentColor"/></svg>
+      </span>
+      <h1 class="home-title">dba<em>diy</em></h1>
+      <p class="home-sub" data-i18n="home.sub">Your dehumidifier, end to end. Pick a topic.</p>
+    </div>
+  </div>
+
+  <div class="tile-grid">
+
+    <a class="tile tile-feature" href="#install">
+      <div class="tile-feature-bg" aria-hidden="true">
+        <svg viewBox="0 0 360 220" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="tg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0ea5e9"/>
+              <stop offset="0.55" stop-color="#0369a1"/>
+              <stop offset="1" stop-color="#082f49"/>
+            </linearGradient>
+            <radialGradient id="tg2" cx="80%" cy="20%" r="70%">
+              <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.35"/>
+              <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="360" height="220" fill="url(#tg1)"/>
+          <rect width="360" height="220" fill="url(#tg2)"/>
+          <g stroke="#7dd3fc" stroke-width="1" opacity="0.25" fill="none">
+            <path d="M -20 70 Q 90 40 200 70 T 380 70"/>
+            <path d="M -20 100 Q 90 70 200 100 T 380 100"/>
+            <path d="M -20 140 Q 90 110 200 140 T 380 140"/>
+            <path d="M -20 170 Q 90 140 200 170 T 380 170"/>
+          </g>
+          <g class="tile-unit">
+            <rect x="100" y="92" width="160" height="40" rx="3" fill="#f8fafc" stroke="#082f49" stroke-width="1.4"/>
+            <line x1="106" y1="100" x2="254" y2="100" stroke="#94a3b8" stroke-width="0.5"/>
+            <rect x="92" y="103" width="10" height="18" fill="#94a3b8" stroke="#082f49" stroke-width="0.6"/>
+            <rect x="258" y="103" width="10" height="18" fill="#94a3b8" stroke="#082f49" stroke-width="0.6"/>
+            <circle cx="92" cy="112" r="6" fill="#0c4a6e"/>
+            <circle cx="268" cy="112" r="6" fill="#0c4a6e"/>
+            <text x="180" y="119" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="16" fill="#0ea5e9">dba</text>
+            <rect x="120" y="80" width="4" height="12" fill="#082f49"/>
+            <rect x="236" y="80" width="4" height="12" fill="#082f49"/>
+          </g>
+          <g opacity="0.6">
+            <line x1="60" y1="60" x2="60" y2="100" stroke="#7dd3fc" stroke-width="0.6"/>
+            <line x1="300" y1="60" x2="300" y2="100" stroke="#7dd3fc" stroke-width="0.6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tile-feature-body">
+        <span class="tile-tag" data-i18n="home.feature.tag">7 steps · most read</span>
+        <h2 data-i18n="home.feature.title">Installation</h2>
+        <p data-i18n="home.feature.desc">Prep, hanging, drainage, ducting, controls, power, commissioning.</p>
+        <span class="tile-go">
+          <span data-i18n="home.feature.go">Open guide</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <a class="tile" href="#models" style="--accent:#0ea5e9">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="18" width="36" height="14" rx="2"/>
+          <circle cx="9" cy="25" r="2.4"/>
+          <circle cx="39" cy="25" r="2.4"/>
+          <line x1="14" y1="14" x2="14" y2="18"/>
+          <line x1="34" y1="14" x2="34" y2="18"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.models.title">Models</h3>
+      <p data-i18n="home.tile.models.desc">UTC20 · 68 · 120</p>
+    </a>
+
+    <a class="tile" href="#sizing" style="--accent:#16a34a">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="14" width="36" height="20" rx="2"/>
+          <line x1="14" y1="14" x2="14" y2="20"/>
+          <line x1="20" y1="14" x2="20" y2="22"/>
+          <line x1="26" y1="14" x2="26" y2="20"/>
+          <line x1="32" y1="14" x2="32" y2="22"/>
+          <line x1="38" y1="14" x2="38" y2="20"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.sizing.title">Sizing</h3>
+      <p data-i18n="home.tile.sizing.desc">What fits your space</p>
+    </a>
+
+    <a class="tile" href="#troubleshooting" style="--accent:#f59e0b">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 32 L22 24 L26 28 L34 20"/>
+          <path d="M28 20 L34 20 L34 26"/>
+          <circle cx="24" cy="24" r="18"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.troubleshooting.title">Troubleshooting</h3>
+      <p data-i18n="home.tile.troubleshooting.desc">If something's off</p>
+    </a>
+
+    <a class="tile" href="#maintenance" style="--accent:#8b5cf6">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 8 L24 18 L34 8"/>
+          <line x1="24" y1="18" x2="24" y2="28"/>
+          <rect x="12" y="28" width="24" height="14" rx="2"/>
+          <line x1="18" y1="34" x2="30" y2="34"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.maintenance.title">Maintenance</h3>
+      <p data-i18n="home.tile.maintenance.desc">Filter · coil · drain</p>
+    </a>
+
+    <a class="tile" href="#contact" style="--accent:#0f172a">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 12 L40 12 L40 32 L24 32 L16 40 L16 32 L8 32 Z"/>
+          <circle cx="18" cy="22" r="1.4" fill="currentColor"/>
+          <circle cx="24" cy="22" r="1.4" fill="currentColor"/>
+          <circle cx="30" cy="22" r="1.4" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.contact.title">Contact us</h3>
+      <p data-i18n="home.tile.contact.desc">SG &amp; HK office</p>
+    </a>
+
+  </div>
+
+  <div class="official-block">
+    <span class="official-eyebrow" data-i18n="home.official.eyebrow">Official sites</span>
+    <div class="official-row">
+      <a href="https://www.dba.sg" target="_blank" rel="noopener" class="official-link">
+        <span class="flag">🇸🇬</span>
+        <span class="official-text">
+          <strong>dba.sg</strong>
+          <small data-i18n="home.official.sg">Singapore</small>
+        </span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <a href="https://www.dba.hk" target="_blank" rel="noopener" class="official-link">
+        <span class="flag">🇭🇰</span>
+        <span class="official-text">
+          <strong>dba.hk</strong>
+          <small data-i18n="home.official.hk">Hong Kong</small>
+        </span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <footer class="home-foot">
+    <span data-i18n="home.foot.copy">© 2026 DBA Electric</span>
+    <span data-i18n="home.foot.note">Educational reference, not engineering certification.</span>
+  </footer>
+</section>
+
+<!-- ====== MODELS ====== -->
+<section class="screen" data-screen="models">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="models.eyebrow">Three sizes, one body shape</span>
+      <h2 data-i18n="models.title">Ultra Thin Series</h2>
+      <p data-i18n="models.desc">Same slim ceiling-mount housing, same controls, same drain pump. Pick by capacity and area.</p>
+    </div>
+
+    <div class="model-stack">
+
+      <article class="model-card" id="utc20">
+        <div class="model-head">
+          <span class="model-tag">DBA-UTC20</span>
+          <h3>20 L/day</h3>
+          <p data-i18n="models.utc20.desc">200 – 400 sqft · for one room or a studio.</p>
+        </div>
+        <div class="model-illu">
+          <svg viewBox="0 0 280 90"><rect x="20" y="22" width="240" height="46" rx="4" fill="#1f2937"/><rect x="36" y="34" width="22" height="22" rx="2" fill="#0f172a"/><circle cx="264" cy="45" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="16" cy="45" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/><text x="140" y="51" text-anchor="middle" font-family="Manrope" font-weight="700" font-size="14" fill="#86efac">dba</text></svg>
+        </div>
+        <dl class="spec">
+          <dt data-i18n="models.spec.airflow">Airflow</dt><dd>220 CMH</dd>
+          <dt data-i18n="models.spec.sound">Sound</dt><dd>39 dB(A)</dd>
+          <dt data-i18n="models.spec.static">Static</dt><dd>80 Pa</dd>
+          <dt data-i18n="models.spec.flange">Flange</dt><dd>⌀146 mm</dd>
+          <dt data-i18n="models.spec.body">Body</dt><dd>865 × 376 × 200 mm</dd>
+        </dl>
+      </article>
+
+      <article class="model-card model-card-featured" id="utc68">
+        <div class="model-head">
+          <span class="model-tag" data-i18n="models.utc68.tag">DBA-UTC68 · popular</span>
+          <h3>68 L/day</h3>
+          <p data-i18n="models.utc68.desc">800 – 1000 sqft · the do-it-all whole-apartment size.</p>
+        </div>
+        <div class="model-illu">
+          <svg viewBox="0 0 280 90"><rect x="14" y="16" width="252" height="58" rx="5" fill="#1f2937"/><rect x="36" y="32" width="26" height="26" rx="2" fill="#0f172a"/><circle cx="270" cy="45" r="16" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="10" cy="45" r="16" fill="none" stroke="#94a3b8" stroke-width="2"/><text x="140" y="52" text-anchor="middle" font-family="Manrope" font-weight="700" font-size="16" fill="#86efac">dba</text></svg>
+        </div>
+        <dl class="spec">
+          <dt data-i18n="models.spec.airflow">Airflow</dt><dd>500 CMH</dd>
+          <dt data-i18n="models.spec.sound">Sound</dt><dd>48 dB(A)</dd>
+          <dt data-i18n="models.spec.static">Static</dt><dd>100 Pa</dd>
+          <dt data-i18n="models.spec.flange">Flange</dt><dd>⌀146 mm</dd>
+          <dt data-i18n="models.spec.body">Body</dt><dd>1010 × 500 × 240 mm</dd>
+        </dl>
+      </article>
+
+      <article class="model-card" id="utc120">
+        <div class="model-head">
+          <span class="model-tag">DBA-UTC120</span>
+          <h3>120 L/day</h3>
+          <p data-i18n="models.utc120.desc">1300 – 1500 sqft · large homes &amp; light commercial.</p>
+        </div>
+        <div class="model-illu">
+          <svg viewBox="0 0 280 90"><rect x="6" y="10" width="268" height="70" rx="6" fill="#1f2937"/><rect x="36" y="30" width="34" height="30" rx="2" fill="#0f172a"/><circle cx="276" cy="45" r="18" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="6" cy="32" r="11" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="6" cy="58" r="11" fill="none" stroke="#94a3b8" stroke-width="2"/><text x="140" y="54" text-anchor="middle" font-family="Manrope" font-weight="700" font-size="18" fill="#86efac">dba</text></svg>
+        </div>
+        <dl class="spec">
+          <dt data-i18n="models.spec.airflow">Airflow</dt><dd>890 CMH</dd>
+          <dt data-i18n="models.spec.sound">Sound</dt><dd>50 dB(A)</dd>
+          <dt data-i18n="models.spec.static">Static</dt><dd>100 Pa</dd>
+          <dt data-i18n="models.spec.flange">Flange</dt><dd data-i18n="models.utc120.flange">⌀196 mm (×2 inlet)</dd>
+          <dt data-i18n="models.spec.body">Body</dt><dd>1075 × 746 × 310 mm</dd>
+        </dl>
+      </article>
+    </div>
+
+    <div class="feature-pills">
+      <span data-i18n="models.feat.pump">✓ Built-in 1.8 m pump</span>
+      <span data-i18n="models.feat.uv">✓ UV-C sterilization</span>
+      <span data-i18n="models.feat.filter">✓ Stainless mesh filter</span>
+      <span data-i18n="models.feat.wifi">✓ WiFi + Modbus</span>
+      <span data-i18n="models.feat.bearing">✓ NSK bearing motor</span>
+      <span data-i18n="models.feat.energy">✓ HK Energy Grade 1</span>
+    </div>
+
+    <a class="next-link" href="#sizing">
+      <span data-i18n="models.next">Not sure which one?</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ====== SIZING ====== -->
+<section class="screen" data-screen="sizing">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="sizing.eyebrow">Pick by floor area + duct run</span>
+      <h2 data-i18n="sizing.title">Which one fits?</h2>
+      <p data-i18n="sizing.desc">Start with the area you want to dry. Then check the longest duct run — every 90° bend costs about 10 Pa of static pressure.</p>
+    </div>
+
+    <div class="size-q">
+      <h3 data-i18n="sizing.q.heading">How big is the space?</h3>
+      <div class="size-options">
+        <a href="#utc20" class="size-opt" style="--accent:#22d3ee">
+          <span class="size-area" data-i18n="sizing.s.area">under 400 sqft</span>
+          <span class="size-pick">UTC20</span>
+          <span class="size-note" data-i18n="sizing.s.note">a studio, single bedroom, or storeroom</span>
+        </a>
+        <a href="#utc68" class="size-opt size-opt-rec" style="--accent:#0ea5e9">
+          <span class="size-area" data-i18n="sizing.m.area">400 – 1000 sqft</span>
+          <span class="size-pick">UTC68</span>
+          <span class="size-note" data-i18n="sizing.m.note">most Singapore &amp; Hong Kong apartments</span>
+        </a>
+        <a href="#utc120" class="size-opt" style="--accent:#0369a1">
+          <span class="size-area" data-i18n="sizing.l.area">1000 – 1500 sqft</span>
+          <span class="size-pick">UTC120</span>
+          <span class="size-note" data-i18n="sizing.l.note">large homes, light commercial, dual inlet</span>
+        </a>
+        <div class="size-opt size-opt-flat" style="--accent:#1e293b">
+          <span class="size-area" data-i18n="sizing.xl.area">over 1500 sqft</span>
+          <span class="size-pick" data-i18n="sizing.xl.pick">Talk to us</span>
+          <span class="size-note" data-i18n="sizing.xl.note">parallel units, or step up to industrial</span>
+          <a href="#contact" class="size-contact" data-i18n="sizing.xl.cta">Send a plan →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="size-tips">
+      <h3 data-i18n="sizing.tips.heading">Things that bump you up a size</h3>
+      <ul class="check-list">
+        <li data-i18n="sizing.tips.1"><strong>High ceilings</strong> — anything over 3 m, calculate by volume not area.</li>
+        <li data-i18n="sizing.tips.2"><strong>Long duct runs</strong> — over 5 m of flex, or three+ elbows.</li>
+        <li data-i18n="sizing.tips.3"><strong>Open plan</strong> — a single unit drying a kitchen + living + study.</li>
+        <li data-i18n="sizing.tips.4"><strong>Plants or laundry</strong> — both quietly add 5–10 L of moisture a day.</li>
+      </ul>
+      <p class="size-foot" data-i18n="sizing.foot">If you're on the edge between two sizes, go up. Running 60% is quieter and lasts longer than running flat-out.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== INSTALL HUB ====== -->
+<section class="screen" data-screen="install">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="install.eyebrow">From the official DBA UTC install card</span>
+      <h2 data-i18n="install.title">Installation</h2>
+      <p data-i18n="install.desc">Seven steps from a bare ceiling to a working machine. Tap one to dive in.</p>
+    </div>
+
+    <div class="step-grid">
+      <a href="#install/preparation" class="step-card" style="--n:1;--accent:#0ea5e9">
+        <span class="step-n">01</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 8h20M6 16h20M6 24h12"/><circle cx="26" cy="24" r="2.4"/></svg>
+        </div>
+        <h3 data-i18n="install.step.prep.t">Preparation</h3>
+        <p data-i18n="install.step.prep.d">Bench test, plan, hatch.</p>
+      </a>
+      <a href="#install/hanging" class="step-card" style="--n:2;--accent:#0284c7">
+        <span class="step-n">02</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="8" y1="4" x2="8" y2="20"/><line x1="24" y1="4" x2="24" y2="20"/><rect x="4" y="20" width="24" height="6" rx="1"/></svg>
+        </div>
+        <h3 data-i18n="install.step.hang.t">Hanging</h3>
+        <p data-i18n="install.step.hang.d">M10 rods, level, isolate.</p>
+      </a>
+      <a href="#install/drainage" class="step-card" style="--n:3;--accent:#0369a1">
+        <span class="step-n">03</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 4v14M10 18q0 6 6 6h10"/><circle cx="26" cy="24" r="2"/></svg>
+        </div>
+        <h3 data-i18n="install.step.drain.t">Drainage</h3>
+        <p data-i18n="install.step.drain.d">Pump, check valve, U-trap.</p>
+      </a>
+      <a href="#install/ducting" class="step-card" style="--n:4;--accent:#0d9488">
+        <span class="step-n">04</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 16h10v10h6V16h8"/><path d="M9 12l5 4-5 4M23 12l5 4-5 4"/></svg>
+        </div>
+        <h3 data-i18n="install.step.duct.t">Ducting</h3>
+        <p data-i18n="install.step.duct.d">⌀146 / ⌀196 mm collars.</p>
+      </a>
+      <a href="#install/controls" class="step-card" style="--n:5;--accent:#16a34a">
+        <span class="step-n">05</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="6" width="20" height="20" rx="2"/><line x1="6" y1="12" x2="26" y2="12"/><circle cx="10" cy="9" r="0.8" fill="currentColor"/><path d="M11 18l3 3 7-7"/></svg>
+        </div>
+        <h3 data-i18n="install.step.ctrl.t">Controls</h3>
+        <p data-i18n="install.step.ctrl.d">LCD panel + signal wires.</p>
+      </a>
+      <a href="#install/power" class="step-card" style="--n:6;--accent:#ca8a04">
+        <span class="step-n">06</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 L8 18 L14 18 L12 28 L24 14 L18 14 Z"/></svg>
+        </div>
+        <h3 data-i18n="install.step.pow.t">Power</h3>
+        <p data-i18n="install.step.pow.d">16 A breaker, 2.5 mm², earth.</p>
+      </a>
+      <a href="#install/commissioning" class="step-card step-card-final" style="--n:7;--accent:#dc2626">
+        <span class="step-n">07</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16 L14 24 L26 8"/><circle cx="16" cy="16" r="14"/></svg>
+        </div>
+        <h3 data-i18n="install.step.com.t">Commissioning</h3>
+        <p data-i18n="install.step.com.d">Final test &amp; walk away.</p>
+      </a>
+    </div>
+
+    <a class="next-link" href="#install/preparation">
+      <span data-i18n="install.start">Start at step 1</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ====== INSTALL / PREPARATION ====== -->
+<section class="screen install-step" data-screen="install/preparation" data-step="1">
+  <div class="screen-pad">
+    <div class="stepper" data-active="0"></div>
+    <div class="step-hero" style="--accent:#0ea5e9">
+      <span class="step-pill" data-i18n="ip.pill">Step 01 of 07</span>
+      <h2 data-i18n="ip.title">Preparation</h2>
+      <p data-i18n="ip.desc">Open the box, bench-test the unit, then plan the install. Skipping the test costs you a day if anything's wrong inside the carton.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="ip.chip.1">5-min bench test</span>
+      <span class="chip" data-i18n="ip.chip.2">Hatch ≥ 60 × 60 cm</span>
+      <span class="chip" data-i18n="ip.chip.3">Direct service access</span>
+    </div>
+
+    <!-- ====== 5-MIN BENCH TEST ====== -->
+    <div class="bench-card">
+      <div class="bench-head">
+        <span class="bench-badge"><span class="bench-dot"></span> <span data-i18n="ip.bench.badge">Compulsory</span></span>
+        <h3 data-i18n="ip.bench.title">5-minute bench test, before you hang it</h3>
+        <p data-i18n="ip.bench.lede">Out of the box, on the floor or workbench, run a power-on check. Five minutes here saves an entire day of dismantling later.</p>
+      </div>
+      <ol class="bench-steps">
+        <li data-i18n="ip.bench.s1"><strong>Unbox</strong> — take the unit out of the carton, set it on the floor with the panels facing up. Keep packaging in case of a return.</li>
+        <li data-i18n="ip.bench.s2"><strong>Connect the control panel</strong> to the unit's labelled signal port. Match wire numbers exactly.</li>
+        <li data-i18n="ip.bench.s3"><strong>Connect the humidity sensor</strong> to its port. The unit won't run dehumidification without a sensor reading.</li>
+        <li data-i18n="ip.bench.s4"><strong>Plug in the power.</strong> Use a temporary socket if the dedicated circuit isn't wired yet — just enough to bring it alive.</li>
+        <li data-i18n="ip.bench.s5"><strong>Power on.</strong> The fan should spin up immediately, no delay. If it doesn't, stop here.</li>
+        <li data-i18n="ip.bench.s6"><strong>Force the compressor on</strong> — set the humidity target to a low value, around 40% RH. The compressor should engage within 60 seconds.</li>
+        <li data-i18n="ip.bench.s7"><strong>Listen &amp; feel.</strong> Fan should be even, compressor steady — no knocking, no metal rattle. Warm air should be coming out of the supply outlet.</li>
+        <li data-i18n="ip.bench.s8"><strong>Check the panel.</strong> No error code on the LCD = the unit is good to install.</li>
+      </ol>
+      <div class="bench-foot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+        <span data-i18n="ip.bench.ok">No error code? You can start the install.</span>
+      </div>
+    </div>
+
+    <h3 class="block-h" data-i18n="ip.plan.heading">Then plan, before you cut anything</h3>
+    <ul class="check-list">
+      <li data-i18n="ip.plan.1"><strong>Confirm the plenum depth.</strong> UTC20 needs 200 mm clear above the false ceiling, UTC68 needs 240 mm, UTC120 needs 310 mm — plus an air gap above so the body never touches the slab.</li>
+      <li data-i18n="ip.plan.2"><strong>Find the slab anchors.</strong> Mark where you'll fix the four threaded rods. Avoid existing services in the void.</li>
+      <li data-i18n="ip.plan.3"><strong>Pick a hatch location.</strong> Directly in front of the service panel, minimum 60 × 60 cm. Don't offset it.</li>
+      <li data-i18n="ip.plan.4"><strong>Plan duct routes early.</strong> Sketch return and supply paths, mark elbows, count them — each 90° bend costs ≈10 Pa.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="ip.kit.heading">What you'll need on the day</h3>
+    <div class="kit-grid">
+      <div class="kit-item"><span data-i18n="ip.kit.1.t">M10 SS rods × 4</span><small data-i18n="ip.kit.1.d">plus nuts, washers, rubber spacers</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.2.t">Flex or rigid duct</span><small data-i18n="ip.kit.2.d">matched to the unit collar (⌀146 / ⌀196)</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.3.t">DN15 drain pipe</span><small data-i18n="ip.kit.3.d">plus check valve and U-trap</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.4.t">3 × 2.5 mm² cable</span><small data-i18n="ip.kit.4.d">and a dedicated 16 A air switch</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.5.t">86-type back box</span><small data-i18n="ip.kit.5.d">for the LCD control panel</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.6.t">Spirit level &amp; tape</span><small data-i18n="ip.kit.6.d">level the unit horizontally before final tightening</small></div>
+    </div>
+
+    <div class="warn-card">
+      <strong data-i18n="ip.warn.t">One thing to never skip.</strong>
+      <span data-i18n="ip.warn.b">Don't power the unit on during construction. Drywall dust, cement, sawdust — all of it lands on the coil and kills the compressor. Tape the inlet shut until the room's clean.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install" class="sf-back" aria-label="Back to install hub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ih.title">Hanging</span></div>
+    <a href="#install/hanging" class="sf-next">
+      <span data-i18n="sf.go">Go</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / HANGING ====== -->
+<section class="screen install-step" data-screen="install/hanging" data-step="2">
+  <div class="screen-pad">
+    <div class="stepper" data-active="1"></div>
+    <div class="step-hero" style="--accent:#0284c7">
+      <span class="step-pill" data-i18n="ih.pill">Step 02 of 07</span>
+      <h2 data-i18n="ih.title">Hanging the unit</h2>
+      <p data-i18n="ih.desc">Four threaded rods, levelled body, rubber washers between the rod and the foot. Get this right and you'll never hear the unit running.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="ih.chip.1">4 × M10 304 SS rods</span>
+      <span class="chip" data-i18n="ih.chip.2">≥ 2 cm rod spare</span>
+      <span class="chip" data-i18n="ih.chip.3">Rubber vibration washers</span>
+    </div>
+
+    <div class="illu-card">
+      <svg viewBox="0 0 320 200" class="illu">
+        <rect width="320" height="20" fill="#4b5563"/>
+        <text x="160" y="14" text-anchor="middle" font-family="Inter" font-size="9" fill="#fff" letter-spacing="2" data-i18n="ih.illu.slab">CONCRETE SLAB</text>
+        <line x1="80" y1="20" x2="80" y2="120" stroke="#475569" stroke-width="4"/>
+        <line x1="240" y1="20" x2="240" y2="120" stroke="#475569" stroke-width="4"/>
+        <g stroke="#1f2937" stroke-width="0.6" opacity="0.6">
+          <line x1="78" y1="40" x2="82" y2="40"/><line x1="78" y1="60" x2="82" y2="60"/><line x1="78" y1="80" x2="82" y2="80"/><line x1="78" y1="100" x2="82" y2="100"/>
+          <line x1="238" y1="40" x2="242" y2="40"/><line x1="238" y1="60" x2="242" y2="60"/><line x1="238" y1="80" x2="242" y2="80"/><line x1="238" y1="100" x2="242" y2="100"/>
+        </g>
+        <rect x="64" y="120" width="192" height="40" rx="3" fill="#f1f5f9" stroke="#1f2937" stroke-width="1.6"/>
+        <rect x="62" y="118" width="20" height="6" fill="#94a3b8" stroke="#1f2937" stroke-width="0.8"/>
+        <rect x="238" y="118" width="20" height="6" fill="#94a3b8" stroke="#1f2937" stroke-width="0.8"/>
+        <text x="160" y="146" text-anchor="middle" font-family="Manrope" font-size="14" font-weight="700" fill="#0ea5e9">dba</text>
+        <line x1="0" y1="180" x2="320" y2="180" stroke="#475569" stroke-width="1.5"/>
+        <text x="312" y="194" text-anchor="end" font-family="Inter" font-size="8.5" fill="#64748b" data-i18n="ih.illu.fc">false ceiling</text>
+        <g font-family="Inter" font-size="9" fill="#475569">
+          <text x="50" y="76" text-anchor="end" data-i18n="ih.illu.rod">M10 rod</text>
+          <line x1="55" y1="74" x2="76" y2="74" stroke="#94a3b8" stroke-width="0.8"/>
+          <text x="270" y="124" text-anchor="start" data-i18n="ih.illu.washer">rubber washer</text>
+          <line x1="268" y1="122" x2="248" y2="122" stroke="#94a3b8" stroke-width="0.8"/>
+        </g>
+      </svg>
+    </div>
+
+    <h3 class="block-h" data-i18n="ih.how.heading">How to hang it</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="ih.how.1"><strong>Drop four threaded rods</strong> from the slab anchors, M10 in 304 stainless. Cut them so at least 2 cm sticks out below the unit foot — that gives you room to level later.</div></li>
+      <li><span>2</span><div data-i18n="ih.how.2"><strong>Slide a rubber washer onto each rod</strong> before the foot, and another one above the nut. The washers are what stop fan vibration travelling into the slab.</div></li>
+      <li><span>3</span><div data-i18n="ih.how.3"><strong>Lift the unit onto the rods</strong> through the four positioning holes (numbered 1–4 on the chassis).</div></li>
+      <li><span>4</span><div data-i18n="ih.how.4"><strong>Level it horizontally</strong> with a spirit level on the top face. The drain pan inside has to sit flat or condensate pools in the wrong corner.</div></li>
+      <li><span>5</span><div data-i18n="ih.how.5"><strong>Tighten the nuts evenly,</strong> diagonal pattern, until the rubber compresses lightly — not flat.</div></li>
+    </ol>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="ih.warn.t">Don't let the body touch the slab.</strong>
+      <span data-i18n="ih.warn.b">Even a couple of millimetres of contact will transmit fan vibration straight into the structure above. The air gap is the silencer.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/preparation" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="id.title">Drainage</span></div>
+    <a href="#install/drainage" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / DRAINAGE ====== -->
+<section class="screen install-step" data-screen="install/drainage" data-step="3">
+  <div class="screen-pad">
+    <div class="stepper" data-active="2"></div>
+    <div class="step-hero" style="--accent:#0369a1">
+      <span class="step-pill" data-i18n="id.pill">Step 03 of 07</span>
+      <h2 data-i18n="id.title">Drainage</h2>
+      <p data-i18n="id.desc">Every UTC ships with a built-in pump that lifts condensate 1.8 m. Gravity is optional — but a check valve and a U-trap aren't.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="id.chip.1">1.8 m pump lift</span>
+      <span class="chip" data-i18n="id.chip.2">DN15 outlet</span>
+      <span class="chip" data-i18n="id.chip.3">Check valve + U-trap</span>
+    </div>
+
+    <div class="illu-card">
+      <svg viewBox="0 0 320 200" class="illu">
+        <rect x="60" y="40" width="200" height="50" rx="3" fill="#f1f5f9" stroke="#1f2937" stroke-width="1.4"/>
+        <text x="160" y="70" text-anchor="middle" font-family="Manrope" font-weight="700" font-size="13" fill="#0ea5e9">DBA UTC</text>
+        <circle cx="230" cy="40" r="4" fill="#1e3a8a"/>
+        <path d="M 230 40 L 230 20 L 310 20" stroke="#1e3a8a" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M 230 40 L 230 20 L 310 20" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="244" cy="20" r="5" fill="#fef9c3" stroke="#a16207"/>
+        <text x="244" y="13" text-anchor="middle" font-family="Inter" font-size="7" fill="#a16207" data-i18n="id.illu.cv">CV</text>
+        <path d="M 270 20 L 270 30 L 280 30 L 280 20" stroke="#3b82f6" stroke-width="3" fill="none"/>
+        <text x="280" y="42" text-anchor="middle" font-family="Inter" font-size="7" fill="#1e40af" data-i18n="id.illu.utrap">U-trap</text>
+        <g stroke="#3b82f6" stroke-width="0.6" stroke-dasharray="2 2">
+          <line x1="200" y1="40" x2="200" y2="20"/>
+          <line x1="196" y1="40" x2="204" y2="40"/>
+          <line x1="196" y1="20" x2="204" y2="20"/>
+        </g>
+        <text x="194" y="32" text-anchor="end" font-family="Inter" font-size="8" fill="#1e40af" font-style="italic">≤ 1.8 m</text>
+        <line x1="0" y1="180" x2="320" y2="180" stroke="#475569" stroke-width="1"/>
+        <text x="312" y="194" text-anchor="end" font-family="Inter" font-size="8" fill="#64748b" data-i18n="id.illu.stack">to stack</text>
+      </svg>
+    </div>
+
+    <h3 class="block-h" data-i18n="id.path.heading">The plumb path</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="id.path.1"><strong>Right at the pump outlet</strong> — fit a check valve. This is what stops water siphoning backwards when the pump cycles off.</div></li>
+      <li><span>2</span><div data-i18n="id.path.2"><strong>Then a U-trap.</strong> Breaks the air column so the pump can't suck air through the drain line instead of pushing water.</div></li>
+      <li><span>3</span><div data-i18n="id.path.3"><strong>DN15 pipe</strong> to the nearest stack, vertical lift first, then horizontal fall to the drain.</div></li>
+      <li><span>4</span><div data-i18n="id.path.4"><strong>Insulate across the plenum</strong> — the pipe carries cold water through warm humid air and sweats.</div></li>
+      <li><span>5</span><div data-i18n="id.path.5"><strong>Two units sharing a route?</strong> Drop each one separately, merge low. Never tee them at the top.</div></li>
+    </ol>
+
+    <h3 class="block-h" data-i18n="id.sign.heading">Before you sign off</h3>
+    <p class="prose" data-i18n="id.sign.body">Pour a litre of water slowly into the drain pan through the service hatch. The pump should kick in within a few seconds and clear the pan. Watch every joint on the route for the next five minutes — that's when a bad seal will start dripping.</p>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/hanging" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ic.title">Ducting</span></div>
+    <a href="#install/ducting" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / DUCTING ====== -->
+<section class="screen install-step" data-screen="install/ducting" data-step="4">
+  <div class="screen-pad">
+    <div class="stepper" data-active="3"></div>
+    <div class="step-hero" style="--accent:#0d9488">
+      <span class="step-pill" data-i18n="ic.pill">Step 04 of 07</span>
+      <h2 data-i18n="ic.title">Ducting</h2>
+      <p data-i18n="ic.desc">Match the duct ID to the unit collar. Necking down is the single most common install mistake — airflow drops, the unit short-cycles, and it never hits setpoint.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="ic.chip.1">UTC20/68 · ⌀146 mm</span>
+      <span class="chip" data-i18n="ic.chip.2">UTC120 · ⌀196 mm</span>
+      <span class="chip" data-i18n="ic.chip.3">Supply 1.5 – 3 m/s</span>
+    </div>
+
+    <h3 class="block-h" data-i18n="ic.layouts.heading">Pick your layout</h3>
+    <div class="duct-stack">
+      <article class="duct-row"><span class="duct-n">1</span><div><h4 data-i18n="ic.l1.t">Standalone</h4><p data-i18n="ic.l1.d">Return and supply both go to the room directly. Simplest install, fully independent of any HVAC. Default for most apartments.</p></div></article>
+      <article class="duct-row"><span class="duct-n">2</span><div><h4 data-i18n="ic.l2.t">Return-side injection</h4><p data-i18n="ic.l2.d">Dehumidifier sits in parallel with the HVAC return. Dries the air before it hits the cooling coil — coil sweats less, latent load drops.</p></div></article>
+      <article class="duct-row"><span class="duct-n">3</span><div><h4 data-i18n="ic.l3.t">Supply-side injection</h4><p data-i18n="ic.l3.d">Pulls separately from the room, discharges into the HVAC supply. Needs a backdraft damper so HVAC pressure can't push back.</p></div></article>
+      <article class="duct-row"><span class="duct-n">4</span><div><h4 data-i18n="ic.l4.t">Bypass loop</h4><p data-i18n="ic.l4.d">Return from the HVAC return, supply into the HVAC supply. Full parallel loop — works when you want dedicated humidity control alongside cooling.</p></div></article>
+      <article class="duct-row"><span class="duct-n">5</span><div><h4 data-i18n="ic.l5.t">Standalone + fresh air</h4><p data-i18n="ic.l5.d">Adds an outdoor branch into the return side. Dries make-up air on the way in. Useful in sealed apartments where CO₂ climbs overnight.</p></div></article>
+      <article class="duct-row"><span class="duct-n">6</span><div><h4 data-i18n="ic.l6.t">Multi-zone manifold</h4><p data-i18n="ic.l6.d">One unit, central plenum, branches to every room. Whole-house drying with a UTC68 or UTC120. Add backdraft dampers on each branch.</p></div></article>
+    </div>
+
+    <h3 class="block-h" data-i18n="ic.rules.heading">Rules of thumb</h3>
+    <ul class="check-list">
+      <li data-i18n="ic.r1"><strong>Flex is fine</strong> for short runs — under 3 m, fully stretched, no kinks.</li>
+      <li data-i18n="ic.r2"><strong>Beyond 3 m, switch to rigid</strong> galvanised or rigid PE, lightly insulated.</li>
+      <li data-i18n="ic.r3"><strong>Hold supply outlet velocity 1.5 – 3 m/s</strong> — below is sluggish, above whistles.</li>
+      <li data-i18n="ic.r4"><strong>Keep airflow ≥ 80 %</strong> of nominal at max fan. Below that, the unit labours.</li>
+      <li data-i18n="ic.r5"><strong>Minimise elbows</strong> in main ducts. Each 90° costs ≈10 Pa.</li>
+    </ul>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="ic.warn.t">Don't neck down to fit.</strong>
+      <span data-i18n="ic.warn.b">If your plenum is tight, redesign the route — never reduce the collar. A 25 mm reduction off a 146 mm collar drops airflow by about 30 %.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/drainage" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ico.title">Controls</span></div>
+    <a href="#install/controls" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / CONTROLS ====== -->
+<section class="screen install-step" data-screen="install/controls" data-step="5">
+  <div class="screen-pad">
+    <div class="stepper" data-active="4"></div>
+    <div class="step-hero" style="--accent:#16a34a">
+      <span class="step-pill" data-i18n="ico.pill">Step 05 of 07</span>
+      <h2 data-i18n="ico.title">Controls</h2>
+      <p data-i18n="ico.desc">The LCD wall panel ships with 8 m of cable and fits a standard 86-type back box. Signal wires are sequenced — connect them in order, with the power off.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="ico.chip.1">86 × 86 mm back box</span>
+      <span class="chip" data-i18n="ico.chip.2">8 m cable supplied</span>
+      <span class="chip" data-i18n="ico.chip.3">Sequenced signal wires</span>
+    </div>
+
+    <h3 class="block-h" data-i18n="ico.where.heading">Where to mount the panel</h3>
+    <ul class="check-list">
+      <li data-i18n="ico.w1"><strong>Common wall, line of sight</strong> — somewhere everyone in the room will actually see it.</li>
+      <li data-i18n="ico.w2"><strong>1.3 – 1.5 m above the floor.</strong> Tall enough to read, low enough to reach.</li>
+      <li data-i18n="ico.w3"><strong>Away from doors and air paths.</strong> A panel in the supply airstream reads dry air and shuts the unit off prematurely.</li>
+      <li data-i18n="ico.w4"><strong>86 × 86 mm back box</strong>, sunk flush. Run the 8 m cable through conduit, never loose in the void.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="ico.smart.heading">App + smart home</h3>
+    <p class="prose" data-i18n="ico.smart.body">Every UTC speaks WiFi out of the box — pair with the DBA app for remote start, schedules, and humidity history. For BMS integration, the Modbus RS485 port lives behind the side cover. Dry contact input lets a window sensor or leak detector force the unit off.</p>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="ico.warn.t">Power off before you touch signal wires.</strong>
+      <span data-i18n="ico.warn.b">Plugging or unplugging the control panel while the unit is live will fry the control board. Per the install guide: power down, connect, then power up.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/ducting" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ipw.title">Power</span></div>
+    <a href="#install/power" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / POWER ====== -->
+<section class="screen install-step" data-screen="install/power" data-step="6">
+  <div class="screen-pad">
+    <div class="stepper" data-active="5"></div>
+    <div class="step-hero" style="--accent:#ca8a04">
+      <span class="step-pill" data-i18n="ipw.pill">Step 06 of 07</span>
+      <h2 data-i18n="ipw.title">Power</h2>
+      <p data-i18n="ipw.desc">One dedicated circuit, properly earthed. Don't share it with anything else — compressor startup current is high enough to nuisance-trip a shared breaker.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="ipw.chip.1">3 × 2.5 mm² minimum</span>
+      <span class="chip" data-i18n="ipw.chip.2">16 A dedicated breaker</span>
+      <span class="chip" data-i18n="ipw.chip.3">Proper earth</span>
+    </div>
+
+    <h3 class="block-h" data-i18n="ipw.wiring.heading">Wiring</h3>
+    <ul class="check-list">
+      <li data-i18n="ipw.w1"><strong>Cable:</strong> 3 × 2.5 mm² minimum from the consumer unit to the unit's terminal block. Larger if the run is over 15 m.</li>
+      <li data-i18n="ipw.w2"><strong>Breaker:</strong> dedicated 16 A air switch, type C MCB. RCBO if local code requires it.</li>
+      <li data-i18n="ipw.w3"><strong>Earth:</strong> connected to the unit's earth terminal — not the chassis screw. Verify continuity with a meter.</li>
+      <li data-i18n="ipw.w4"><strong>Isolator:</strong> reachable from the hatch, so service techs can lock-off without going back to the DB.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="ipw.order.heading">Order of operations</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="ipw.o1"><strong>Run the cable</strong> from the DB to the unit, through proper conduit. Don't loop excess inside the unit — coil it cleanly outside.</div></li>
+      <li><span>2</span><div data-i18n="ipw.o2"><strong>Land the cores</strong> at the terminal block. Live, neutral, earth — to the labelled terminals only. Torque them properly.</div></li>
+      <li><span>3</span><div data-i18n="ipw.o3"><strong>Connect signal wires next,</strong> with the breaker still off. They're numbered and sequenced — match labels exactly.</div></li>
+      <li><span>4</span><div data-i18n="ipw.o4"><strong>Replace the access panel</strong> before re-energising. The interlock is what protects the next person.</div></li>
+      <li><span>5</span><div data-i18n="ipw.o5"><strong>Energise from the DB,</strong> watch the panel come up, then run the commissioning check.</div></li>
+    </ol>
+
+    <div class="warn-card">
+      <strong data-i18n="ipw.warn.t">Never work the unit live.</strong>
+      <span data-i18n="ipw.warn.b">The compressor terminals carry several hundred volts during start, and the capacitor stays charged after the breaker trips. Lock off, verify dead, then open.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/controls" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="icm.title">Commissioning</span></div>
+    <a href="#install/commissioning" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== INSTALL / COMMISSIONING ====== -->
+<section class="screen install-step" data-screen="install/commissioning" data-step="7">
+  <div class="screen-pad">
+    <div class="stepper" data-active="6"></div>
+    <div class="step-hero" style="--accent:#dc2626">
+      <span class="step-pill" data-i18n="icm.pill">Step 07 of 07</span>
+      <h2 data-i18n="icm.title">Commissioning</h2>
+      <p data-i18n="icm.desc">Ten minutes of watching the unit run is what separates a clean install from a callback in six weeks.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="icm.chip.1">10 min watch test</span>
+      <span class="chip" data-i18n="icm.chip.2">No fault codes</span>
+      <span class="chip" data-i18n="icm.chip.3">Drain leak test</span>
+    </div>
+
+    <h3 class="block-h" data-i18n="icm.test.heading">The 10-minute test</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="icm.t1"><strong>Energise.</strong> LCD wall panel boots — no error code.</div></li>
+      <li><span>2</span><div data-i18n="icm.t2"><strong>Set to dehumidification mode</strong> with target 50% RH. Fan should ramp cleanly through low → medium → high.</div></li>
+      <li><span>3</span><div data-i18n="icm.t3"><strong>Compressor kicks in</strong> within 90 seconds. No knocking, no metallic rattle, no surging fan note.</div></li>
+      <li><span>4</span><div data-i18n="icm.t4"><strong>Listen at the supply grille.</strong> No whistle, no fluttering damper. If there's a whistle, the duct is undersized.</div></li>
+      <li><span>5</span><div data-i18n="icm.t5"><strong>Watch the drain.</strong> Within five minutes the pump should cycle once. Check every joint on the route, then the U-trap.</div></li>
+      <li><span>6</span><div data-i18n="icm.t6"><strong>After 10 minutes,</strong> humidity reading on the panel should be trending down. If it's flat or rising, recheck airflow before you blame the unit.</div></li>
+    </ol>
+
+    <h3 class="block-h" data-i18n="icm.handoff.heading">Hand-off</h3>
+    <p class="prose" data-i18n="icm.handoff.body">Show the homeowner three things, in this order: filter access (and how to wash it), how to change setpoint on the panel, how to pair the WiFi app. Leave them the install card and the user manual. Note the unit serial on the wall behind the panel — it's the first thing service will ask for.</p>
+
+    <div class="done-card">
+      <span class="done-tick">✓</span>
+      <div>
+        <strong data-i18n="icm.done.t">That's a clean install.</strong>
+        <span data-i18n="icm.done.b">A properly commissioned UTC will run quietly for a decade with monthly filter rinses and a yearly coil wipe.</span>
+      </div>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#install/power" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.done">Done</span> · <span data-i18n="home.tile.maintenance.title">Maintenance</span></div>
+    <a href="#maintenance" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== TROUBLESHOOTING ====== -->
+<section class="screen" data-screen="troubleshooting">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="ts.eyebrow">If something feels off</span>
+      <h2 data-i18n="ts.title">Troubleshooting</h2>
+      <p data-i18n="ts.desc">Most "broken" dehumidifiers are starved-airflow units, full filters, or stalled drains. Walk through these before calling service.</p>
+    </div>
+
+    <div class="trouble-list">
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.1.tag">Output low</span>
+          <span class="trouble-title" data-i18n="ts.1.title">Not pulling out as much water as it used to</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.1.b1">Pull the filter — if it's grey or matted, rinse under warm water, air dry, refit. Try again for 24 hours.</li>
+            <li data-i18n="ts.1.b2">Check airflow at the supply grille with the back of your hand. Should feel firm. If it's weak, ducting may have collapsed or kinked.</li>
+            <li data-i18n="ts.1.b3">Check the coil through the hatch. Frost on the coil at room temp = low refrigerant — call service.</li>
+            <li data-i18n="ts.1.b4">Confirm the room isn't being constantly re-humidified — open window, wet laundry, plants.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.2.tag">Noise</span>
+          <span class="trouble-title" data-i18n="ts.2.title">Rattling, knocking, or humming through the ceiling</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.2.b1">Open the hatch and check whether the unit body is touching the slab. If yes, slacken the rod nuts a turn — the rubber washers do the isolating.</li>
+            <li data-i18n="ts.2.b2">Check the duct connections. Loose flex against a metal collar buzzes — re-clip and tape.</li>
+            <li data-i18n="ts.2.b3">Knocking on startup is the compressor. Persistent knocking once running = mounting bolts loose or refrigerant charge issue.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.3.tag">Water</span>
+          <span class="trouble-title" data-i18n="ts.3.title">Dripping from the ceiling or hatch</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.3.b1">Power down first.</li>
+            <li data-i18n="ts.3.b2">Open the hatch. If water is in the drain pan, the pump's not clearing — check the check valve and the U-trap.</li>
+            <li data-i18n="ts.3.b3">If water is on top of the supply duct, the duct is sweating — insulate it across the plenum.</li>
+            <li data-i18n="ts.3.b4">If water is at a joint, reseal with mastic and re-clip.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.4.tag">Panel</span>
+          <span class="trouble-title" data-i18n="ts.4.title">Fault code on the LCD</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <p data-i18n="ts.4.intro">Codes are listed in the user manual that ships with the unit. The most common ones:</p>
+          <ul>
+            <li data-i18n="ts.4.b1"><strong>E1 / E2</strong> — sensor fault, usually a disconnected signal wire. Power down, reseat the panel cable.</li>
+            <li data-i18n="ts.4.b2"><strong>E3</strong> — frost protection. Unit will resume in 30 minutes. If it keeps tripping, room is too cold for refrigerant cycle.</li>
+            <li data-i18n="ts.4.b3"><strong>P1</strong> — pump not clearing. Check the drain.</li>
+          </ul>
+          <p data-i18n="ts.4.foot">If a code persists after a full power cycle (breaker off for 60 s), call service with the code and the unit serial.</p>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.5.tag">No power</span>
+          <span class="trouble-title" data-i18n="ts.5.title">Panel dark, unit unresponsive</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.5.b1">Check the breaker at the DB. If it has tripped, reset once. If it trips again, stop — there's a real fault.</li>
+            <li data-i18n="ts.5.b2">If the breaker holds, check the isolator at the hatch.</li>
+            <li data-i18n="ts.5.b3">If both are on but the panel is dark, the panel cable may have loosened — power down, reseat, retry.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.6.tag">Smell</span>
+          <span class="trouble-title" data-i18n="ts.6.title">Musty smell from the supply grille</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.6.b1">Filter — rinse it. This is the cause 80% of the time.</li>
+            <li data-i18n="ts.6.b2">Run the UV-C lamp continuously for a few cycles (selectable from the panel).</li>
+            <li data-i18n="ts.6.b3">If it persists, schedule a yearly coil wipe-down — the coil itself can grow biofilm over time.</li>
+          </ol>
+        </div>
+      </details>
+
+    </div>
+
+    <a class="next-link" href="#contact">
+      <span data-i18n="ts.next">Still stuck? Send us a message</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ====== MAINTENANCE ====== -->
+<section class="screen" data-screen="maintenance">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="mn.eyebrow">A clean unit lasts a decade</span>
+      <h2 data-i18n="mn.title">Maintenance</h2>
+      <p data-i18n="mn.desc">Three jobs across the year. None of them takes more than ten minutes.</p>
+    </div>
+
+    <div class="maint-stack">
+
+      <article class="maint-card">
+        <div class="maint-cadence" data-i18n="mn.m.cadence">Monthly</div>
+        <h3 data-i18n="mn.m.title">Rinse the filter</h3>
+        <p data-i18n="mn.m.body">Open the hatch, slide the stainless mesh filter out, rinse under warm water until the runoff is clear. Air dry, refit.</p>
+        <ul class="check-list check-list-tight">
+          <li data-i18n="mn.m.1">Skip the soap — it leaves residue.</li>
+          <li data-i18n="mn.m.2">If you smoke or burn incense, do it fortnightly.</li>
+          <li data-i18n="mn.m.3">Never refit a damp filter — biofilm starts on day one.</li>
+        </ul>
+      </article>
+
+      <article class="maint-card">
+        <div class="maint-cadence" data-i18n="mn.q.cadence">Quarterly</div>
+        <h3 data-i18n="mn.q.title">Eyes-on check</h3>
+        <p data-i18n="mn.q.body">Five minutes through the hatch. You're looking for things that have moved or changed since the install.</p>
+        <ul class="check-list check-list-tight">
+          <li data-i18n="mn.q.1">Drain pipe joints — any sign of dampness or mineral crust?</li>
+          <li data-i18n="mn.q.2">Insulation on the supply duct — still intact and dry?</li>
+          <li data-i18n="mn.q.3">Rod nuts — finger-test for any that have loosened.</li>
+          <li data-i18n="mn.q.4">Panel humidity reading vs. a separate hygrometer in the room — should agree within 3%.</li>
+        </ul>
+      </article>
+
+      <article class="maint-card">
+        <div class="maint-cadence" data-i18n="mn.y.cadence">Yearly</div>
+        <h3 data-i18n="mn.y.title">Coil &amp; drain service</h3>
+        <p data-i18n="mn.y.body">Power the unit down at the breaker first. Wipe the coil fins with a soft brush, then a damp cloth — never bend the fins. Pour a litre of water through the drain pan to verify the pump still clears fast and the check valve is sealing.</p>
+        <ul class="check-list check-list-tight">
+          <li data-i18n="mn.y.1">Coil cleaner if the fins are greasy — kitchen installs need it.</li>
+          <li data-i18n="mn.y.2">Replace the UV-C lamp every 18 – 24 months.</li>
+          <li data-i18n="mn.y.3">Firmware: check the DBA app for an update while you're in there.</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="mn.warn.t">If you live above a kitchen or near the sea,</strong>
+      <span data-i18n="mn.warn.b">halve every interval. Cooking oil and salt aerosol coat the coil twice as fast.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section class="screen" data-screen="contact">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="ct.eyebrow">Send a plan, get a sketch back</span>
+      <h2 data-i18n="ct.title">Contact us</h2>
+      <p data-i18n="ct.desc">A floor plan, ceiling height, and where you want the unit. We'll come back with a sketched layout and rough sizing — no obligation.</p>
+    </div>
+
+    <div class="contact-cards">
+
+      <article class="contact-card">
+        <div class="contact-region"><span class="flag">🇸🇬</span> <span data-i18n="ct.sg.region">Singapore</span></div>
+        <h3 data-i18n="ct.sg.org">DBA Electric Pte. Ltd.</h3>
+        <div class="contact-actions">
+          <a href="tel:+6567729962" class="contact-act">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+65 6772 9962</span>
+          </a>
+          <a href="https://wa.me/6589859886" class="contact-act contact-act-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.6-.6 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.2.8.8-3.1-.2-.3c-.8-1.3-1.3-2.9-1.3-4.5C3.5 7.4 7.4 3.5 12 3.5s8.5 3.9 8.5 8.5-3.9 8.2-8.5 8.2z"/></svg>
+            <span>+65 8985 9886</span>
+          </a>
+          <a href="mailto:dba@dba.sg" class="contact-act">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7L12 13 2 7"/></svg>
+            <span>dba@dba.sg</span>
+          </a>
+        </div>
+        <p class="contact-addr" data-i18n="ct.sg.addr">Block B, Cititech Industrial Building, 629 Aljunied Road, #07‑08, Singapore 389838</p>
+        <a href="https://www.dba.sg" target="_blank" rel="noopener" class="contact-site">dba.sg →</a>
+      </article>
+
+      <article class="contact-card">
+        <div class="contact-region"><span class="flag">🇭🇰</span> <span data-i18n="ct.hk.region">Hong Kong</span></div>
+        <h3 data-i18n="ct.hk.org">Debiasia Green Technology (HK) Co. Ltd.</h3>
+        <div class="contact-actions">
+          <a href="tel:+85225411611" class="contact-act">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+852 2541 1611</span>
+          </a>
+          <a href="https://wa.me/85254880850" class="contact-act contact-act-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.6-.6 1.8-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.7.4 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.2.8.8-3.1-.2-.3c-.8-1.3-1.3-2.9-1.3-4.5C3.5 7.4 7.4 3.5 12 3.5s8.5 3.9 8.5 8.5-3.9 8.2-8.5 8.2z"/></svg>
+            <span>+852 5488 0850</span>
+          </a>
+          <a href="mailto:dba@dba.hk" class="contact-act">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7L12 13 2 7"/></svg>
+            <span>dba@dba.hk</span>
+          </a>
+        </div>
+        <p class="contact-addr" data-i18n="ct.hk.addr">Room 04, 4/F, Wah Fat Industrial Building, 10–14 Kung Yip Street, Kwai Chung, Hong Kong</p>
+        <a href="https://www.dba.hk" target="_blank" rel="noopener" class="contact-site">dba.hk →</a>
+      </article>
+    </div>
+
+    <p class="contact-note" data-i18n="ct.note">Reply usually within a business day. Comfortable with both residential and industrial scopes.</p>
+  </div>
+</section>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
