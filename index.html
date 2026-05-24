@@ -109,20 +109,6 @@
       </div>
     </a>
 
-    <a class="tile" href="#models" style="--accent:#0ea5e9">
-      <div class="tile-icon">
-        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="6" y="18" width="36" height="14" rx="2"/>
-          <circle cx="9" cy="25" r="2.4"/>
-          <circle cx="39" cy="25" r="2.4"/>
-          <line x1="14" y1="14" x2="14" y2="18"/>
-          <line x1="34" y1="14" x2="34" y2="18"/>
-        </svg>
-      </div>
-      <h3 data-i18n="home.tile.models.title">Models</h3>
-      <p data-i18n="home.tile.models.desc">UTC20 · 68 · 120</p>
-    </a>
-
     <a class="tile" href="#troubleshooting" style="--accent:#f59e0b">
       <div class="tile-icon">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -146,6 +132,20 @@
       </div>
       <h3 data-i18n="home.tile.maintenance.title">Maintenance</h3>
       <p data-i18n="home.tile.maintenance.desc">Filter · coil · drain</p>
+    </a>
+
+    <a class="tile" href="#models" style="--accent:#0ea5e9">
+      <div class="tile-icon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="18" width="36" height="14" rx="2"/>
+          <circle cx="9" cy="25" r="2.4"/>
+          <circle cx="39" cy="25" r="2.4"/>
+          <line x1="14" y1="14" x2="14" y2="18"/>
+          <line x1="34" y1="14" x2="34" y2="18"/>
+        </svg>
+      </div>
+      <h3 data-i18n="home.tile.models.title">Models</h3>
+      <p data-i18n="home.tile.models.desc">UTC20 · 55 · 68 · 120</p>
     </a>
 
   </div>
@@ -427,8 +427,8 @@
 
     <div class="chip-row">
       <span class="chip" data-i18n="ip.chip.1">5-min bench test</span>
-      <span class="chip" data-i18n="ip.chip.2">Hatch ≥ 60 × 60 cm</span>
-      <span class="chip" data-i18n="ip.chip.3">Direct service access</span>
+      <span class="chip" data-i18n="ip.chip.2">Hatch 450 / 600 mm</span>
+      <span class="chip" data-i18n="ip.chip.3">Service panel orientation</span>
     </div>
 
     <!-- ====== 5-MIN BENCH TEST ====== -->
@@ -458,18 +458,25 @@
     <ul class="check-list">
       <li data-i18n="ip.plan.1"><strong>Confirm the plenum depth.</strong> UTC20 needs 200 mm clear above the false ceiling, UTC68 needs 240 mm, UTC120 needs 310 mm — plus an air gap above so the body never touches the slab.</li>
       <li data-i18n="ip.plan.2"><strong>Find the slab anchors.</strong> Mark where you'll fix the four threaded rods. Avoid existing services in the void.</li>
-      <li data-i18n="ip.plan.3"><strong>Pick a hatch location.</strong> Directly in front of the service panel, minimum 60 × 60 cm. Don't offset it.</li>
+      <li data-i18n="ip.plan.3"><strong>Pick a hatch location.</strong> Per the manual: <strong>450 × 450 mm or 600 × 600 mm</strong>, directly in front of the service-panel side (where the drainage outlet is). Don't offset it. The unit's filter slides out this side.</li>
       <li data-i18n="ip.plan.4"><strong>Plan duct routes early.</strong> Sketch return and supply paths, mark elbows, count them — each 90° bend costs ≈10 Pa.</li>
     </ul>
 
-    <h3 class="block-h" data-i18n="ip.kit.heading">What you'll need on the day</h3>
+    <h3 class="block-h" data-i18n="ip.kit.heading">Materials needed for installation</h3>
+    <p class="prose ip-kit-intro" data-i18n="ip.kit.intro">Manual page 6 — recommended mounting components, all 304 stainless steel:</p>
     <div class="kit-grid">
-      <div class="kit-item"><span data-i18n="ip.kit.1.t">M10 SS rods × 4</span><small data-i18n="ip.kit.1.d">plus nuts, washers, rubber spacers</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.2.t">Flex or rigid duct</span><small data-i18n="ip.kit.2.d">matched to the unit collar (⌀146 / ⌀196)</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.3.t">DN15 drain pipe</span><small data-i18n="ip.kit.3.d">plus check valve and U-trap</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.4.t">3 × 2.5 mm² cable</span><small data-i18n="ip.kit.4.d">and a dedicated 16 A air switch</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.5.t">86-type back box</span><small data-i18n="ip.kit.5.d">for the LCD control panel</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.6.t">Spirit level &amp; tape</span><small data-i18n="ip.kit.6.d">level the unit horizontally before final tightening</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.1.t">M10 sleeve anchors × 4</span><small data-i18n="ip.kit.1.d">to fix the threaded rods into the concrete slab</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.2.t">M10 threaded rods × 4</span><small data-i18n="ip.kit.2.d">main support rods (cut to length, usually 1–2 m)</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.3.t">M10 hexagonal nuts × 12</span><small data-i18n="ip.kit.3.d">for height adjustment, levelling, and locking</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.4.t">M10 flat washers × 12</span><small data-i18n="ip.kit.4.d">distribute load and protect surfaces</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.5.t">M10 lock rings × 12</span><small data-i18n="ip.kit.5.d">prevent the nuts from loosening due to vibration</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.6.t">Rubber vibration pads</span><small data-i18n="ip.kit.6.d">at the unit's hanging ears, for ultra-quiet running</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.7.t">Flex + rigid duct</span><small data-i18n="ip.kit.7.d">aluminium foil flex for most runs; rigid galvanised for longer sections</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.8.t">300–500 mm flex section</span><small data-i18n="ip.kit.8.d">vibration isolation between the unit flange and rigid duct</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.9.t">Insulated drain hose</span><small data-i18n="ip.kit.9.d">plus an Upper U-trap (check valve is built into the unit)</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.10.t">3 × 2.5 mm² cable</span><small data-i18n="ip.kit.10.d">and a dedicated 16 A air switch with proper earth</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.11.t">86-type back box</span><small data-i18n="ip.kit.11.d">for the LCD control panel (8 m cable supplied)</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.12.t">Spirit level &amp; tape</span><small data-i18n="ip.kit.12.d">level the unit before final tightening</small></div>
     </div>
 
     <div class="warn-card">
@@ -538,6 +545,29 @@
       <li><span>4</span><div data-i18n="ih.how.4"><strong>Level it horizontally</strong> with a spirit level on the top face. The drain pan inside has to sit flat or condensate pools in the wrong corner.</div></li>
       <li><span>5</span><div data-i18n="ih.how.5"><strong>Tighten the nuts evenly,</strong> diagonal pattern, until the rubber compresses lightly — not flat.</div></li>
     </ol>
+
+    <h3 class="block-h" data-i18n="ih.orient.heading">Orientation — get this right before drilling</h3>
+    <p class="prose" data-i18n="ih.orient.intro">The unit is not symmetrical. Each side does a different job. Decide the orientation <strong>before</strong> you drill the slab anchors, because it dictates where the access hatch, duct openings, and drain route need to be.</p>
+    <ul class="check-list">
+      <li data-i18n="ih.orient.1"><strong>Service / access panel side</strong> — must face the planned false-ceiling hatch. The filter slides out from this side and the electrical compartment opens from here. <strong>Never face it to a wall</strong> — you will lose all service access.</li>
+      <li data-i18n="ih.orient.2"><strong>Air inlet vs air outlet</strong> — opposite ends of the body. Plan the return and supply duct routes around this from the start.</li>
+      <li data-i18n="ih.orient.3"><strong>Pump drainage outlet</strong> — on one of the long sides. The drain route needs clear access on that side.</li>
+      <li data-i18n="ih.orient.4"><strong>Wired control box &amp; rear panel</strong> — the status LED, emergency-stop button, and power cord outlet are on the rear. Don't bury that face against a structure.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="ih.hatch.heading">Access hatch &amp; service clearance</h3>
+    <p class="prose" data-i18n="ih.hatch.intro">The official manual is specific: the access hatch must sit <strong>directly in front of the service panel side</strong> (the drainage outlet side). No offset, no compromises — service techs need to slide the filter out and reach the drain.</p>
+    <ul class="check-list">
+      <li data-i18n="ih.hatch.1"><strong>Hatch size: 450 × 450 mm or 600 × 600 mm</strong>, square, directly in front of the service panel. 600 is more comfortable for service.</li>
+      <li data-i18n="ih.hatch.2"><strong>≥ 450 mm clearance</strong> around the unit inside the false-ceiling void — room to remove side covers and reach the drain.</li>
+      <li data-i18n="ih.hatch.3"><strong>≥ 10 mm air gap</strong> between the unit body and the slab above, and between the unit and the false ceiling below.</li>
+      <li data-i18n="ih.hatch.4"><strong>Maintenance every 3–6 months</strong> — filter, coil inspection, drain check — so the hatch will get used. Make it useable.</li>
+    </ul>
+
+    <div class="warn-card">
+      <strong data-i18n="ih.orient.warn.t">If the service panel ends up facing a wall, the install is wrong.</strong>
+      <span data-i18n="ih.orient.warn.b">You cannot change the filter, open the access panel, or service the drain without dropping the whole unit. Catch this before tightening the suspension rods.</span>
+    </div>
 
     <div class="warn-card warn-card-soft">
       <strong data-i18n="ih.warn.t">Don't let the body touch the slab.</strong>
