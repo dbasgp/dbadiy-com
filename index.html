@@ -413,27 +413,27 @@
     </div>
 
     <div class="chip-row">
-      <span class="chip" data-i18n="ip.chip.1">5-min bench test</span>
+      <span class="chip" data-i18n="ip.chip.1">10-min bench test</span>
       <span class="chip" data-i18n="ip.chip.2">Hatch 450 / 600 mm</span>
       <span class="chip" data-i18n="ip.chip.3">Service panel orientation</span>
     </div>
 
-    <!-- ====== 5-MIN BENCH TEST ====== -->
+    <!-- ====== 10-MIN BENCH TEST ====== -->
     <div class="bench-card">
       <div class="bench-head">
         <span class="bench-badge"><span class="bench-dot"></span> <span data-i18n="ip.bench.badge">Compulsory</span></span>
         <h3 data-i18n="ip.bench.title">10-minute bench test, before you hang it</h3>
-        <p data-i18n="ip.bench.lede">Out of the box, on the floor or workbench, run a 10-minute power-on check. Per the official install card: "Before and after installation, the unit must be powered on for testing." Ten minutes here saves an entire day of dismantling later.</p>
+        <p data-i18n="ip.bench.lede">Set the unit on the floor or workbench out of the box and run a 10-minute power-on check. The unit must be powered on for testing both before and after installation. Ten minutes here saves an entire day of dismantling later.</p>
       </div>
       <ol class="bench-steps">
-        <li data-i18n="ip.bench.s1"><strong>Unbox</strong> — take the unit out of the carton, set it on the floor with the panels facing up. Keep packaging in case of a return.</li>
-        <li data-i18n="ip.bench.s2"><strong>Connect the control panel</strong> (terminals 4–7) using the supplied 8 m cable. Match wire numbers exactly.</li>
-        <li data-i18n="ip.bench.s3"><strong>Connect the temperature &amp; humidity sensor</strong> (terminals 1–3). The unit will not run dehumidification without a valid sensor reading.</li>
-        <li data-i18n="ip.bench.s4"><strong>Plug in the power.</strong> Use a temporary 220–240 V grounded socket if the dedicated circuit isn't wired yet.</li>
-        <li data-i18n="ip.bench.s5"><strong>Power on.</strong> Fan should start immediately. Compressor follows after a 3-second delay (designed delay, not a fault).</li>
-        <li data-i18n="ip.bench.s6"><strong>Force the compressor on</strong> — set the humidity target around 40% RH on the panel.</li>
-        <li data-i18n="ip.bench.s7"><strong>Run for more than 10 minutes</strong> in dehumidification mode. Listen for any unusual noise. Feel for warm air at the outlet — that means the compressor is moving heat correctly.</li>
-        <li data-i18n="ip.bench.s8"><strong>Check the LCD throughout</strong> — no error code, no defrost lock-in, ambient RH should be trending down by the end.</li>
+        <li data-i18n="ip.bench.s1"><strong>Unbox</strong> — open the carton, lay the unit flat on the floor. Keep the packaging in case of a return.</li>
+        <li data-i18n="ip.bench.s2"><strong>Connect the LCD control panel</strong> — run the panel signal cable into the unit at terminals 4–7.</li>
+        <li data-i18n="ip.bench.s3"><strong>Connect the temperature &amp; humidity sensor</strong> — wire it into the unit at terminals 1–3. The unit will not run dehumidification without a valid sensor reading.</li>
+        <li data-i18n="ip.bench.s4"><strong>Power up</strong> — a grounded 220–240 V socket is fine for the test.</li>
+        <li data-i18n="ip.bench.s5"><strong>Switch on</strong> — fan starts immediately, compressor follows after a 3-second delay. Make sure the unit is in dehumidification mode.</li>
+        <li data-i18n="ip.bench.s6"><strong>Force the compressor on</strong> — set the humidity target to 40% RH or lower. If the target is above ambient RH, the compressor will not start.</li>
+        <li data-i18n="ip.bench.s7"><strong>Run for more than 10 minutes</strong> in dehumidification mode. Listen for any unusual noise from the fan and compressor. Warm air at the outlet confirms dehumidification is working. You can also hold the sensor near the outlet — the RH shown on the LCD will gradually drop. The outlet has a metal fan inside; never put your hands or any object into it.</li>
+        <li data-i18n="ip.bench.s8"><strong>Check the LCD control panel</strong> — display and controls should respond normally, with no error code shown.</li>
       </ol>
       <div class="bench-foot">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
@@ -443,9 +443,19 @@
 
     <h3 class="block-h" data-i18n="ip.plan.heading">Then plan, before you cut anything</h3>
     <ul class="check-list">
-      <li data-i18n="ip.plan.1"><strong>Confirm the plenum depth.</strong> UTC20 needs 200 mm clear above the false ceiling, UTC68 needs 240 mm, UTC120 needs 310 mm — plus an air gap above so the body never touches the slab.</li>
-      <li data-i18n="ip.plan.2"><strong>Find the slab anchors.</strong> Mark where you'll fix the four threaded rods. Avoid existing services in the void.</li>
-      <li data-i18n="ip.plan.3"><strong>Pick a hatch location.</strong> Per the manual: <strong>450 × 450 mm or 600 × 600 mm</strong>, directly in front of the service-panel side (where the drainage outlet is). Don't offset it. The unit's filter slides out this side.</li>
+      <li data-i18n="ip.plan.1"><strong>Confirm the plenum height.</strong> UTC20 needs 200 mm, UTC68 needs 240 mm, UTC120 needs 310 mm — plus 20–30 mm of clearance above and below, so the body never touches the slab or the false ceiling.</li>
+    </ul>
+    <figure class="plan-figure">
+      <img src="images/installation/access-hatch.png" alt="" loading="lazy" />
+    </figure>
+    <ul class="check-list">
+      <li data-i18n="ip.plan.2"><strong>Find the slab anchors.</strong> Mark where you'll fix the four threaded rods. Avoid existing services inside the slab.</li>
+      <li data-i18n="ip.plan.3"><strong>Pick a hatch location.</strong> A hatch of <strong>450 × 450 mm or 600 × 600 mm</strong> is recommended, directly in front of the service-panel side (the drainage outlet side). Don't offset it. The unit's filter slides out this side.</li>
+    </ul>
+    <figure class="plan-figure">
+      <img src="images/installation/unit-heights.png" alt="" loading="lazy" />
+    </figure>
+    <ul class="check-list">
       <li data-i18n="ip.plan.4"><strong>Plan duct routes early.</strong> Sketch return and supply paths, mark elbows, count them — each 90° bend costs ≈10 Pa.</li>
     </ul>
 
@@ -459,9 +469,9 @@
       <div class="kit-item"><span data-i18n="ip.kit.5.t">M10 lock rings × 12</span><small data-i18n="ip.kit.5.d">prevent the nuts from loosening due to vibration</small></div>
       <div class="kit-item"><span data-i18n="ip.kit.6.t">Rubber vibration pads</span><small data-i18n="ip.kit.6.d">at the unit's hanging ears, for ultra-quiet running</small></div>
       <div class="kit-item"><span data-i18n="ip.kit.7.t">Flex + rigid duct</span><small data-i18n="ip.kit.7.d">aluminium foil flex for most runs; rigid galvanised for longer sections</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.8.t">300–500 mm flex section</span><small data-i18n="ip.kit.8.d">vibration isolation between the unit flange and rigid duct</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.8.t">500–1000 mm silenced duct</span><small data-i18n="ip.kit.8.d">silenced anti-vibration flex section between the unit flange and the rigid duct</small></div>
       <div class="kit-item"><span data-i18n="ip.kit.9.t">Insulated drain hose</span><small data-i18n="ip.kit.9.d">plus an Upper U-trap (check valve is built into the unit)</small></div>
-      <div class="kit-item"><span data-i18n="ip.kit.10.t">3 × 2.5 mm² cable</span><small data-i18n="ip.kit.10.d">and a dedicated 16 A air switch with proper earth</small></div>
+      <div class="kit-item"><span data-i18n="ip.kit.10.t">3 × 2.5 mm² cable</span><small data-i18n="ip.kit.10.d">and a dedicated 13 A 220 V grounded socket on its own circuit</small></div>
       <div class="kit-item"><span data-i18n="ip.kit.11.t">86-type back box</span><small data-i18n="ip.kit.11.d">for the LCD control panel (8 m cable supplied)</small></div>
       <div class="kit-item"><span data-i18n="ip.kit.12.t">Spirit level &amp; tape</span><small data-i18n="ip.kit.12.d">level the unit before final tightening</small></div>
     </div>

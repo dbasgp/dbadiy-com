@@ -1026,6 +1026,22 @@ img,svg{display:block;max-width:100%;}
 }
 .illu{width:100%; height:auto; max-height:220px;}
 
+.plan-figure{
+  margin:10px 0 14px;
+  padding:14px 16px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-sm);
+}
+.plan-figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:240px;
+  object-fit:contain;
+}
+
 /* Done card */
 .done-card{
   margin-top:22px;
