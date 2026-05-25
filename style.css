@@ -1015,6 +1015,15 @@ img,svg{display:block;max-width:100%;}
 }
 .warn-card-soft strong{color:var(--ink);}
 
+.warn-inline{
+  display:inline;
+  color:#dc2626;
+  font-weight:700;
+}
+.warn-inline::before{
+  content:"\26A0\FE0F\00A0";
+}
+
 /* Illustration card */
 .illu-card{
   background:var(--surface);
