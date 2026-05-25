@@ -236,55 +236,21 @@ img,svg{display:block;max-width:100%;}
   max-width:560px;
   margin:0 auto;
 }
-.logo-block{
-  position:relative;
+.home-logo{
+  margin:0;
   display:flex;
-  flex-direction:column;
-  align-items:center;
+  justify-content:center;
 }
-.logo-orbit{
-  position:absolute;
-  top:0;
-  left:50%;
-  transform:translateX(-50%);
-  width:64px;
-  height:64px;
-  pointer-events:none;
+.home-logo img{
+  width:100%;
+  max-width:280px;
+  height:auto;
+  display:block;
 }
-.logo-pulse{
-  position:absolute;
-  top:0;left:0;right:0;bottom:0;
-  border-radius:50%;
-  border:2px solid var(--primary);
-  opacity:0;
-  animation:pulse-out 2.4s ease-out infinite;
-}
-.logo-pulse-2{animation-delay:1.2s;}
-@keyframes pulse-out{
-  0%{transform:scale(0.85);opacity:0.6;}
-  100%{transform:scale(2);opacity:0;}
-}
-.logo-mark{
-  position:relative;
-  display:inline-grid;place-items:center;
-  width:64px;height:64px;
-  border-radius:18px;
-  color:var(--primary);
-  background:linear-gradient(180deg, #ffffff, var(--primary-soft));
-  box-shadow:var(--shadow-md);
-}
-.logo-mark svg{width:36px;height:36px;}
-.home-title{
-  font-size:42px;
-  letter-spacing:-0.03em;
-  margin:16px 0 6px;
-}
-.home-title em{font-style:normal;color:var(--primary);font-weight:800;}
-.home-sub{
-  font-size:15px;
-  color:var(--ink-3);
-  max-width:340px;
-  margin:0 auto;
+.nav-logo{
+  height:32px;
+  width:auto;
+  display:block;
 }
 
 .tile-grid{
@@ -1547,9 +1513,8 @@ img,svg{display:block;max-width:100%;}
     --hdr-h:64px;
     --step-footer-h:72px;
   }
-  .home-title{font-size:52px;}
+  .home-logo img{max-width:360px;}
   .home-hero{padding:48px 24px 28px;}
-  .home-sub{font-size:16.5px; max-width:420px;}
   .tile{min-height:160px; padding:22px 20px;}
   .tile h3{font-size:18px;}
   .tile-feature{min-height:240px;}
@@ -1572,7 +1537,6 @@ img,svg{display:block;max-width:100%;}
 /* Reduced motion */
 @media(prefers-reduced-motion:reduce){
   .screen{animation:none;}
-  .logo-pulse{animation:none; opacity:0;}
   .bench-dot{animation:none;}
   *{transition:none !important;}
 }
