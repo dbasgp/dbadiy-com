@@ -1228,6 +1228,83 @@ img,svg{display:block;max-width:100%;}
 }
 .next-link svg{width:16px;height:16px;}
 
+/* ============== CASES (project gallery) ============== */
+.cases-block{
+  margin-top:36px;
+  padding-top:28px;
+  border-top:1px solid var(--line);
+}
+.cases-head{margin-bottom:14px;}
+.cases-head h3{font-size:22px;margin:4px 0 6px;}
+.cases-head .eyebrow{color:var(--ink-3);}
+.cases-head p{font-size:13.5px;color:var(--ink-3);max-width:42ch;}
+.cases-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+.case-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-sm);
+  overflow:hidden;
+}
+.case-card > summary{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 14px 10px 10px;
+  cursor:pointer;
+  list-style:none;
+  transition:background 0.15s;
+}
+.case-card > summary::-webkit-details-marker{display:none;}
+.case-card > summary:active{background:color-mix(in srgb, var(--ink-3) 6%, transparent);}
+.case-photo{
+  flex:0 0 64px;
+  width:64px;height:64px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#e2e8f0,#f1f5f9);
+  display:grid;place-items:center;
+  color:var(--ink-3);
+  font-size:10px;
+  letter-spacing:0.08em;
+  font-weight:700;
+}
+.case-meta{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;}
+.case-meta strong{font-size:14.5px;color:var(--ink);line-height:1.3;}
+.case-meta span{font-size:12.5px;color:var(--ink-3);}
+.case-chev{
+  width:18px;height:18px;
+  color:var(--ink-3);
+  flex:0 0 18px;
+  transition:transform 0.2s;
+}
+.case-card[open] > summary .case-chev{transform:rotate(180deg);}
+.case-body{
+  padding:0 14px 14px;
+  border-top:1px solid var(--line);
+  padding-top:12px;
+}
+.case-photo-row{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:6px;
+  margin-bottom:10px;
+}
+.case-photo-lg{
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  border-radius:8px;
+  flex:none;
+}
+.case-notes{font-size:13.5px;color:var(--ink-2);line-height:1.6;}
+@media (min-width:600px){
+  .cases-grid{grid-template-columns:repeat(2, 1fr);}
+}
+
 /* ============== DUCTING ROWS ============== */
 .duct-stack{
   display:flex;
