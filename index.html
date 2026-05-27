@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>DBA DIY — your dehumidifier, in your pocket</title>
 <meta name="description" content="Mobile install &amp; care guide for DBA ceiling-mounted dehumidifiers. English &amp; 繁體中文." />
-<meta name="theme-color" content="#0ea5e9" />
+<meta name="theme-color" content="#0d1721" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="mobile-web-app-capable" content="yes" />
@@ -66,7 +66,7 @@
       </div>
     </a>
 
-    <a class="tile tile-feature" href="#manual" style="--accent:#0ea5e9">
+    <a class="tile tile-feature tile-feature-alt" href="#manual">
       <div class="tile-feature-body">
         <span class="tile-tag" data-i18n="home.manual.tag">7 chapters · official</span>
         <h2 data-i18n="home.manual.title">User Manual</h2>
@@ -106,7 +106,7 @@
       <p data-i18n="home.tile.maintenance.desc">Filter · coil · drain</p>
     </a>
 
-    <a class="tile" href="#models" style="--accent:#0ea5e9">
+    <a class="tile" href="#models" style="--accent:#0f766e">
       <div class="tile-icon">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="6" y="18" width="36" height="14" rx="2"/>
@@ -209,131 +209,369 @@
       <p data-i18n="models.desc">Same ceiling-mount housing, same controls, same built-in drain pump. Capacities from 20 to 120 L/day.</p>
     </div>
 
-    <div class="model-stack">
+    <!-- Marquee hero photo from the official catalog -->
+    <figure class="marquee">
+      <img src="images/catalog/airflow.jpg" alt="Ceiling-mounted dehumidifier delivering airflow in a living room" loading="lazy" />
+      <figcaption>
+        <span class="marquee-tag" data-i18n="models.marquee.tag">Minimalist aesthetics</span>
+        <strong data-i18n="models.marquee.t">20 cm ultra-slim, hidden installation.</strong>
+      </figcaption>
+    </figure>
 
-      <article class="model-card" id="utc20">
-        <div class="model-photo">
-          <img src="images/products/utc20.webp" alt="DBA-UTC20" loading="lazy" />
-        </div>
-        <div class="model-head">
-          <span class="model-tag">DBA-UTC20</span>
-          <h3>20 L/day</h3>
-          <p data-i18n="models.utc20.desc">Studio or single-room size. R410A refrigerant, single inlet.</p>
-        </div>
-        <dl class="spec spec-full">
-          <dt data-i18n="models.spec.capacity">Moisture removal capacity</dt><dd>20 L/day @ 30°C 80%RH<br><span class="spec-sub">9.9 L/day @ 26.7°C 60%RH</span></dd>
-          <dt data-i18n="models.spec.psupply">Power supply</dt><dd>220 – 240 V ~ 50 Hz</dd>
-          <dt data-i18n="models.spec.prated">Rated power</dt><dd>196 W</dd>
-          <dt data-i18n="models.spec.pmax">Max power</dt><dd>300 W</dd>
-          <dt data-i18n="models.spec.crated">Rated current</dt><dd>1.0 A</dd>
-          <dt data-i18n="models.spec.cmax">Max current</dt><dd>1.35 A</dd>
-          <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>220 m³/hr</dd>
-          <dt data-i18n="models.spec.suction">Max suction pressure</dt><dd>1.0 MPa</dd>
-          <dt data-i18n="models.spec.discharge">Max discharge pressure</dt><dd>2.5 MPa</dd>
-          <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R410A · 230 g</dd>
-          <dt data-i18n="models.spec.optemp">Operation temperature</dt><dd>5 – 40 °C</dd>
-          <dt data-i18n="models.spec.pump">Pump max head lift</dt><dd>1.8 m</dd>
-          <dt data-i18n="models.spec.weight">Net weight</dt><dd>28 kg</dd>
-          <dt data-i18n="models.spec.size">Product size</dt><dd>865 × 376 × 201 mm</dd>
-          <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
-        </dl>
+    <!-- Feature deck: 4 catalog visuals + short copy -->
+    <div class="cat-deck">
+      <article class="catfeat">
+        <img src="images/catalog/house.jpg" alt="Whole-house dehumidification diagram" loading="lazy" />
+        <h4 data-i18n="models.catfeat.house.t">Whole-house, one unit</h4>
+        <p data-i18n="models.catfeat.house.d">Branches feed every room from a single ceiling void. UTC68 or UTC120 dries an entire apartment.</p>
       </article>
-
-      <article class="model-card" id="utc55">
-        <div class="model-photo">
-          <img src="images/products/utc55.webp" alt="DBA-UTC55" loading="lazy" />
-        </div>
-        <div class="model-head">
-          <span class="model-tag model-tag-r32">DBA-UTC55 · R32</span>
-          <h3>55 L/day</h3>
-          <p data-i18n="models.utc55.desc">Mid-size between UTC20 and UTC68. R32 refrigerant (mildly flammable).</p>
-        </div>
-        <dl class="spec spec-full">
-          <dt data-i18n="models.spec.capacity">Moisture removal capacity</dt><dd>55 L/day @ 30°C 80%RH<br><span class="spec-sub">30 L/day @ 26.7°C 60%RH</span></dd>
-          <dt data-i18n="models.spec.psupply">Power supply</dt><dd>220 – 240 V ~ 50 Hz</dd>
-          <dt data-i18n="models.spec.prated">Rated power</dt><dd>700 W</dd>
-          <dt data-i18n="models.spec.pmax">Max power</dt><dd>930 W</dd>
-          <dt data-i18n="models.spec.crated">Rated current</dt><dd>3.2 A</dd>
-          <dt data-i18n="models.spec.cmax">Max current</dt><dd>4.3 A</dd>
-          <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>600 m³/hr</dd>
-          <dt data-i18n="models.spec.suction">Max suction pressure</dt><dd>2.5 MPa</dd>
-          <dt data-i18n="models.spec.discharge">Max discharge pressure</dt><dd>4.5 MPa</dd>
-          <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd data-i18n="models.utc55.refr">R32 · 0.3 kg (mildly flammable)</dd>
-          <dt data-i18n="models.spec.optemp">Operation temperature</dt><dd>5 – 40 °C</dd>
-          <dt data-i18n="models.spec.pump">Pump max head lift</dt><dd>1.8 m</dd>
-          <dt data-i18n="models.spec.weight">Net weight</dt><dd>38 kg</dd>
-          <dt data-i18n="models.spec.size">Product size</dt><dd>970 × 436 × 238 mm</dd>
-          <dt data-i18n="models.spec.certs">Certifications</dt><dd>CE · CB · RoHS · Flammable Refrigerant</dd>
-        </dl>
+      <article class="catfeat">
+        <img src="images/catalog/uv.jpg" alt="UV-C sterilisation lamp inside a dehumidifier" loading="lazy" />
+        <h4 data-i18n="models.catfeat.uv.t">UV-C sterilisation</h4>
+        <p data-i18n="models.catfeat.uv.d">Optional lamp eliminates 99.9% of airborne bacteria and viruses passing the coil.</p>
       </article>
-
-      <article class="model-card model-card-featured" id="utc68">
-        <div class="model-photo">
-          <img src="images/products/utc68.webp" alt="DBA-UTC68" loading="lazy" />
-        </div>
-        <div class="model-head">
-          <span class="model-tag" data-i18n="models.utc68.tag">DBA-UTC68 · popular</span>
-          <h3>68 L/day</h3>
-          <p data-i18n="models.utc68.desc">The whole-apartment workhorse. R410A refrigerant, single inlet.</p>
-        </div>
-        <dl class="spec spec-full">
-          <dt data-i18n="models.spec.capacity">Moisture removal capacity</dt><dd>68 L/day @ 30°C 80%RH<br><span class="spec-sub">42 L/day @ 26.7°C 60%RH</span></dd>
-          <dt data-i18n="models.spec.psupply">Power supply</dt><dd>220 – 240 V ~ 50 Hz</dd>
-          <dt data-i18n="models.spec.prated">Rated power</dt><dd>880 W</dd>
-          <dt data-i18n="models.spec.pmax">Max power</dt><dd>1250 W</dd>
-          <dt data-i18n="models.spec.crated">Rated current</dt><dd>4.0 A</dd>
-          <dt data-i18n="models.spec.cmax">Max current</dt><dd>5.7 A</dd>
-          <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>500 m³/hr</dd>
-          <dt data-i18n="models.spec.suction">Max suction pressure</dt><dd>2.5 MPa</dd>
-          <dt data-i18n="models.spec.discharge">Max discharge pressure</dt><dd>4.5 MPa</dd>
-          <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R410A · 600 g</dd>
-          <dt data-i18n="models.spec.optemp">Operation temperature</dt><dd>5 – 40 °C</dd>
-          <dt data-i18n="models.spec.pump">Pump max head lift</dt><dd>1.8 m</dd>
-          <dt data-i18n="models.spec.weight">Net weight</dt><dd>42 kg</dd>
-          <dt data-i18n="models.spec.size">Product size</dt><dd>1010 × 500 × 240 mm</dd>
-          <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
-        </dl>
+      <article class="catfeat">
+        <img src="images/catalog/lcd.jpg" alt="LCD wall panel, app, and smart home control" loading="lazy" />
+        <h4 data-i18n="models.catfeat.lcd.t">Wall panel · app · BMS</h4>
+        <p data-i18n="models.catfeat.lcd.d">86×86 mm LCD, Tuya app on 2.4 GHz WiFi, and RS485 Modbus for any BMS or PLC.</p>
       </article>
-
-      <article class="model-card" id="utc120">
-        <div class="model-photo">
-          <img src="images/products/utc120.webp" alt="DBA-UTC120" loading="lazy" />
-        </div>
-        <div class="model-head">
-          <span class="model-tag">DBA-UTC120</span>
-          <h3>120 L/day</h3>
-          <p data-i18n="models.utc120.desc">Large homes and light commercial. R410A refrigerant, twin-inlet.</p>
-        </div>
-        <dl class="spec spec-full">
-          <dt data-i18n="models.spec.capacity">Moisture removal capacity</dt><dd>120 L/day @ 30°C 80%RH<br><span class="spec-sub">52.8 L/day @ 26.7°C 60%RH</span></dd>
-          <dt data-i18n="models.spec.psupply">Power supply</dt><dd>220 – 240 V ~ 50 Hz</dd>
-          <dt data-i18n="models.spec.prated">Rated power</dt><dd>1100 W</dd>
-          <dt data-i18n="models.spec.pmax">Max power</dt><dd>1700 W</dd>
-          <dt data-i18n="models.spec.crated">Rated current</dt><dd>5.0 A</dd>
-          <dt data-i18n="models.spec.cmax">Max current</dt><dd>8.7 A</dd>
-          <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>890 m³/hr</dd>
-          <dt data-i18n="models.spec.suction">Max suction pressure</dt><dd>2.5 MPa</dd>
-          <dt data-i18n="models.spec.discharge">Max discharge pressure</dt><dd>4.5 MPa</dd>
-          <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R410A · 900 g</dd>
-          <dt data-i18n="models.spec.optemp">Operation temperature</dt><dd>5 – 40 °C</dd>
-          <dt data-i18n="models.spec.pump">Pump max head lift</dt><dd>1.8 m</dd>
-          <dt data-i18n="models.spec.weight">Net weight</dt><dd>64 kg</dd>
-          <dt data-i18n="models.spec.size">Product size</dt><dd>1075 × 746 × 310 mm</dd>
-          <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
-        </dl>
+      <article class="catfeat">
+        <img src="images/catalog/pump.jpg" alt="Built-in drainage pump with check valve" loading="lazy" />
+        <h4 data-i18n="models.catfeat.pump.t">1.8 m pump lift · DN15</h4>
+        <p data-i18n="models.catfeat.pump.d">Built-in pump and check valve push condensate up to 1.8 m to the nearest stack.</p>
+      </article>
+      <article class="catfeat">
+        <img src="images/catalog/motor.jpg" alt="Metal cast motor with Japan NSK bearing" loading="lazy" />
+        <h4 data-i18n="models.catfeat.motor.t">Metal cast motor</h4>
+        <p data-i18n="models.catfeat.motor.d">Japan NSK bearing inside a cast metal housing — runs cool, runs quiet, lasts a decade.</p>
+      </article>
+      <article class="catfeat">
+        <img src="images/catalog/quiet.jpg" alt="Shock-absorbing mounts beneath the chassis" loading="lazy" />
+        <h4 data-i18n="models.catfeat.quiet.t">40 dB quiet operation</h4>
+        <p data-i18n="models.catfeat.quiet.d">Multiple shock-absorbing mounts under the chassis isolate compressor vibration.</p>
       </article>
     </div>
 
-    <div class="feature-pills">
-      <span data-i18n="models.feat.pump">✓ Built-in 1.8 m pump &amp; check valve</span>
-      <span data-i18n="models.feat.uv">✓ UV-C lamp (if equipped)</span>
-      <span data-i18n="models.feat.filter">✓ Washable mesh filter</span>
-      <span data-i18n="models.feat.wifi">✓ WiFi (Tuya app)</span>
-      <span data-i18n="models.feat.modbus">✓ RS485 Modbus 9600 bps</span>
-      <span data-i18n="models.feat.leak">✓ Water leak sensor input</span>
-      <span data-i18n="models.feat.remote">✓ Dry-contact remote on/off</span>
-      <span data-i18n="models.feat.cert">✓ CE · CB · RoHS</span>
+    <!-- Compare strip — jump to any model -->
+    <nav class="capacity-strip" aria-label="Compare capacities">
+      <a href="#utc20" class="cap-pin" data-acc="copper">
+        <span class="cap-num">20</span>
+        <span class="cap-label">L/day</span>
+        <span class="cap-meta">UTC20</span>
+      </a>
+      <a href="#utc55" class="cap-pin" data-acc="amber">
+        <span class="cap-num">55</span>
+        <span class="cap-label">L/day</span>
+        <span class="cap-meta">UTC55 · R32</span>
+      </a>
+      <a href="#utc68" class="cap-pin cap-pin-hero" data-acc="teal">
+        <span class="cap-num">68</span>
+        <span class="cap-label">L/day</span>
+        <span class="cap-meta" data-i18n="models.utc68.popular">UTC68 · popular</span>
+      </a>
+      <a href="#utc120" class="cap-pin" data-acc="ink">
+        <span class="cap-num">120</span>
+        <span class="cap-label">L/day</span>
+        <span class="cap-meta">UTC120</span>
+      </a>
+    </nav>
+
+    <div class="model-mag">
+
+      <!-- ====== UTC20 ====== -->
+      <article class="mcard" id="utc20" data-acc="copper">
+        <div class="mcard-hero">
+          <div class="mcard-photo">
+            <img src="images/products/utc20.webp" alt="DBA-UTC20" loading="lazy" />
+          </div>
+          <div class="mcard-stat">
+            <span class="mcard-sku">DBA-UTC20</span>
+            <span class="mcard-big"><strong>20</strong><em>L/day</em></span>
+            <p class="mcard-blurb" data-i18n="models.utc20.desc">Studio or single-room size. R410A refrigerant, single inlet.</p>
+            <div class="mcard-badges">
+              <span class="mbadge mbadge-energy" data-i18n="models.utc20.energy">HK Grade 1 Energy Label</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mcard-keystats">
+          <div><span class="ks-num">200–400</span><span class="ks-lbl" data-i18n="models.spec.cover">sqft area</span></div>
+          <div><span class="ks-num">39</span><span class="ks-lbl">dB(A) @ 3m</span></div>
+          <div><span class="ks-num">⌀146</span><span class="ks-lbl" data-i18n="models.spec.flange">flange in/out</span></div>
+          <div><span class="ks-num">DN15</span><span class="ks-lbl" data-i18n="models.spec.drainsize">drain outlet</span></div>
+        </div>
+
+        <div class="spec-groups">
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.perf">Performance</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.capacity">Moisture removal</dt><dd>20 L/day @ 30°C 80%RH<br><span class="spec-sub">9.9 L/day @ 26.7°C 60%RH</span></dd>
+              <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>220 m³/hr</dd>
+              <dt data-i18n="models.spec.static">Static pressure</dt><dd>80 Pa</dd>
+              <dt data-i18n="models.spec.noise">Sound @ 3 m</dt><dd>39 dB(A)</dd>
+              <dt data-i18n="models.spec.cover">Coverage</dt><dd>200 – 400 sqft</dd>
+              <dt data-i18n="models.spec.optemp">Operating temp</dt><dd>5 – 40 °C</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.power">Power</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.psupply">Voltage</dt><dd>220 – 240 V ~ 50 Hz</dd>
+              <dt data-i18n="models.spec.prated">Rated power</dt><dd>196 W</dd>
+              <dt data-i18n="models.spec.pmax">Max power</dt><dd>300 W</dd>
+              <dt data-i18n="models.spec.crated">Rated current</dt><dd>1.0 A</dd>
+              <dt data-i18n="models.spec.cmax">Max current</dt><dd>1.35 A</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.connect">Drainage &amp; ducting</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.pump">Pump lift</dt><dd>1.8 m (built-in check valve)</dd>
+              <dt data-i18n="models.spec.drainsize">Drain outlet</dt><dd>DN15</dd>
+              <dt data-i18n="models.spec.flange">Air flange ⌀</dt><dd>146 mm (in &amp; out)</dd>
+              <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R134a · 0.23 kg</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.physical">Physical &amp; certs</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.size">Dimensions (L×W×H)</dt><dd>865 × 376 × 200 mm</dd>
+              <dt data-i18n="models.spec.weight">Net weight</dt><dd>28 kg</dd>
+              <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- ====== UTC55 ====== -->
+      <article class="mcard" id="utc55" data-acc="amber">
+        <div class="mcard-hero">
+          <div class="mcard-photo">
+            <img src="images/products/utc55.webp" alt="DBA-UTC55" loading="lazy" />
+          </div>
+          <div class="mcard-stat">
+            <span class="mcard-sku">DBA-UTC55</span>
+            <span class="mcard-big"><strong>55</strong><em>L/day</em></span>
+            <p class="mcard-blurb" data-i18n="models.utc55.desc">Mid-size between UTC20 and UTC68. R32 refrigerant (mildly flammable).</p>
+            <div class="mcard-badges">
+              <span class="mbadge mbadge-r32" data-i18n="models.utc55.r32badge">R32 · A2L</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mcard-keystats">
+          <div><span class="ks-num">600–800</span><span class="ks-lbl" data-i18n="models.spec.cover">sqft area</span></div>
+          <div><span class="ks-num">45</span><span class="ks-lbl">dB(A) @ 3m</span></div>
+          <div><span class="ks-num">⌀146</span><span class="ks-lbl" data-i18n="models.spec.flange">flange in/out</span></div>
+          <div><span class="ks-num">DN15</span><span class="ks-lbl" data-i18n="models.spec.drainsize">drain outlet</span></div>
+        </div>
+
+        <div class="spec-groups">
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.perf">Performance</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.capacity">Moisture removal</dt><dd>55 L/day @ 30°C 80%RH<br><span class="spec-sub">30 L/day @ 26.7°C 60%RH</span></dd>
+              <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>600 m³/hr</dd>
+              <dt data-i18n="models.spec.static">Static pressure</dt><dd>90 Pa</dd>
+              <dt data-i18n="models.spec.noise">Sound @ 3 m</dt><dd>45 dB(A)</dd>
+              <dt data-i18n="models.spec.cover">Coverage</dt><dd>600 – 800 sqft</dd>
+              <dt data-i18n="models.spec.optemp">Operating temp</dt><dd>5 – 40 °C</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.power">Power</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.psupply">Voltage</dt><dd>220 – 240 V ~ 50 Hz</dd>
+              <dt data-i18n="models.spec.prated">Rated power</dt><dd>700 W</dd>
+              <dt data-i18n="models.spec.pmax">Max power</dt><dd>930 W</dd>
+              <dt data-i18n="models.spec.crated">Rated current</dt><dd>3.2 A</dd>
+              <dt data-i18n="models.spec.cmax">Max current</dt><dd>4.3 A</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.connect">Drainage &amp; ducting</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.pump">Pump lift</dt><dd>1.8 m (built-in check valve)</dd>
+              <dt data-i18n="models.spec.drainsize">Drain outlet</dt><dd>DN15</dd>
+              <dt data-i18n="models.spec.flange">Air flange ⌀</dt><dd>146 mm (in &amp; out)</dd>
+              <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd data-i18n="models.utc55.refr">R32 · 0.3 kg (mildly flammable)</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.physical">Physical &amp; certs</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.size">Dimensions (L×W×H)</dt><dd>970 × 436 × 238 mm</dd>
+              <dt data-i18n="models.spec.weight">Net weight</dt><dd>38 kg</dd>
+              <dt data-i18n="models.spec.certs">Certifications</dt><dd>CE · CB · RoHS · A2L</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- ====== UTC68 ====== -->
+      <article class="mcard mcard-featured" id="utc68" data-acc="teal">
+        <div class="mcard-hero">
+          <div class="mcard-photo">
+            <img src="images/products/utc68.webp" alt="DBA-UTC68" loading="lazy" />
+          </div>
+          <div class="mcard-stat">
+            <span class="mcard-sku" data-i18n="models.utc68.tag">DBA-UTC68 · popular</span>
+            <span class="mcard-big"><strong>68</strong><em>L/day</em></span>
+            <p class="mcard-blurb" data-i18n="models.utc68.desc">The whole-apartment workhorse. R410A refrigerant, single inlet.</p>
+          </div>
+        </div>
+
+        <div class="mcard-keystats">
+          <div><span class="ks-num">800–1000</span><span class="ks-lbl" data-i18n="models.spec.cover">sqft area</span></div>
+          <div><span class="ks-num">48</span><span class="ks-lbl">dB(A) @ 3m</span></div>
+          <div><span class="ks-num">⌀146</span><span class="ks-lbl" data-i18n="models.spec.flange">flange in/out</span></div>
+          <div><span class="ks-num">DN15</span><span class="ks-lbl" data-i18n="models.spec.drainsize">drain outlet</span></div>
+        </div>
+
+        <div class="spec-groups">
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.perf">Performance</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.capacity">Moisture removal</dt><dd>68 L/day @ 30°C 80%RH<br><span class="spec-sub">42 L/day @ 26.7°C 60%RH</span></dd>
+              <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>500 m³/hr</dd>
+              <dt data-i18n="models.spec.static">Static pressure</dt><dd>100 Pa</dd>
+              <dt data-i18n="models.spec.noise">Sound @ 3 m</dt><dd>48 dB(A)</dd>
+              <dt data-i18n="models.spec.cover">Coverage</dt><dd>800 – 1000 sqft</dd>
+              <dt data-i18n="models.spec.optemp">Operating temp</dt><dd>5 – 40 °C</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.power">Power</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.psupply">Voltage</dt><dd>220 – 240 V ~ 50 Hz</dd>
+              <dt data-i18n="models.spec.prated">Rated power</dt><dd>880 W</dd>
+              <dt data-i18n="models.spec.pmax">Max power</dt><dd>1250 W</dd>
+              <dt data-i18n="models.spec.crated">Rated current</dt><dd>4.0 A</dd>
+              <dt data-i18n="models.spec.cmax">Max current</dt><dd>5.7 A</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.connect">Drainage &amp; ducting</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.pump">Pump lift</dt><dd>1.8 m (built-in check valve)</dd>
+              <dt data-i18n="models.spec.drainsize">Drain outlet</dt><dd>DN15</dd>
+              <dt data-i18n="models.spec.flange">Air flange ⌀</dt><dd>146 mm (in &amp; out)</dd>
+              <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R410A · 0.6 kg</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.physical">Physical &amp; certs</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.size">Dimensions (L×W×H)</dt><dd>1010 × 500 × 240 mm</dd>
+              <dt data-i18n="models.spec.weight">Net weight</dt><dd>42 kg</dd>
+              <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- ====== UTC120 ====== -->
+      <article class="mcard" id="utc120" data-acc="ink">
+        <div class="mcard-hero">
+          <div class="mcard-photo">
+            <img src="images/products/utc120.webp" alt="DBA-UTC120" loading="lazy" />
+          </div>
+          <div class="mcard-stat">
+            <span class="mcard-sku">DBA-UTC120</span>
+            <span class="mcard-big"><strong>120</strong><em>L/day</em></span>
+            <p class="mcard-blurb" data-i18n="models.utc120.desc">Large homes and light commercial. R410A refrigerant, twin-inlet.</p>
+            <div class="mcard-badges">
+              <span class="mbadge mbadge-twin" data-i18n="models.utc120.twin">Twin inlet ⌀196</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mcard-keystats">
+          <div><span class="ks-num">1300–1500</span><span class="ks-lbl" data-i18n="models.spec.cover">sqft area</span></div>
+          <div><span class="ks-num">50</span><span class="ks-lbl">dB(A) @ 3m</span></div>
+          <div><span class="ks-num">⌀196</span><span class="ks-lbl" data-i18n="models.spec.flange">flange in/out</span></div>
+          <div><span class="ks-num">DN15</span><span class="ks-lbl" data-i18n="models.spec.drainsize">drain outlet</span></div>
+        </div>
+
+        <div class="spec-groups">
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.perf">Performance</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.capacity">Moisture removal</dt><dd>120 L/day @ 30°C 80%RH<br><span class="spec-sub">53 L/day @ 26.7°C 60%RH</span></dd>
+              <dt data-i18n="models.spec.airflow">Max airflow</dt><dd>890 m³/hr</dd>
+              <dt data-i18n="models.spec.static">Static pressure</dt><dd>100 Pa</dd>
+              <dt data-i18n="models.spec.noise">Sound @ 3 m</dt><dd>50 dB(A)</dd>
+              <dt data-i18n="models.spec.cover">Coverage</dt><dd>1300 – 1500 sqft</dd>
+              <dt data-i18n="models.spec.optemp">Operating temp</dt><dd>5 – 40 °C</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.power">Power</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.psupply">Voltage</dt><dd>220 – 240 V ~ 50 Hz</dd>
+              <dt data-i18n="models.spec.prated">Rated power</dt><dd>1010 W</dd>
+              <dt data-i18n="models.spec.pmax">Max power</dt><dd>1600 W</dd>
+              <dt data-i18n="models.spec.crated">Rated current</dt><dd>4.7 A</dd>
+              <dt data-i18n="models.spec.cmax">Max current</dt><dd>7.4 A</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.connect">Drainage &amp; ducting</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.pump">Pump lift</dt><dd>1.8 m (built-in check valve)</dd>
+              <dt data-i18n="models.spec.drainsize">Drain outlet</dt><dd>DN15</dd>
+              <dt data-i18n="models.spec.flange">Air flange ⌀</dt><dd>196 mm · twin inlet, single outlet</dd>
+              <dt data-i18n="models.spec.refrigerant">Refrigerant</dt><dd>R410A · 0.9 kg</dd>
+            </dl>
+          </div>
+          <div class="spec-grp">
+            <h4 class="spec-grp-h" data-i18n="models.grp.physical">Physical &amp; certs</h4>
+            <dl class="spec spec-grid">
+              <dt data-i18n="models.spec.size">Dimensions (L×W×H)</dt><dd>1075 × 746 × 310 mm</dd>
+              <dt data-i18n="models.spec.weight">Net weight</dt><dd>64 kg</dd>
+              <dt data-i18n="models.spec.certs">Certifications</dt><dd>ISO · CE · CB · RoHS</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
     </div>
+
+    <!-- Shared features across the whole UTC range -->
+    <section class="shared-features">
+      <h3 class="shared-h" data-i18n="models.shared.h">Same on every UTC</h3>
+      <div class="shared-grid">
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9c0 4 7 11 7 11s7-7 7-11a7 7 0 0 0-14 0z"/></svg>
+          <strong data-i18n="models.share.pump.t">1.8 m pump lift</strong>
+          <small data-i18n="models.share.pump.d">Built-in pump &amp; check valve. DN15 outlet.</small>
+        </div>
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10v4M11 10v4M15 10v4M19 10v4"/></svg>
+          <strong data-i18n="models.share.uv.t">UV-C sterilisation</strong>
+          <small data-i18n="models.share.uv.d">Optional lamp eliminates 99.9% airborne bacteria.</small>
+        </div>
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18M5 6l14 12M19 6L5 18"/></svg>
+          <strong data-i18n="models.share.filter.t">Stainless mesh filter</strong>
+          <small data-i18n="models.share.filter.d">Washable. Rinse every 2 weeks.</small>
+        </div>
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a7 7 0 0 1 14 0M8 16a4 4 0 0 1 8 0M11 19a1 1 0 1 0 2 0 1 1 0 1 0-2 0z"/></svg>
+          <strong data-i18n="models.share.wifi.t">WiFi + RS485 Modbus</strong>
+          <small data-i18n="models.share.wifi.d">Tuya Smart app · BMS/PLC over RS485 at 9600 bps.</small>
+        </div>
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+          <strong data-i18n="models.share.dry.t">Dry-contact remote</strong>
+          <small data-i18n="models.share.dry.d">BMS interlock, fire alarm, leak sensor, water-leak input.</small>
+        </div>
+        <div class="shared-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5M3 18l9 5 9-5"/></svg>
+          <strong data-i18n="models.share.cert.t">CE · CB · RoHS · ISO 9001</strong>
+          <small data-i18n="models.share.cert.d">Multi-region certification across the range.</small>
+        </div>
+      </div>
+    </section>
 
     <a class="next-link" href="#install">
       <span data-i18n="models.next">See installation guide</span>
@@ -351,8 +589,16 @@
       <p data-i18n="install.desc">Seven steps from a bare ceiling to a working machine. Tap one to dive in.</p>
     </div>
 
+    <figure class="marquee marquee-tall">
+      <img src="images/catalog/house.jpg" alt="Whole-house dehumidification — central ceiling unit feeding every room" loading="lazy" />
+      <figcaption>
+        <span class="marquee-tag" data-i18n="install.marquee.tag">Whole-house dehumidification</span>
+        <strong data-i18n="install.marquee.t">One unit. Branches to every room.</strong>
+      </figcaption>
+    </figure>
+
     <div class="step-grid">
-      <a href="#install/preparation" class="step-card" style="--n:1;--accent:#0ea5e9">
+      <a href="#install/preparation" class="step-card" style="--n:1;--accent:#c2410c">
         <span class="step-n">01</span>
         <div class="step-icon">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 8h20M6 16h20M6 24h12"/><circle cx="26" cy="24" r="2.4"/></svg>
@@ -360,7 +606,7 @@
         <h3 data-i18n="install.step.prep.t">Preparation</h3>
         <p data-i18n="install.step.prep.d">Bench test, plan, hatch.</p>
       </a>
-      <a href="#install/hanging" class="step-card" style="--n:2;--accent:#0284c7">
+      <a href="#install/hanging" class="step-card" style="--n:2;--accent:#b45309">
         <span class="step-n">02</span>
         <div class="step-icon">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="8" y1="4" x2="8" y2="20"/><line x1="24" y1="4" x2="24" y2="20"/><rect x="4" y="20" width="24" height="6" rx="1"/></svg>
@@ -368,7 +614,7 @@
         <h3 data-i18n="install.step.hang.t">Hanging</h3>
         <p data-i18n="install.step.hang.d">M10 rods, level, isolate.</p>
       </a>
-      <a href="#install/drainage" class="step-card" style="--n:3;--accent:#0369a1">
+      <a href="#install/drainage" class="step-card" style="--n:3;--accent:#0f766e">
         <span class="step-n">03</span>
         <div class="step-icon">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 4v14M10 18q0 6 6 6h10"/><circle cx="26" cy="24" r="2"/></svg>
@@ -506,7 +752,7 @@
 <section class="screen install-step" data-screen="install/preparation" data-step="1">
   <div class="screen-pad">
     <div class="stepper" data-active="0"></div>
-    <div class="step-hero" style="--accent:#0ea5e9">
+    <div class="step-hero" style="--accent:#c2410c">
       <span class="step-pill" data-i18n="ip.pill">Step 01 of 07</span>
       <h2 data-i18n="ip.title">Preparation</h2>
       <p data-i18n="ip.desc">Before installation, bench-test the unit on the floor. Confirm the dehumidifier runs normally.</p>
@@ -614,7 +860,7 @@
 <section class="screen install-step" data-screen="install/hanging" data-step="2">
   <div class="screen-pad">
     <div class="stepper" data-active="1"></div>
-    <div class="step-hero" style="--accent:#0284c7">
+    <div class="step-hero" style="--accent:#b45309">
       <span class="step-pill" data-i18n="ih.pill">Step 02 of 07</span>
       <h2 data-i18n="ih.title">Hanging the unit</h2>
       <p data-i18n="ih.desc">Suspended from four M10 threaded rods. Keep the body level.</p>
@@ -680,7 +926,7 @@
 <section class="screen install-step" data-screen="install/drainage" data-step="3">
   <div class="screen-pad">
     <div class="stepper" data-active="2"></div>
-    <div class="step-hero" style="--accent:#0369a1">
+    <div class="step-hero" style="--accent:#0f766e">
       <span class="step-pill" data-i18n="id.pill">Step 03 of 07</span>
       <h2 data-i18n="id.title">Drainage</h2>
       <p data-i18n="id.desc">Every UTC ships with a built-in pump that lifts condensate up to 1.8 m, with a check valve already integrated inside the unit. You just need to add the Upper U-trap and route the pipe.</p>
@@ -708,6 +954,11 @@
 
     <h3 class="block-h" data-i18n="id.cycle.heading">How the pump cycles</h3>
     <p class="prose" data-i18n="id.cycle.body">While the unit runs, the built-in pump runs <strong>3 minutes on, 5 minutes off</strong>, repeating. If the drain backs up, fault code <strong>E3</strong> (water full protection) appears on the LCD.</p>
+
+    <figure class="plan-figure manual-figure">
+      <img src="images/catalog/pump.jpg" alt="Built-in drainage pump lifting condensate up to 1.8 m" loading="lazy" />
+      <figcaption data-i18n="id.fig.pump">Auto pump drainage — head lift up to 1.8 m, with a check valve built in.</figcaption>
+    </figure>
 
     <h3 class="block-h" data-i18n="id.sign.heading">Before you sign off</h3>
     <p class="prose" data-i18n="id.sign.body">Pour a litre of water slowly into the drain pan through the service hatch. The pump should kick in within a minute and clear the pan. Watch every joint on the route for the next five minutes — that's when a bad seal will start dripping.</p>
@@ -818,6 +1069,11 @@
       <span class="chip" data-i18n="ico.chip.2">8 m cable supplied</span>
       <span class="chip" data-i18n="ico.chip.3">13 wired terminals</span>
     </div>
+
+    <figure class="plan-figure manual-figure">
+      <img src="images/catalog/lcd.jpg" alt="LCD wall panel and mobile app showing dehumidifier humidity control" loading="lazy" />
+      <figcaption data-i18n="ico.fig.lcd">86×86 mm wall panel for daily use; Tuya app for remote control; RS485 Modbus for BMS.</figcaption>
+    </figure>
 
     <h3 class="block-h" data-i18n="ico.where.heading">Where to mount the panel</h3>
     <ul class="check-list">
@@ -1040,7 +1296,7 @@
         <h3 data-i18n="manual.step.safety.t">Safety</h3>
         <p data-i18n="manual.step.safety.d">Grounding, refrigerant, R32 rules.</p>
       </a>
-      <a href="#manual/overview" class="step-card" style="--n:2;--accent:#0284c7">
+      <a href="#manual/overview" class="step-card" style="--n:2;--accent:#b45309">
         <span class="step-n">02</span>
         <div class="step-icon">
           <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="24" height="14" rx="2"/><circle cx="9" cy="17" r="2.4"/><circle cx="23" cy="17" r="2.4"/><line x1="14" y1="7" x2="14" y2="10"/><line x1="20" y1="7" x2="20" y2="10"/></svg>
@@ -1153,7 +1409,7 @@
 <section class="screen install-step" data-screen="manual/overview" data-step="2">
   <div class="screen-pad">
     <div class="stepper" data-active="1" data-set="manual"></div>
-    <div class="step-hero" style="--accent:#0284c7">
+    <div class="step-hero" style="--accent:#b45309">
       <span class="step-pill" data-i18n="um.overview.pill">Chapter 02 of 07</span>
       <h2 data-i18n="um.overview.title">Product overview</h2>
       <p data-i18n="um.overview.desc">What's in the box, where every port is, and how the unit is laid out. Worth keeping open while you do the install.</p>
