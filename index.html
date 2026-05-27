@@ -66,6 +66,21 @@
       </div>
     </a>
 
+    <a class="tile tile-feature" href="#manual" style="--accent:#0ea5e9">
+      <div class="tile-feature-body">
+        <span class="tile-tag" data-i18n="home.manual.tag">7 chapters · official</span>
+        <h2 data-i18n="home.manual.title">User Manual</h2>
+        <p data-i18n="home.manual.desc">Safety, product overview, control panel, operation, app, maintenance, warranty.</p>
+        <span class="tile-go">
+          <span data-i18n="home.manual.go">Open manual</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </div>
+      <div class="tile-feature-photo" aria-hidden="true">
+        <img src="images/products/utc55.png" alt="" />
+      </div>
+    </a>
+
     <a class="tile" href="#troubleshooting" style="--accent:#f59e0b">
       <div class="tile-icon">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -225,8 +240,8 @@
       </article>
 
       <article class="model-card" id="utc55">
-        <div class="model-photo model-photo-placeholder" aria-label="UTC55 — photo coming">
-          <svg viewBox="0 0 280 140"><defs><linearGradient id="utc55g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f2937"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect x="20" y="34" width="240" height="72" rx="5" fill="url(#utc55g)"/><rect x="44" y="56" width="28" height="28" rx="2" fill="#0b1220"/><circle cx="252" cy="70" r="18" fill="none" stroke="#94a3b8" stroke-width="2"/><circle cx="28" cy="70" r="18" fill="none" stroke="#94a3b8" stroke-width="2"/><text x="140" y="78" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="20" fill="#86efac">dba</text><text x="140" y="125" text-anchor="middle" font-family="Inter" font-size="9" fill="#94a3b8" letter-spacing="2">UTC55 · PHOTO COMING</text></svg>
+        <div class="model-photo">
+          <img src="images/products/utc55.png" alt="DBA-UTC55" loading="lazy" />
         </div>
         <div class="model-head">
           <span class="model-tag model-tag-r32">DBA-UTC55 · R32</span>
@@ -934,6 +949,422 @@
     <a href="#install/power" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
     <div class="sf-meta"><span data-i18n="sf.done">Done</span> · <span data-i18n="home.tile.maintenance.title">Maintenance</span></div>
     <a href="#maintenance" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL HUB ====== -->
+<section class="screen" data-screen="manual">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="manual.eyebrow">From the official DBA UTC product manual</span>
+      <h2 data-i18n="manual.title">User Manual</h2>
+      <p data-i18n="manual.desc">Seven chapters covering the unit end-to-end — safety, anatomy, control panel, operation, app, maintenance, warranty.</p>
+    </div>
+
+    <div class="step-grid">
+      <a href="#manual/safety" class="step-card" style="--n:1;--accent:#dc2626">
+        <span class="step-n">01</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4 L4 10 v8 c0 6 5 10 12 12 c7-2 12-6 12-12 v-8 z"/><path d="M12 16 l3 3 l6-7"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.safety.t">Safety</h3>
+        <p data-i18n="manual.step.safety.d">Grounding, refrigerant, R32 rules.</p>
+      </a>
+      <a href="#manual/overview" class="step-card" style="--n:2;--accent:#0284c7">
+        <span class="step-n">02</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="24" height="14" rx="2"/><circle cx="9" cy="17" r="2.4"/><circle cx="23" cy="17" r="2.4"/><line x1="14" y1="7" x2="14" y2="10"/><line x1="20" y1="7" x2="20" y2="10"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.overview.t">Product overview</h3>
+        <p data-i18n="manual.step.overview.d">Parts, ports, package contents.</p>
+      </a>
+      <a href="#manual/controls" class="step-card" style="--n:3;--accent:#0d9488">
+        <span class="step-n">03</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="20" height="24" rx="2"/><rect x="10" y="8" width="12" height="8" rx="1"/><circle cx="11" cy="22" r="1"/><circle cx="16" cy="22" r="1"/><circle cx="21" cy="22" r="1"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.ctrl.t">Control panel</h3>
+        <p data-i18n="manual.step.ctrl.d">Icons, buttons, what each does.</p>
+      </a>
+      <a href="#manual/operation" class="step-card" style="--n:4;--accent:#16a34a">
+        <span class="step-n">04</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12"/><path d="M16 10 v6 l4 3"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.op.t">Operation</h3>
+        <p data-i18n="manual.step.op.d">Modes, timer, defrost, fan speed.</p>
+      </a>
+      <a href="#manual/app" class="step-card" style="--n:5;--accent:#8b5cf6">
+        <span class="step-n">05</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="14" height="26" rx="3"/><circle cx="16" cy="25" r="1.2"/><path d="M13 8 h6"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.app.t">App pairing</h3>
+        <p data-i18n="manual.step.app.d">Tuya Smart, 2.4 GHz WiFi.</p>
+      </a>
+      <a href="#manual/maintenance" class="step-card" style="--n:6;--accent:#ca8a04">
+        <span class="step-n">06</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4 v6 M18 4 v6"/><rect x="10" y="10" width="12" height="12" rx="2"/><path d="M14 16 h4 M14 19 h4"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.maint.t">Maintenance</h3>
+        <p data-i18n="manual.step.maint.d">Filter rinse, coil, fault codes.</p>
+      </a>
+      <a href="#manual/warranty" class="step-card step-card-final" style="--n:7;--accent:#0f172a">
+        <span class="step-n">07</span>
+        <div class="step-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="20" height="22" rx="2"/><path d="M11 12 h10 M11 16 h10 M11 20 h6"/></svg>
+        </div>
+        <h3 data-i18n="manual.step.war.t">Warranty</h3>
+        <p data-i18n="manual.step.war.d">1-year limited, claims, exclusions.</p>
+      </a>
+    </div>
+
+    <a class="next-link" href="#manual/safety">
+      <span data-i18n="manual.start">Start at chapter 1</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ====== MANUAL / SAFETY ====== -->
+<section class="screen install-step" data-screen="manual/safety" data-step="1">
+  <div class="screen-pad">
+    <div class="stepper" data-active="0" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#dc2626">
+      <span class="step-pill" data-i18n="um.safety.pill">Chapter 01 of 07</span>
+      <h2 data-i18n="um.safety.title">Safety instructions</h2>
+      <p data-i18n="um.safety.desc">Observe these at all times. The unit runs on mains voltage and contains pressurised refrigerant — sloppy handling causes shock, fire, or compressor death.</p>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip" data-i18n="um.safety.chip.1">220-240 V earthed</span>
+      <span class="chip" data-i18n="um.safety.chip.2">No extension cords</span>
+      <span class="chip" data-i18n="um.safety.chip.3">R32 mildly flammable</span>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.safety.general.heading">General</h3>
+    <ul class="check-list">
+      <li data-i18n="um.safety.g1"><strong>Not for unsupervised children</strong> or persons with reduced physical / sensory / mental capability. Supervise children so they don't play with it.</li>
+      <li data-i18n="um.safety.g2"><strong>Only a properly grounded 220-240 V ~ 50 Hz outlet.</strong> Don't modify the plug, don't use an extension cord or an adapter — they overheat.</li>
+      <li data-i18n="um.safety.g3"><strong>Disconnect power before servicing,</strong> cleaning, or moving the unit. Unplug by gripping the plug body — never pull on the cord.</li>
+      <li data-i18n="um.safety.g4"><strong>Install per local code.</strong> Professional installation by a qualified technician is strongly recommended.</li>
+      <li data-i18n="um.safety.g5"><strong>Keep fingers and objects out of the inlet and outlet.</strong> There's a metal fan inside. Keep vents clear.</li>
+      <li data-i18n="um.safety.g6"><strong>Don't expose to flammable gas, corrosives, heavy dust, or direct water.</strong> Not for explosive or highly corrosive environments.</li>
+      <li data-i18n="um.safety.g7"><strong>Damaged power cord</strong> — must be replaced by the manufacturer, its service agent, or a similarly qualified person.</li>
+      <li data-i18n="um.safety.g8"><strong>Any abnormal sign</strong> (unusual noise, smell, smoke) — cut power immediately and call service.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.safety.ref.heading">Refrigerant — R410A vs R32</h3>
+    <p class="prose" data-i18n="um.safety.ref.intro">Your refrigerant type is on the rating label on the unit. R410A is <strong>not</strong> flammable. R32 is <strong>mildly flammable (A2L)</strong> — if your unit uses R32, observe the following:</p>
+    <ul class="check-list">
+      <li data-i18n="um.safety.r1"><strong>Qualified personnel only</strong> for installation and servicing.</li>
+      <li data-i18n="um.safety.r2"><strong>Install, operate, store</strong> in a well-ventilated area.</li>
+      <li data-i18n="um.safety.r3"><strong>Don't accelerate defrosting or cleaning</strong> beyond what the manufacturer recommends.</li>
+      <li data-i18n="um.safety.r4"><strong>Never pierce or burn</strong> the refrigerant circuit.</li>
+      <li data-i18n="um.safety.r5"><strong>Dispose of the unit</strong> per local regulations at end of life.</li>
+    </ul>
+
+    <div class="warn-card">
+      <strong data-i18n="um.safety.warn.t">Failure to follow these instructions</strong>
+      <span data-i18n="um.safety.warn.b">can result in electric shock, fire, or equipment damage. Keep this manual for future reference.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual" class="sf-back" aria-label="Back to manual hub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    </a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.overview.title">Product overview</span></div>
+    <a href="#manual/overview" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / OVERVIEW ====== -->
+<section class="screen install-step" data-screen="manual/overview" data-step="2">
+  <div class="screen-pad">
+    <div class="stepper" data-active="1" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#0284c7">
+      <span class="step-pill" data-i18n="um.overview.pill">Chapter 02 of 07</span>
+      <h2 data-i18n="um.overview.title">Product overview</h2>
+      <p data-i18n="um.overview.desc">What's in the box, where every port is, and how the unit is laid out. Worth keeping open while you do the install.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.overview.pkg.heading">Package contents</h3>
+    <ul class="check-list">
+      <li data-i18n="um.overview.p1"><strong>Dehumidifier</strong> — with a 5 m power cable and a Type G plug.</li>
+      <li data-i18n="um.overview.p2"><strong>Wired control panel</strong> — 8 m signal cable, fits an 86-type back box.</li>
+      <li data-i18n="um.overview.p3"><strong>Temperature &amp; humidity sensor</strong> — 5 m cable, plugs into terminals 1–3.</li>
+      <li data-i18n="um.overview.p4"><strong>Remote controller</strong> — 2 × AAA batteries supplied.</li>
+      <li data-i18n="um.overview.p5"><strong>Installation guide</strong> — the wall-mounted marker card with all key dimensions.</li>
+    </ul>
+
+    <figure class="plan-figure manual-figure">
+      <img src="images/installation/anatomy-iso.png" alt="Isometric view showing air inlet, dust filter, access panel, wired controls, air outlet, pump drainage outlet, and power cord outlet" loading="lazy" />
+      <figcaption data-i18n="um.overview.fig.iso">Isometric view — air inlet on one short side, air outlet opposite, service panel and wired controls on the long face.</figcaption>
+    </figure>
+
+    <figure class="plan-figure manual-figure">
+      <img src="images/installation/anatomy-top.png" alt="Top view showing the four suspension brackets, direction of airflow, pump drainage outlet, access panel and wired controls" loading="lazy" />
+      <figcaption data-i18n="um.overview.fig.top">Top view — four suspension brackets at the corners, drainage outlet on one long side, wired controls on the other.</figcaption>
+    </figure>
+
+    <h3 class="block-h" data-i18n="um.overview.parts.heading">Parts to know</h3>
+    <ul class="check-list">
+      <li data-i18n="um.overview.x1"><strong>Air inlet &amp; outlet</strong> — opposite short sides. Direction of airflow is printed on the top of the unit.</li>
+      <li data-i18n="um.overview.x2"><strong>Dust filter</strong> — slides out from the service-panel side. Wash regularly.</li>
+      <li data-i18n="um.overview.x3"><strong>Access panel</strong> — long face of the unit. Faces the false-ceiling access hatch.</li>
+      <li data-i18n="um.overview.x4"><strong>Pump drainage outlet</strong> — bottom, on the same side as the access panel.</li>
+      <li data-i18n="um.overview.x5"><strong>Wired controls box</strong> — small cover next to the air outlet; holds the 13-terminal block.</li>
+      <li data-i18n="um.overview.x6"><strong>Power cord outlet</strong> — rear face, next to the emergency stop button and status indicator.</li>
+    </ul>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/safety" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.controls.title">Control panel</span></div>
+    <a href="#manual/controls" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / CONTROLS ====== -->
+<section class="screen install-step" data-screen="manual/controls" data-step="3">
+  <div class="screen-pad">
+    <div class="stepper" data-active="2" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#0d9488">
+      <span class="step-pill" data-i18n="um.controls.pill">Chapter 03 of 07</span>
+      <h2 data-i18n="um.controls.title">Control panel</h2>
+      <p data-i18n="um.controls.desc">The wired panel does everything — power, mode, fan speed, target humidity, clock, timer, UV. Eleven on-screen icons tell you what state the unit is in.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.controls.icons.heading">Display icons</h3>
+    <div class="term-table">
+      <div class="term-row"><span class="term-num">1</span><div class="term-body"><strong data-i18n="um.ic.1.t">WiFi connection</strong><small data-i18n="um.ic.1.d">Connected to WiFi or in app-pairing mode.</small></div></div>
+      <div class="term-row"><span class="term-num">2</span><div class="term-body"><strong data-i18n="um.ic.2.t">Mainboard disconnection</strong><small data-i18n="um.ic.2.d">Communication fault between the panel and the mainboard.</small></div></div>
+      <div class="term-row"><span class="term-num">3</span><div class="term-body"><strong data-i18n="um.ic.3.t">Defrosting</strong><small data-i18n="um.ic.3.d">Automatic defrost cycle is active.</small></div></div>
+      <div class="term-row"><span class="term-num">4</span><div class="term-body"><strong data-i18n="um.ic.4.t">Timer</strong><small data-i18n="um.ic.4.d">Daily ON/OFF schedule is enabled.</small></div></div>
+      <div class="term-row"><span class="term-num">5</span><div class="term-body"><strong data-i18n="um.ic.5.t">Time display</strong><small data-i18n="um.ic.5.d">Shows current time and timer setpoints.</small></div></div>
+      <div class="term-row"><span class="term-num">6</span><div class="term-body"><strong data-i18n="um.ic.6.t">Humidity</strong><small data-i18n="um.ic.6.d">Current room humidity, in %RH.</small></div></div>
+      <div class="term-row"><span class="term-num">7</span><div class="term-body"><strong data-i18n="um.ic.7.t">Temperature</strong><small data-i18n="um.ic.7.d">Current room temperature, in °C.</small></div></div>
+      <div class="term-row"><span class="term-num">8</span><div class="term-body"><strong data-i18n="um.ic.8.t">Fan speed</strong><small data-i18n="um.ic.8.d">High or low — toggle with the fan button.</small></div></div>
+      <div class="term-row"><span class="term-num">9</span><div class="term-body"><strong data-i18n="um.ic.9.t">Mode</strong><small data-i18n="um.ic.9.d">Dehumidify or ventilation — switch with the mode button.</small></div></div>
+      <div class="term-row"><span class="term-num">10</span><div class="term-body"><strong data-i18n="um.ic.10.t">UV purification</strong><small data-i18n="um.ic.10.d">UV-C lamp on (only if your model is fitted with one).</small></div></div>
+      <div class="term-row"><span class="term-num">11</span><div class="term-body"><strong data-i18n="um.ic.11.t">Power on</strong><small data-i18n="um.ic.11.d">Unit is powered on.</small></div></div>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.controls.btn.heading">Buttons</h3>
+    <ul class="check-list">
+      <li data-i18n="um.controls.b1"><strong>Power</strong> — standby ↔ run. On power-up the fan defaults to High Speed.</li>
+      <li data-i18n="um.controls.b2"><strong>Fan speed</strong> — toggles between High and Low. Indicator shows level.</li>
+      <li data-i18n="um.controls.b3"><strong>Mode (M)</strong> — cycles Dehumidify / Ventilation. <strong>Long-press 3 s</strong> to enter clock and timer setup.</li>
+      <li data-i18n="um.controls.b4"><strong>▲ / Humidity setting</strong> — press to enter setup, then ▲ / ▼ to step the target (10 – 95 % RH). Confirms after 5 s of no input.</li>
+      <li data-i18n="um.controls.b5"><strong>▼ / UV lamp</strong> — short-press to toggle the UV lamp on/off (if fitted).</li>
+    </ul>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="um.controls.note.t">Compressor delayed start</strong>
+      <span data-i18n="um.controls.note.b">The fan starts immediately, the compressor follows after a 3-second delay every time start conditions are met. That's a design feature, not a fault.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/overview" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.operation.title">Operation</span></div>
+    <a href="#manual/operation" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / OPERATION ====== -->
+<section class="screen install-step" data-screen="manual/operation" data-step="4">
+  <div class="screen-pad">
+    <div class="stepper" data-active="3" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#16a34a">
+      <span class="step-pill" data-i18n="um.operation.pill">Chapter 04 of 07</span>
+      <h2 data-i18n="um.operation.title">Operation</h2>
+      <p data-i18n="um.operation.desc">Modes, timers, fan, defrost, drain pump cycle. The everyday how-it-runs.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.op.power.heading">Power on / off</h3>
+    <ul class="check-list">
+      <li data-i18n="um.op.p1"><strong>From standby:</strong> press Power → unit starts. Fan defaults to High Speed.</li>
+      <li data-i18n="um.op.p2"><strong>While running:</strong> press Power → standby mode. Buttons and some icons turn off.</li>
+      <li data-i18n="um.op.p3"><strong>Compressor delay:</strong> any time start conditions are met, the fan starts immediately and the compressor follows 3 s later.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.op.mode.heading">Operating modes</h3>
+    <ul class="check-list">
+      <li data-i18n="um.op.m1"><strong>Dehumidification</strong> (default at power-up) — compressor cycles to hit your target %RH.</li>
+      <li data-i18n="um.op.m2"><strong>Ventilation</strong> — fan only, compressor stays off. Useful for clearing stale air without drying.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.op.clock.heading">Clock &amp; timer</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="um.op.c1"><strong>Long-press Mode (M) for 3 s</strong> to enter clock setup.</div></li>
+      <li><span>2</span><div data-i18n="um.op.c2"><strong>▲ / ▼ to set the hour,</strong> then press M to move to minutes.</div></li>
+      <li><span>3</span><div data-i18n="um.op.c3"><strong>Press M again to set the ON timer</strong> (auto power-on time).</div></li>
+      <li><span>4</span><div data-i18n="um.op.c4"><strong>Press M again to set the OFF timer</strong> (auto power-off time).</div></li>
+      <li><span>5</span><div data-i18n="um.op.c5"><strong>5 s of inactivity</strong> exits setup and saves everything.</div></li>
+    </ol>
+    <p class="prose" data-i18n="um.op.c6">Once configured, the unit runs the same ON/OFF schedule every day. To cancel the timer, set both ON and OFF to <strong>00:00</strong>.</p>
+
+    <h3 class="block-h" data-i18n="um.op.pump.heading">Drain pump cycle</h3>
+    <p class="prose" data-i18n="um.op.pump.body">While the unit runs, the built-in pump cycles <strong>3 min on, 5 min off</strong>, repeating. If the drain backs up, the panel shows fault code <strong>E3</strong> (water full).</p>
+
+    <h3 class="block-h" data-i18n="um.op.defrost.heading">Automatic defrost</h3>
+    <ul class="check-list">
+      <li data-i18n="um.op.d1"><strong>Enters defrost</strong> when the compressor has run continuously for <strong>25 minutes</strong> and the coil temperature reads ≤ −1 °C for 30 s.</li>
+      <li data-i18n="um.op.d2"><strong>During defrost</strong> the compressor stops, the fan runs at High Speed, and the panel shows the defrost icon.</li>
+      <li data-i18n="um.op.d3"><strong>Exits defrost</strong> after <strong>8 minutes max</strong>, or once the coil rises to ≥ 5 °C (after at least 3 minutes of defrost).</li>
+      <li data-i18n="um.op.d4"><strong>Sensor fault (E1):</strong> the unit falls back to timed defrost — 25 min compressor / 8 min defrost.</li>
+    </ul>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="um.op.warn.t">Compressor restart protection</strong>
+      <span data-i18n="um.op.warn.b">After the compressor stops, it waits 3 minutes before restarting. That delay protects the compressor — don't power-cycle the unit to "force" it back on.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/controls" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.app.title">App pairing</span></div>
+    <a href="#manual/app" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / APP ====== -->
+<section class="screen install-step" data-screen="manual/app" data-step="5">
+  <div class="screen-pad">
+    <div class="stepper" data-active="4" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#8b5cf6">
+      <span class="step-pill" data-i18n="um.app.pill">Chapter 05 of 07</span>
+      <h2 data-i18n="um.app.title">App pairing</h2>
+      <p data-i18n="um.app.desc">Connect the unit to the Tuya Smart app for remote control. The phone needs 2.4 GHz WiFi — 5 GHz won't pair.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.app.steps.heading">Pairing steps</h3>
+    <ol class="step-list">
+      <li><span>1</span><div data-i18n="um.app.s1"><strong>Install the Tuya Smart app</strong> from the App Store or Play Store and register an account.</div></li>
+      <li><span>2</span><div data-i18n="um.app.s2"><strong>Turn on phone Bluetooth</strong> and connect to your <strong>2.4 GHz WiFi</strong> network (not 5 GHz).</div></li>
+      <li><span>3</span><div data-i18n="um.app.s3"><strong>Put the unit in pairing mode:</strong> turn it on, then press and hold the fan-speed button until the WiFi icon flashes on the panel.</div></li>
+      <li><span>4</span><div data-i18n="um.app.s4"><strong>In the app, tap "Add Device"</strong> — Tuya will discover the dehumidifier automatically.</div></li>
+      <li><span>5</span><div data-i18n="um.app.s5"><strong>Enter your WiFi name and password.</strong> The app adds the device and opens the mobile control panel.</div></li>
+    </ol>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="um.app.note.t">Third-party service</strong>
+      <span data-i18n="um.app.note.b">App features depend on network conditions and the Tuya cloud. The manufacturer isn't responsible for outages caused by your internet, router, or the Tuya platform.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/operation" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.maint.title">Maintenance</span></div>
+    <a href="#manual/maintenance" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / MAINTENANCE ====== -->
+<section class="screen install-step" data-screen="manual/maintenance" data-step="6">
+  <div class="screen-pad">
+    <div class="stepper" data-active="5" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#ca8a04">
+      <span class="step-pill" data-i18n="um.maint.pill">Chapter 06 of 07</span>
+      <h2 data-i18n="um.maint.title">Maintenance &amp; fault codes</h2>
+      <p data-i18n="um.maint.desc">Most "broken" units are dirty filters or stalled drains. Routine cleaning keeps the unit at full capacity.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.maint.filter.heading">Cleaning the air filter</h3>
+    <ul class="check-list">
+      <li data-i18n="um.maint.f1"><strong>Check every two weeks,</strong> or weekly / daily in dusty environments.</li>
+      <li data-i18n="um.maint.f2"><strong>Tap or vacuum</strong> dust off the filter, or rinse in warm water (≤ 40 °C) with a little neutral detergent.</li>
+      <li data-i18n="um.maint.f3"><strong>Rinse and air-dry fully</strong> before re-fitting. No direct sunlight or heat — it warps the mesh.</li>
+      <li data-i18n="um.maint.f4"><strong>Never run the unit without the filter installed.</strong></li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.maint.body.heading">Cleaning the body</h3>
+    <ul class="check-list">
+      <li data-i18n="um.maint.b1"><strong>Soft, clean, dry cloth.</strong> For heavier soiling, a mild detergent followed by a damp cloth.</li>
+      <li data-i18n="um.maint.b2"><strong>No solvents, abrasive powders, or polishing agents</strong> — they damage the surface.</li>
+      <li data-i18n="um.maint.b3"><strong>Don't rinse the unit with water.</strong> Water ingress causes insulation failure and shock risk.</li>
+      <li data-i18n="um.maint.b4"><strong>Power off and unplug</strong> before any cleaning or maintenance.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.maint.codes.heading">Fault codes</h3>
+    <div class="term-table">
+      <div class="term-row"><span class="term-num">E1</span><div class="term-body"><strong data-i18n="um.fc.1.t">Evaporator coil sensor fault</strong><small data-i18n="um.fc.1.d">Unit falls back to timed defrost. Replace the coil sensor.</small></div></div>
+      <div class="term-row"><span class="term-num">E2</span><div class="term-body"><strong data-i18n="um.fc.2.t">Temperature &amp; humidity sensor fault</strong><small data-i18n="um.fc.2.d">Reading is invalid — dehumidification won't run.</small></div></div>
+      <div class="term-row"><span class="term-num">E3</span><div class="term-body"><strong data-i18n="um.fc.3.t">Water-full protection</strong><small data-i18n="um.fc.3.d">Drain pan or hose is backing up — check pump and U-trap.</small></div></div>
+      <div class="term-row"><span class="term-num">E4</span><div class="term-body"><strong data-i18n="um.fc.4.t">Low refrigerant pressure</strong><small data-i18n="um.fc.4.d">Suspected leak — needs service.</small></div></div>
+      <div class="term-row"><span class="term-num">E7</span><div class="term-body"><strong data-i18n="um.fc.7.t">Water-leak sensor triggered</strong><small data-i18n="um.fc.7.d">Moisture detected on the leak cable. Unit stays off until cleared.</small></div></div>
+      <div class="term-row"><span class="term-num">E8</span><div class="term-body"><strong data-i18n="um.fc.8.t">High exhaust temperature</strong><small data-i18n="um.fc.8.d">Compressor running too hot — check airflow and coil.</small></div></div>
+      <div class="term-row"><span class="term-num">E9</span><div class="term-body"><strong data-i18n="um.fc.9.t">Discharge temperature sensor fault</strong><small data-i18n="um.fc.9.d">Sensor invalid — needs service.</small></div></div>
+    </div>
+
+    <div class="warn-card warn-card-soft">
+      <strong data-i18n="um.maint.normal.t">What's normal</strong>
+      <span data-i18n="um.maint.normal.b">Soft refrigerant flow sounds during operation and shutdown are normal. Warm air at the outlet during dehumidification is also normal — that's the heat the unit is moving off the coil.</span>
+    </div>
+
+    <div class="warn-card">
+      <strong data-i18n="um.maint.warn.t">Don't disassemble the unit yourself.</strong>
+      <span data-i18n="um.maint.warn.b">If filter cleaning and drain checks don't solve the issue, contact the supplier or an authorised service centre.</span>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/app" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.warranty.title">Warranty</span></div>
+    <a href="#manual/warranty" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+</section>
+
+<!-- ====== MANUAL / WARRANTY ====== -->
+<section class="screen install-step" data-screen="manual/warranty" data-step="7">
+  <div class="screen-pad">
+    <div class="stepper" data-active="6" data-set="manual"></div>
+    <div class="step-hero" style="--accent:#0f172a">
+      <span class="step-pill" data-i18n="um.warranty.pill">Chapter 07 of 07</span>
+      <h2 data-i18n="um.warranty.title">Limited warranty</h2>
+      <p data-i18n="um.warranty.desc">Effective 1 January 2024. Summary of the warranty card shipped with the unit — keep the original card for any claim.</p>
+    </div>
+
+    <h3 class="block-h" data-i18n="um.warranty.cover.heading">What's covered</h3>
+    <ul class="check-list">
+      <li data-i18n="um.warranty.c1"><strong>1 year</strong> from the original purchase date by the first end user, against defects in materials and workmanship under normal use.</li>
+      <li data-i18n="um.warranty.c2"><strong>Manufacturer's option</strong> — repair or replace the defective product or component.</li>
+      <li data-i18n="um.warranty.c3"><strong>Applies only if</strong> the unit is installed, operated, and maintained per the manual.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.warranty.excl.heading">What's NOT covered</h3>
+    <ul class="check-list">
+      <li data-i18n="um.warranty.e1"><strong>Refrigerant, accessories, consumables</strong> (e.g. filters), transport, installation, removal, or labour costs.</li>
+      <li data-i18n="um.warranty.e2"><strong>Damage from improper installation, operation, or maintenance,</strong> or failure to follow instructions.</li>
+      <li data-i18n="um.warranty.e3"><strong>Unauthorised repair or modification,</strong> misuse, abuse.</li>
+      <li data-i18n="um.warranty.e4"><strong>Environmental damage</strong> — corrosion, freezing, water ingress, acts of nature.</li>
+      <li data-i18n="um.warranty.e5"><strong>Replacement parts</strong> do not extend the original warranty period.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.warranty.claim.heading">Making a claim</h3>
+    <ul class="check-list">
+      <li data-i18n="um.warranty.cl1"><strong>Submit within the warranty period</strong> with valid proof of purchase.</li>
+      <li data-i18n="um.warranty.cl2"><strong>Service is performed</strong> by the manufacturer or an authorised service provider.</li>
+      <li data-i18n="um.warranty.cl3"><strong>If shipping is required</strong> the customer is responsible for packaging, transport costs, and risk of loss.</li>
+    </ul>
+
+    <h3 class="block-h" data-i18n="um.warranty.contact.heading">Contact for service</h3>
+    <ul class="check-list">
+      <li data-i18n="um.warranty.k1"><strong>Hong Kong</strong> — Debiasia Green Technology (HK) Co. Ltd. · +852 2541 1611 · dba@dba.hk</li>
+      <li data-i18n="um.warranty.k2"><strong>Singapore</strong> — DBA Electric Pte. Ltd. · +65 6772 9962 · dba@dba.sg</li>
+    </ul>
+
+    <p class="prose" data-i18n="um.warranty.note">To the maximum extent permitted by law, total liability shall not exceed the original purchase price of the product. The manufacturer reserves the right to amend this warranty without notice.</p>
+
+    <div class="done-card">
+      <span class="done-tick">✓</span>
+      <div>
+        <strong data-i18n="um.warranty.done.t">That's the manual end-to-end.</strong>
+        <span data-i18n="um.warranty.done.b">Next time you need a fault code, a button, or a setpoint range — just open this chapter on your phone.</span>
+      </div>
+    </div>
+  </div>
+  <nav class="step-footer">
+    <a href="#manual/maintenance" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.done">Done</span> · <span data-i18n="home.tile.troubleshooting.title">Troubleshooting</span></div>
+    <a href="#troubleshooting" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
