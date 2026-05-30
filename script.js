@@ -666,7 +666,6 @@
 
     /* Contact (inline on home) */
     'ct.title':                  '聯絡我們',
-    'ct.desc':                   '請提供平面圖、樓底高度、以及預定的安裝位置。我們會以草圖回覆建議的佈局與初步選型 — 無任何承諾。',
     'ct.sg.region':              '新加坡',
     'ct.sg.org':                 'DBA Electric Pte. Ltd.',
     'ct.sg.addr':                'Block B, Cititech Industrial Building, 629 Aljunied Road, #07‑08, Singapore 389838',
