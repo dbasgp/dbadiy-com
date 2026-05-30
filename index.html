@@ -1034,13 +1034,14 @@
     <div class="step-hero" style="--accent:#2563eb">
       <span class="step-pill" data-i18n="ico.pill">Step 05 of 07</span>
       <h2 data-i18n="ico.title">Controls</h2>
-      <p data-i18n="ico.desc">The LCD wall panel ships with 8 m of cable and fits a standard 86-type back box. Signal wires are sequenced — connect them in order, with the power off.</p>
+      <p data-i18n="ico.desc">All signal connections must be made with the power off.</p>
     </div>
 
     <div class="chip-row">
-      <span class="chip" data-i18n="ico.chip.1">86 × 86 mm back box</span>
-      <span class="chip" data-i18n="ico.chip.2">8 m cable supplied</span>
-      <span class="chip" data-i18n="ico.chip.3">13 wired terminals</span>
+      <span class="chip" data-i18n="ico.chip.1">LCD panel (8 m signal cable)</span>
+      <span class="chip" data-i18n="ico.chip.2">Humidity sensor (5 m signal cable)</span>
+      <span class="chip" data-i18n="ico.chip.3">Dry-contact on/off</span>
+      <span class="chip" data-i18n="ico.chip.4">Leak-detection cable</span>
     </div>
 
     <figure class="plan-figure manual-figure">
@@ -1048,16 +1049,14 @@
       <figcaption data-i18n="ico.fig.lcd">86×86 mm wall panel for daily use; Tuya app for remote control; RS485 Modbus for BMS.</figcaption>
     </figure>
 
-    <h3 class="block-h" data-i18n="ico.where.heading">Where to mount the panel</h3>
+    <h3 class="block-h" data-i18n="ico.where.heading">Mounting the panel and the humidity sensor</h3>
     <ul class="check-list">
-      <li data-i18n="ico.w1"><strong>Common wall, line of sight</strong> — somewhere everyone in the room will actually see it.</li>
-      <li data-i18n="ico.w2"><strong>1.3 – 1.5 m above the floor.</strong> Tall enough to read, low enough to reach.</li>
-      <li data-i18n="ico.w3"><strong>Away from doors and air paths.</strong> A panel in the supply airstream reads dry air and shuts the unit off prematurely.</li>
-      <li data-i18n="ico.w4"><strong>86 × 86 mm back box</strong>, sunk flush. Run the 8 m cable through conduit, never loose in the void.</li>
+      <li data-i18n="ico.w1">The control panel is 86 × 86 mm. Mount it on the wall for easy viewing and adjusting the target humidity.</li>
+      <li data-i18n="ico.w2">The humidity sensor can sit at the return-air vent or in a quiet ceiling corner — never in the supply airstream.</li>
     </ul>
 
-    <h3 class="block-h" data-i18n="ico.term.heading">Wired control terminals</h3>
-    <p class="prose ico-term-intro" data-i18n="ico.term.intro">Behind the side cover. Terminals 1–7 carry low-voltage signals out to the sensor and control panel. Terminals 8–13 are <strong>passive dry contact only</strong> — never apply external voltage, it will back-feed and damage the mainboard.</p>
+    <h3 class="block-h" data-i18n="ico.term.heading">Control box — terminal map</h3>
+    <p class="prose ico-term-intro" data-i18n="ico.term.intro">The control box sits on the left of the unit, by the air outlet. <strong>Terminals 1–7</strong> carry low-voltage signals from the humidity sensor and the control panel. <strong>Terminals 8–13 are passive dry-contact inputs</strong> — never apply external voltage to any terminal, it will damage the mainboard.</p>
 
     <figure class="plan-figure manual-figure">
       <img src="images/installation/wired-terminals.png" alt="Terminal map on the rear of the unit: 1–3 humidity sensor, 4–7 wired control panel, 8–9 remote on/off, 10–11 water leak sensor, 12–13 reserved" loading="lazy" />
@@ -1069,28 +1068,28 @@
         <span class="term-num">1 – 3</span>
         <div class="term-body">
           <strong data-i18n="ico.t1.t">Temperature &amp; humidity sensor</strong>
-          <small data-i18n="ico.t1.d">GND · +5V · DATA. The supplied 5 m sensor cable plugs in here. The unit will not enter dehumidification mode without a valid reading.</small>
+          <small data-i18n="ico.t1.d">GND · <span class="wire-r">+5V</span> · <span class="wire-y">DATA</span>. The humidity sensor ships with a 5 m signal cable; any shielded multi-core cable works as well — keep total length under 20 m.</small>
         </div>
       </div>
       <div class="term-row">
         <span class="term-num">4 – 7</span>
         <div class="term-body">
           <strong data-i18n="ico.t2.t">Wired control panel</strong>
-          <small data-i18n="ico.t2.d">RX · TX · +5V · GND. The supplied 8 m LCD panel cable plugs in here. Panel sits in a standard 86 × 86 mm back box.</small>
+          <small data-i18n="ico.t2.d"><span class="wire-r">RX</span> · TX · <span class="wire-r">+5V</span> · <span class="wire-y">GND</span>. The LCD panel ships with an 8 m signal cable; any shielded multi-core cable works as well — keep total length under 20 m.</small>
         </div>
       </div>
       <div class="term-row term-row-passive">
         <span class="term-num">8 – 9</span>
         <div class="term-body">
           <strong data-i18n="ico.t3.t">Remote on/off (dry contact)</strong>
-          <small data-i18n="ico.t3.d">Short the two terminals via any unpowered switch — BMS interlock, fire-alarm shutdown, push-button. <strong>NO</strong> (default): short = on, open = off. <strong>NC</strong>: short = off, open = on (configurable on the panel).</small>
+          <small data-i18n="ico.t3.d">Short the two terminals via any unpowered switch — third-party switch control. <strong>NO</strong> (default): short = on, open = off. <strong>NC</strong>: short = off, open = on (switchable in the control panel's advanced parameters — contact DBA support for details).</small>
         </div>
       </div>
       <div class="term-row term-row-passive">
         <span class="term-num">10 – 11</span>
         <div class="term-body">
-          <strong data-i18n="ico.t4.t">Water leak sensor</strong>
-          <small data-i18n="ico.t4.d">Connect the two black sensing wires of a standard leak-detection cable. Moisture anywhere along the cable triggers fault code <strong>E7</strong> and an auto-shutdown.</small>
+          <strong data-i18n="ico.t4.t">Leak-detection cable signal input</strong>
+          <small data-i18n="ico.t4.d">Connect a standard leak-detection cable. Moisture anywhere along the cable triggers fault code <strong>E7</strong> and an auto-shutdown.</small>
         </div>
       </div>
       <div class="term-row term-row-passive">
