@@ -9,7 +9,7 @@
      ============================================================ */
   const T = {
     /* Home */
-    'home.feature.tag':          '7 個步驟 · 最受歡迎',
+    'home.feature.tag':          '7 個步驟。安裝前必讀',
     'home.feature.title':        '安裝指南',
     'home.feature.desc':         '準備、吊裝、排水、風管、控制、電源、驗收測試。',
     'home.feature.go':           '開始查看',
