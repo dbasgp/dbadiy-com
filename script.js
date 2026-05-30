@@ -98,7 +98,7 @@
     'install.step.hang.t':       '吊裝',
     'install.step.hang.d':       'M10 螺桿、水平、減震。',
     'install.step.drain.t':      '排水',
-    'install.step.drain.d':      '揚程 1.8 m 水泵、保溫綿。',
+    'install.step.drain.d':      '水泵揚程 1.8 米。',
     'install.step.duct.t':       '風管',
     'install.step.duct.d':       '⌀146 / ⌀196 mm 法蘭。',
     'install.step.ctrl.t':       '控制',
