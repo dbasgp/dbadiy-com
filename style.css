@@ -317,7 +317,7 @@ img,svg{display:block;max-width:100%;}
   grid-column:1 / -1;
   min-height:200px;
   padding:0;
-  background:radial-gradient(140% 110% at 50% 50%, #f3f6fb 0%, #dfe7f1 55%, #c9d4e2 100%);
+  background:#eef2f8;
   color:#0f172a;
   border:0;
   position:relative;
@@ -327,40 +327,37 @@ img,svg{display:block;max-width:100%;}
   overflow:hidden;
   isolation:isolate;
 }
-/* Liquid moving gradient — two soft blobs drifting across the whole tile */
+/* Liquid moving gradient — two saturated blobs drifting across the whole tile */
 .tile-feature::before,
 .tile-feature::after{
   content:'';
   position:absolute;
-  inset:-30%;
+  inset:-40%;
   z-index:0;
   border-radius:50%;
-  filter:blur(48px);
-  opacity:0.85;
+  filter:blur(32px);
   pointer-events:none;
   will-change:transform;
 }
 .tile-feature::before{
-  background:radial-gradient(circle at 30% 30%, #9ec5fe 0%, rgba(158,197,254,0) 60%);
-  animation:tile-blob-a 14s ease-in-out infinite alternate;
+  background:radial-gradient(circle at 30% 30%, #60a5fa 0%, rgba(96,165,250,0) 65%);
+  opacity:0.75;
+  animation:tile-blob-a 11s ease-in-out infinite alternate;
 }
 .tile-feature::after{
-  background:radial-gradient(circle at 70% 70%, #b9f0e1 0%, rgba(185,240,225,0) 60%);
-  animation:tile-blob-b 18s ease-in-out infinite alternate;
+  background:radial-gradient(circle at 70% 70%, #5eead4 0%, rgba(94,234,212,0) 65%);
+  opacity:0.7;
+  animation:tile-blob-b 14s ease-in-out infinite alternate;
 }
 @keyframes tile-blob-a{
-  0%   { transform: translate(-8%, -6%) scale(1);   }
-  50%  { transform: translate( 10%,  6%) scale(1.15);}
-  100% { transform: translate( -4%, 10%) scale(0.95);}
+  0%   { transform: translate(-22%, -12%) scale(1);    }
+  50%  { transform: translate( 18%,  16%) scale(1.25); }
+  100% { transform: translate(  -6%, 22%) scale(0.92); }
 }
 @keyframes tile-blob-b{
-  0%   { transform: translate( 6%,  8%) scale(1.05);}
-  50%  { transform: translate(-10%, -4%) scale(0.9); }
-  100% { transform: translate( 8%, -10%) scale(1.2); }
-}
-@media (prefers-reduced-motion: reduce){
-  .tile-feature::before,
-  .tile-feature::after{ animation:none; }
+  0%   { transform: translate( 14%,  18%) scale(1.1);  }
+  50%  { transform: translate(-22%, -10%) scale(0.85); }
+  100% { transform: translate( 20%, -22%) scale(1.3);  }
 }
 .tile-feature-body{
   position:relative;
@@ -427,13 +424,13 @@ img,svg{display:block;max-width:100%;}
 
 /* Alt feature tile — teal-dominant palette for the User Manual hero */
 .tile-feature-alt{
-  background:radial-gradient(140% 110% at 50% 50%, #eef9f6 0%, #cdebe3 55%, #aedacd 100%);
+  background:#eef9f5;
 }
 .tile-feature-alt::before{
-  background:radial-gradient(circle at 30% 30%, #7fd1c0 0%, rgba(127,209,192,0) 60%);
+  background:radial-gradient(circle at 30% 30%, #2dd4bf 0%, rgba(45,212,191,0) 65%);
 }
 .tile-feature-alt::after{
-  background:radial-gradient(circle at 70% 70%, #ffd28a 0%, rgba(255,210,138,0) 60%);
+  background:radial-gradient(circle at 70% 70%, #fbbf24 0%, rgba(251,191,36,0) 65%);
 }
 .tile-feature-alt .tile-tag{
   color:#115e59;
@@ -445,13 +442,13 @@ img,svg{display:block;max-width:100%;}
 
 /* Cases feature tile — warm peach/amber palette for 工程案例 */
 .tile-feature-cases{
-  background:radial-gradient(140% 110% at 50% 50%, #fff5ec 0%, #fde2c9 55%, #f6c89e 100%);
+  background:#fff5ec;
 }
 .tile-feature-cases::before{
-  background:radial-gradient(circle at 30% 30%, #f7b27a 0%, rgba(247,178,122,0) 60%);
+  background:radial-gradient(circle at 30% 30%, #fb923c 0%, rgba(251,146,60,0) 65%);
 }
 .tile-feature-cases::after{
-  background:radial-gradient(circle at 70% 70%, #f4d4a3 0%, rgba(244,212,163,0) 60%);
+  background:radial-gradient(circle at 70% 70%, #fcd34d 0%, rgba(252,211,77,0) 65%);
 }
 .tile-feature-cases .tile-tag{
   color:#9a3412;
@@ -1233,9 +1230,10 @@ img,svg{display:block;max-width:100%;}
   margin:6px 0 8px;
   padding:0;
   border-radius:24px;
-  background:linear-gradient(180deg, #1a1208 0%, #0b1220 100%);
-  color:#fde6cf;
-  box-shadow:0 18px 40px -12px rgba(20,12,4,0.55), 0 4px 12px rgba(20,12,4,0.22);
+  background:linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+  color:var(--ink-2);
+  border:1px solid #fde68a;
+  box-shadow:0 10px 28px -14px rgba(202,138,4,0.35), 0 2px 6px rgba(202,138,4,0.10);
   overflow:hidden;
 }
 .bench-card::before{
@@ -1243,8 +1241,8 @@ img,svg{display:block;max-width:100%;}
   position:absolute;
   inset:0;
   background:
-    radial-gradient(500px 250px at 100% -20%, rgba(249,115,22,0.28), transparent 60%),
-    radial-gradient(400px 220px at -10% 120%, rgba(20,184,166,0.15), transparent 65%);
+    radial-gradient(500px 250px at 100% -20%, rgba(249,115,22,0.10), transparent 60%),
+    radial-gradient(400px 220px at -10% 120%, rgba(202,138,4,0.06), transparent 65%);
   pointer-events:none;
 }
 .bench-head{
@@ -1259,9 +1257,9 @@ img,svg{display:block;max-width:100%;}
   letter-spacing:0.14em;
   text-transform:uppercase;
   font-weight:800;
-  color:#fef9c3;
-  background:rgba(250,204,21,0.18);
-  border:1px solid rgba(250,204,21,0.4);
+  color:#854d0e;
+  background:rgba(250,204,21,0.22);
+  border:1px solid rgba(202,138,4,0.45);
   padding:5px 10px 5px 8px;
   border-radius:999px;
   margin-bottom:14px;
@@ -1270,24 +1268,24 @@ img,svg{display:block;max-width:100%;}
 .bench-dot{
   width:8px;height:8px;
   border-radius:50%;
-  background:#facc15;
-  box-shadow:0 0 0 0 rgba(250,204,21,0.6);
+  background:#ca8a04;
+  box-shadow:0 0 0 0 rgba(202,138,4,0.55);
   animation:bench-blink 1.6s ease-out infinite;
 }
 @keyframes bench-blink{
-  0%{box-shadow:0 0 0 0 rgba(250,204,21,0.6);}
-  70%{box-shadow:0 0 0 9px rgba(250,204,21,0);}
-  100%{box-shadow:0 0 0 0 rgba(250,204,21,0);}
+  0%{box-shadow:0 0 0 0 rgba(202,138,4,0.55);}
+  70%{box-shadow:0 0 0 9px rgba(202,138,4,0);}
+  100%{box-shadow:0 0 0 0 rgba(202,138,4,0);}
 }
 .bench-head h3{
   font-size:22px;
-  color:#fff;
+  color:var(--ink);
   letter-spacing:-0.015em;
   margin-bottom:6px;
 }
 .bench-head p{
   font-size:14px;
-  color:#fed7aa;
+  color:var(--ink-2);
 }
 
 .bench-steps{
@@ -1300,8 +1298,8 @@ img,svg{display:block;max-width:100%;}
 .bench-steps li{
   position:relative;
   padding:12px 0 12px 38px;
-  border-top:1px dashed rgba(254,215,170,0.18);
-  color:#fde6cf;
+  border-top:1px dashed rgba(202,138,4,0.28);
+  color:var(--ink-2);
   font-size:14px;
   counter-increment:bs;
 }
@@ -1316,14 +1314,14 @@ img,svg{display:block;max-width:100%;}
   display:grid;
   place-items:center;
   border-radius:999px;
-  background:rgba(249,115,22,0.16);
-  border:1px solid rgba(249,115,22,0.5);
-  color:#fed7aa;
+  background:rgba(202,138,4,0.12);
+  border:1px solid rgba(202,138,4,0.45);
+  color:#854d0e;
   font-family:'Manrope',sans-serif;
   font-weight:700;
   font-size:12.5px;
 }
-.bench-steps li strong{color:#fff;font-weight:700;}
+.bench-steps li strong{color:var(--ink);font-weight:700;}
 
 .bench-foot{
   position:relative;
@@ -1332,11 +1330,11 @@ img,svg{display:block;max-width:100%;}
   gap:10px;
   margin:0;
   padding:14px 20px 20px;
-  border-top:1px solid rgba(254,215,170,0.18);
-  color:#86efac;
+  border-top:1px solid rgba(202,138,4,0.28);
+  color:#166534;
   font-weight:700;
   font-size:14.5px;
-  background:linear-gradient(180deg, rgba(34,197,94,0.04), rgba(34,197,94,0.10));
+  background:linear-gradient(180deg, rgba(34,197,94,0.05), rgba(34,197,94,0.12));
 }
 .bench-foot svg{
   flex-shrink:0;
@@ -1345,6 +1343,31 @@ img,svg{display:block;max-width:100%;}
   background:#22c55e;
   color:#052e16;
   border-radius:50%;
+}
+
+/* Figure embedded inside the bench-card — shares the same frame */
+.bench-fig{
+  position:relative;
+  margin:0;
+  padding:14px 16px 18px;
+  background:#fff;
+  border-top:1px solid #fde68a;
+  text-align:center;
+}
+.bench-fig img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:340px;
+  object-fit:contain;
+  margin:0 auto;
+}
+.bench-fig figcaption{
+  margin-top:10px;
+  font-size:12.5px;
+  line-height:1.55;
+  color:var(--ink-3);
+  text-align:center;
 }
 
 /* ============== CHECK LIST ============== */
@@ -1387,6 +1410,26 @@ img,svg{display:block;max-width:100%;}
 .check-list-tight li{padding:9px 12px 9px 34px; font-size:13.5px;}
 .check-list-tight li::before{top:13px; left:12px;}
 .check-list-tight li::after{top:16px; left:17px;}
+/* Check-list item that contains both text and an illustrative figure inside the same frame */
+.check-list li.check-with-fig{
+  padding:14px 14px 14px 38px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.check-list li.check-with-fig > span{
+  display:block;
+}
+.check-list li.check-with-fig > img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:280px;
+  object-fit:contain;
+  margin:4px auto 0;
+  padding:10px 0 4px;
+  border-top:1px dashed var(--line-2);
+}
 
 /* Numbered step list */
 .step-list{
