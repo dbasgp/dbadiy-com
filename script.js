@@ -13,7 +13,7 @@
     'home.feature.title':        '安裝指南',
     'home.feature.desc':         '準備、吊裝、排水、風管、控制、電源、驗收測試。',
     'home.feature.go':           '開始查看',
-    'home.tile.models.title':    '型號',
+    'home.tile.models.title':    '產品概覽',
     'home.tile.models.desc':     'UTC20 · 55 · 68 · 120',
     'home.tile.troubleshooting.title': '故障排除',
     'home.tile.troubleshooting.desc':  '出現異常時',
