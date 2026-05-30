@@ -351,13 +351,66 @@ img,svg{display:block;max-width:100%;}
   align-items:center;
   justify-content:center;
   overflow:hidden;
+  isolation:isolate;
+  /* Light backdrop so the black machine reads cleanly */
+  background:
+    radial-gradient(120% 90% at 50% 50%, #f3f6fb 0%, #dfe7f1 55%, #c9d4e2 100%);
+}
+/* Liquid moving gradient — two soft blobs drifting around behind the PNG */
+.tile-feature-photo::before,
+.tile-feature-photo::after{
+  content:'';
+  position:absolute;
+  inset:-30%;
+  z-index:-1;
+  border-radius:50%;
+  filter:blur(36px);
+  opacity:0.85;
+  pointer-events:none;
+  will-change:transform;
+}
+.tile-feature-photo::before{
+  background:radial-gradient(circle at 30% 30%, #9ec5fe 0%, rgba(158,197,254,0) 60%);
+  animation:tile-blob-a 14s ease-in-out infinite alternate;
+}
+.tile-feature-photo::after{
+  background:radial-gradient(circle at 70% 70%, #b9f0e1 0%, rgba(185,240,225,0) 60%);
+  animation:tile-blob-b 18s ease-in-out infinite alternate;
+}
+.tile-feature-alt .tile-feature-photo{
+  background:radial-gradient(120% 90% at 50% 50%, #eef9f6 0%, #cdebe3 55%, #aedacd 100%);
+}
+.tile-feature-alt .tile-feature-photo::before{
+  background:radial-gradient(circle at 30% 30%, #7fd1c0 0%, rgba(127,209,192,0) 60%);
+}
+.tile-feature-alt .tile-feature-photo::after{
+  background:radial-gradient(circle at 70% 70%, #ffd28a 0%, rgba(255,210,138,0) 60%);
+}
+@keyframes tile-blob-a{
+  0%   { transform: translate(-8%, -6%) scale(1);   }
+  50%  { transform: translate( 10%,  6%) scale(1.15);}
+  100% { transform: translate( -4%, 10%) scale(0.95);}
+}
+@keyframes tile-blob-b{
+  0%   { transform: translate( 6%,  8%) scale(1.05);}
+  50%  { transform: translate(-10%, -4%) scale(0.9); }
+  100% { transform: translate( 8%, -10%) scale(1.2); }
+}
+@media (prefers-reduced-motion: reduce){
+  .tile-feature-photo::before,
+  .tile-feature-photo::after{ animation:none; }
 }
 .tile-feature-photo img{
+  position:relative;
+  z-index:1;
   width:100%;
   height:100%;
-  object-fit:cover;
+  max-width:92%;
+  max-height:92%;
+  object-fit:contain;
   object-position:center;
   display:block;
+  filter:drop-shadow(0 14px 22px rgba(15, 23, 42, 0.22));
 }
 .tile-tag{
   align-self:flex-start;
