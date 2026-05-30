@@ -443,6 +443,32 @@ img,svg{display:block;max-width:100%;}
 .tile-feature-alt p{ color:#2f5853; }
 .tile-feature-alt .tile-go{ color:#0f3a36; }
 
+/* Cases feature tile — warm peach/amber palette for 工程案例 */
+.tile-feature-cases{
+  background:radial-gradient(140% 110% at 50% 50%, #fff5ec 0%, #fde2c9 55%, #f6c89e 100%);
+}
+.tile-feature-cases::before{
+  background:radial-gradient(circle at 30% 30%, #f7b27a 0%, rgba(247,178,122,0) 60%);
+}
+.tile-feature-cases::after{
+  background:radial-gradient(circle at 70% 70%, #f4d4a3 0%, rgba(244,212,163,0) 60%);
+}
+.tile-feature-cases .tile-tag{
+  color:#9a3412;
+  border-color:rgba(154,52,18,0.18);
+}
+.tile-feature-cases h2{ color:#7c2d12; }
+.tile-feature-cases p{ color:#7c4b2a; }
+.tile-feature-cases .tile-go{ color:#7c2d12; }
+/* The cases photo is a real scene, not a product cutout — crop to fill, rounded */
+.tile-feature-cases .tile-feature-photo img{
+  max-width:88%;
+  max-height:88%;
+  object-fit:cover;
+  border-radius:14px;
+  filter:drop-shadow(0 10px 18px rgba(124,45,18,0.22));
+}
+
 /* Official links block */
 .official-block{
   max-width:760px;
