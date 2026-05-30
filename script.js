@@ -233,6 +233,7 @@
     'id.path.1':                 '<strong>內置止回閥</strong> — 不需額外加裝。可防止冷凝水倒流入機內。',
     'id.path.2':                 '<strong>加裝上行存水彎</strong> — 可隔絕排水管的空氣與異味。',
     'id.path.3':                 '<strong>排水管需套保溫棉</strong> — 可防止水管表面產生冷凝水。',
+    'id.path.4':                 '<strong>機身排水口需要先連接軟管</strong> — 可防止機器的震動傳導到水管上。切勿用硬管接駁機身排水口。',
     'id.path.5':                 '<strong>共用排水管</strong> — 多條排水管可於低位匯合到主排水管。切勿於頂部 T 字接駁。',
     'id.cycle.heading':          '水泵運作邏輯',
     'id.cycle.body':             '機器運轉期間，內置水泵以 <strong>開啟 3 分鐘、關閉 5 分鐘</strong> 循環運作。如排水堵塞或水泵故障，LCD 控制面板會顯示故障代碼 <strong>E3</strong>（水滿保護）。',
