@@ -529,7 +529,6 @@ img,svg{display:block;max-width:100%;}
   overflow:hidden;
   aspect-ratio: 5 / 2;
   background:#0b1220;
-  box-shadow:var(--shadow-md);
 }
 .marquee img{
   position:absolute; inset:0;
@@ -1092,13 +1091,13 @@ img,svg{display:block;max-width:100%;}
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:var(--radius-md);
-  padding:14px 14px 14px;
+  padding:16px 16px 16px;
   display:flex;
   flex-direction:column;
-  gap:6px;
+  gap:4px;
   box-shadow:var(--shadow-sm);
   transition:transform 0.15s, box-shadow 0.15s;
-  min-height:130px;
+  min-height:150px;
   overflow:hidden;
 }
 .step-card::before{
@@ -1114,20 +1113,13 @@ img,svg{display:block;max-width:100%;}
 .step-n{
   font-family:'Manrope',sans-serif;
   font-weight:800;
-  font-size:13px;
+  font-size:56px;
+  line-height:1;
   color:var(--accent);
-  letter-spacing:0.04em;
+  letter-spacing:-0.04em;
+  margin-bottom:2px;
 }
-.step-icon{
-  width:34px;height:34px;
-  margin-top:auto;
-  display:grid;place-items:center;
-  border-radius:10px;
-  background:color-mix(in srgb, var(--accent) 14%, white);
-  color:var(--accent);
-}
-.step-icon svg{width:20px;height:20px;}
-.step-card h3{font-size:16px; margin-top:6px;}
+.step-card h3{font-size:17px; margin-top:auto;}
 .step-card p{font-size:12.5px; color:var(--ink-3);}
 .step-card-final{
   grid-column:1 / -1;
