@@ -121,7 +121,7 @@
       <p data-i18n="home.tile.maintenance.desc">Filter · coil · drain</p>
     </a>
 
-    <a class="tile" href="#models" style="--accent:#0f766e">
+    <a class="tile" href="#overview" style="--accent:#0f766e">
       <div class="tile-icon">
         <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="6" y="18" width="36" height="14" rx="2"/>
@@ -131,8 +131,8 @@
           <line x1="34" y1="14" x2="34" y2="18"/>
         </svg>
       </div>
-      <h3 data-i18n="home.tile.models.title">Models</h3>
-      <p data-i18n="home.tile.models.desc">UTC20 · 55 · 68 · 120</p>
+      <h3 data-i18n="home.tile.models.title">Product overview</h3>
+      <p data-i18n="home.tile.models.desc">Parts · accessories · specs</p>
     </a>
 
   </div>
@@ -304,7 +304,32 @@
 </section>
 
 <!-- ====== MODELS ====== -->
-<section class="screen" data-screen="models">
+<!-- ====== PRODUCT OVERVIEW HUB ====== -->
+<section class="screen" data-screen="overview">
+  <div class="screen-pad">
+    <div class="page-head">
+      <span class="eyebrow" data-i18n="ov.hub.eyebrow">Product reference</span>
+      <h2 data-i18n="ov.hub.title">Product overview</h2>
+      <p data-i18n="ov.hub.desc">Body anatomy, package contents, and the spec sheet for all four sizes.</p>
+    </div>
+
+    <div class="step-grid">
+      <a href="#overview/parts" class="step-card" style="--n:1;--accent:#2563eb">
+        <span class="step-n">01</span>
+        <h3 data-i18n="ov.parts.t">Parts &amp; accessories</h3>
+        <p data-i18n="ov.parts.d">Body anatomy, port locations, what's in the box.</p>
+      </a>
+      <a href="#overview/specs" class="step-card step-card-final" style="--n:2;--accent:#0f766e">
+        <span class="step-n">02</span>
+        <h3 data-i18n="ov.specs.t">Technical specs</h3>
+        <p data-i18n="ov.specs.d">UTC20 · 55 · 68 · 120 — dimensions, capacity, power, refrigerant.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== OVERVIEW / SPECS ====== -->
+<section class="screen" data-screen="overview/specs">
   <div class="screen-pad">
     <div class="page-head">
       <span class="eyebrow" data-i18n="models.eyebrow">Four sizes, one slim body</span>
@@ -324,7 +349,7 @@
     <!-- Feature deck: 4 catalog visuals + short copy -->
     <div class="cat-deck">
       <article class="catfeat">
-        <img src="images/catalog/house.jpg" alt="Whole-house dehumidification diagram" loading="lazy" />
+        <img src="images/catalog/house.png" alt="Whole-house dehumidification diagram" loading="lazy" />
         <h4 data-i18n="models.catfeat.house.t">Whole-house, one unit</h4>
         <p data-i18n="models.catfeat.house.d">Branches feed every room from a single ceiling void. UTC68 or UTC120 dries an entire apartment.</p>
       </article>
@@ -692,7 +717,7 @@
     </div>
 
     <figure class="marquee marquee-tall">
-      <img src="images/catalog/house.jpg" alt="DBA ceiling-mount dehumidifier system" loading="lazy" />
+      <img src="images/catalog/house.png" alt="DBA ceiling-mount dehumidifier system" loading="lazy" />
       <figcaption>
         <strong data-i18n="install.marquee.t">DBA ceiling-mount dehumidifier system</strong>
       </figcaption>
@@ -1266,33 +1291,28 @@
         <h3 data-i18n="manual.step.safety.t">Safety</h3>
         <p data-i18n="manual.step.safety.d">Grounding, refrigerant, R32 rules.</p>
       </a>
-      <a href="#manual/overview" class="step-card" style="--n:2;--accent:#2563eb">
+      <a href="#manual/controls" class="step-card" style="--n:2;--accent:#2563eb">
         <span class="step-n">02</span>
-        <h3 data-i18n="manual.step.overview.t">Product overview</h3>
-        <p data-i18n="manual.step.overview.d">Parts, ports, package contents.</p>
-      </a>
-      <a href="#manual/controls" class="step-card" style="--n:3;--accent:#16a34a">
-        <span class="step-n">03</span>
         <h3 data-i18n="manual.step.ctrl.t">Control panel</h3>
         <p data-i18n="manual.step.ctrl.d">Icons, buttons, what each does.</p>
       </a>
-      <a href="#manual/operation" class="step-card" style="--n:4;--accent:#2563eb">
-        <span class="step-n">04</span>
+      <a href="#manual/operation" class="step-card" style="--n:3;--accent:#16a34a">
+        <span class="step-n">03</span>
         <h3 data-i18n="manual.step.op.t">Operation</h3>
         <p data-i18n="manual.step.op.d">Modes, timer, defrost, fan speed.</p>
       </a>
-      <a href="#manual/app" class="step-card" style="--n:5;--accent:#16a34a">
-        <span class="step-n">05</span>
+      <a href="#manual/app" class="step-card" style="--n:4;--accent:#2563eb">
+        <span class="step-n">04</span>
         <h3 data-i18n="manual.step.app.t">App pairing</h3>
         <p data-i18n="manual.step.app.d">Tuya Smart, 2.4 GHz WiFi.</p>
       </a>
-      <a href="#manual/maintenance" class="step-card" style="--n:6;--accent:#2563eb">
-        <span class="step-n">06</span>
+      <a href="#manual/maintenance" class="step-card" style="--n:5;--accent:#16a34a">
+        <span class="step-n">05</span>
         <h3 data-i18n="manual.step.maint.t">Maintenance</h3>
         <p data-i18n="manual.step.maint.d">Filter rinse, coil, fault codes.</p>
       </a>
-      <a href="#manual/warranty" class="step-card step-card-final" style="--n:7;--accent:#16a34a">
-        <span class="step-n">07</span>
+      <a href="#manual/warranty" class="step-card step-card-final" style="--n:6;--accent:#2563eb">
+        <span class="step-n">06</span>
         <h3 data-i18n="manual.step.war.t">Warranty</h3>
         <p data-i18n="manual.step.war.d">1-year limited, claims, exclusions.</p>
       </a>
@@ -1310,7 +1330,7 @@
   <div class="screen-pad">
     <div class="stepper" data-active="0" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.safety.pill">Chapter 01 of 07</span>
+      <span class="step-pill" data-i18n="um.safety.pill">Chapter 01 of 06</span>
       <h2 data-i18n="um.safety.title">Safety instructions</h2>
       <p data-i18n="um.safety.desc">Observe these at all times. The unit runs on mains voltage and contains pressurised refrigerant — sloppy handling causes shock, fire, or compressor death.</p>
     </div>
@@ -1352,18 +1372,16 @@
     <a href="#manual" class="sf-back" aria-label="Back to manual hub">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
     </a>
-    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.overview.title">Product overview</span></div>
-    <a href="#manual/overview" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.controls.title">Control panel</span></div>
+    <a href="#manual/controls" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
-<!-- ====== MANUAL / OVERVIEW ====== -->
-<section class="screen install-step" data-screen="manual/overview" data-step="2">
+<!-- ====== OVERVIEW / PARTS ====== -->
+<section class="screen install-step" data-screen="overview/parts">
   <div class="screen-pad">
-    <div class="stepper" data-active="1" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.overview.pill">Chapter 02 of 07</span>
-      <h2 data-i18n="um.overview.title">Product overview</h2>
+      <h2 data-i18n="um.overview.title">Parts &amp; accessories</h2>
       <p data-i18n="um.overview.desc">What's in the box, where every port is, and how the unit is laid out. Worth keeping open while you do the install.</p>
     </div>
 
@@ -1397,18 +1415,18 @@
     </ul>
   </div>
   <nav class="step-footer">
-    <a href="#manual/safety" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.controls.title">Control panel</span></div>
-    <a href="#manual/controls" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a href="#overview" class="sf-back" aria-label="Back to overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ov.specs.t">Technical specs</span></div>
+    <a href="#overview/specs" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
 <!-- ====== MANUAL / CONTROLS ====== -->
-<section class="screen install-step" data-screen="manual/controls" data-step="3">
+<section class="screen install-step" data-screen="manual/controls" data-step="2">
   <div class="screen-pad">
-    <div class="stepper" data-active="2" data-set="manual"></div>
+    <div class="stepper" data-active="1" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.controls.pill">Chapter 03 of 07</span>
+      <span class="step-pill" data-i18n="um.controls.pill">Chapter 02 of 06</span>
       <h2 data-i18n="um.controls.title">Control panel</h2>
       <p data-i18n="um.controls.desc">The wired panel does everything — power, mode, fan speed, target humidity, clock, timer, UV. Eleven on-screen icons tell you what state the unit is in.</p>
     </div>
@@ -1443,18 +1461,18 @@
     </div>
   </div>
   <nav class="step-footer">
-    <a href="#manual/overview" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <a href="#manual/safety" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
     <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.operation.title">Operation</span></div>
     <a href="#manual/operation" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
 <!-- ====== MANUAL / OPERATION ====== -->
-<section class="screen install-step" data-screen="manual/operation" data-step="4">
+<section class="screen install-step" data-screen="manual/operation" data-step="3">
   <div class="screen-pad">
-    <div class="stepper" data-active="3" data-set="manual"></div>
+    <div class="stepper" data-active="2" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.operation.pill">Chapter 04 of 07</span>
+      <span class="step-pill" data-i18n="um.operation.pill">Chapter 03 of 06</span>
       <h2 data-i18n="um.operation.title">Operation</h2>
       <p data-i18n="um.operation.desc">Modes, timers, fan, defrost, drain pump cycle. The everyday how-it-runs.</p>
     </div>
@@ -1506,11 +1524,11 @@
 </section>
 
 <!-- ====== MANUAL / APP ====== -->
-<section class="screen install-step" data-screen="manual/app" data-step="5">
+<section class="screen install-step" data-screen="manual/app" data-step="4">
   <div class="screen-pad">
-    <div class="stepper" data-active="4" data-set="manual"></div>
+    <div class="stepper" data-active="3" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.app.pill">Chapter 05 of 07</span>
+      <span class="step-pill" data-i18n="um.app.pill">Chapter 04 of 06</span>
       <h2 data-i18n="um.app.title">App pairing</h2>
       <p data-i18n="um.app.desc">Connect the unit to the Tuya Smart app for remote control. The phone needs 2.4 GHz WiFi — 5 GHz won't pair.</p>
     </div>
@@ -1537,11 +1555,11 @@
 </section>
 
 <!-- ====== MANUAL / MAINTENANCE ====== -->
-<section class="screen install-step" data-screen="manual/maintenance" data-step="6">
+<section class="screen install-step" data-screen="manual/maintenance" data-step="5">
   <div class="screen-pad">
-    <div class="stepper" data-active="5" data-set="manual"></div>
+    <div class="stepper" data-active="4" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.maint.pill">Chapter 06 of 07</span>
+      <span class="step-pill" data-i18n="um.maint.pill">Chapter 05 of 06</span>
       <h2 data-i18n="um.maint.title">Maintenance &amp; fault codes</h2>
       <p data-i18n="um.maint.desc">Most "broken" units are dirty filters or stalled drains. Routine cleaning keeps the unit at full capacity.</p>
     </div>
@@ -1591,11 +1609,11 @@
 </section>
 
 <!-- ====== MANUAL / WARRANTY ====== -->
-<section class="screen install-step" data-screen="manual/warranty" data-step="7">
+<section class="screen install-step" data-screen="manual/warranty" data-step="6">
   <div class="screen-pad">
-    <div class="stepper" data-active="6" data-set="manual"></div>
+    <div class="stepper" data-active="5" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
-      <span class="step-pill" data-i18n="um.warranty.pill">Chapter 07 of 07</span>
+      <span class="step-pill" data-i18n="um.warranty.pill">Chapter 06 of 06</span>
       <h2 data-i18n="um.warranty.title">Limited warranty</h2>
       <p data-i18n="um.warranty.desc">Effective 1 January 2024. Summary of the warranty card shipped with the unit — keep the original card for any claim.</p>
     </div>

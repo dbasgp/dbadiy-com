@@ -14,7 +14,15 @@
     'home.feature.desc':         '準備、吊裝、排水、風管、控制、電源、驗收測試。',
     'home.feature.go':           '開始查看',
     'home.tile.models.title':    '產品概覽',
-    'home.tile.models.desc':     'UTC20 · 55 · 68 · 120',
+    'home.tile.models.desc':     '主部件 · 配件 · 技術參數',
+    'ov.hub.eyebrow':            '隨機資料',
+    'ov.hub.title':              '產品概覽',
+    'ov.hub.desc':               '機身結構、配件清單，以及四款型號的技術參數。',
+    'ov.parts.t':                '主部件說明及跟機配件',
+    'ov.parts.d':                '機身結構、接口位置、開箱配件清單。',
+    'ov.specs.t':                '產品技術參數',
+    'ov.specs.d':                'UTC20 · 55 · 68 · 120 的尺寸、抽濕量、功率與冷媒。',
+    'ov.specs.title':            '產品技術參數',
     'home.tile.troubleshooting.title': '故障排除',
     'home.tile.troubleshooting.desc':  '出現異常時',
     'home.tile.maintenance.title': '日常保養',
@@ -372,12 +380,10 @@
     /* Manual hub */
     'manual.eyebrow':            '出自官方 DBA UTC 產品手冊',
     'manual.title':              '操作說明',
-    'manual.desc':               '七章內容，由淺入深 — 安全、結構、控制面板、操作、App、保養、保修。',
+    'manual.desc':               '六章內容，由淺入深 — 安全、控制面板、操作、App、保養、保修。',
     'manual.start':              '從第 1 章開始',
     'manual.step.safety.t':      '安全',
     'manual.step.safety.d':      '接地、冷媒、R32 注意事項。',
-    'manual.step.overview.t':    '產品概覽',
-    'manual.step.overview.d':    '部件、接口、配件清單。',
     'manual.step.ctrl.t':        '控制面板',
     'manual.step.ctrl.d':        '圖示與按鍵說明。',
     'manual.step.op.t':          '操作',
@@ -390,14 +396,15 @@
     'manual.step.war.d':         '一年有限保修、申索方法、不保項目。',
 
     /* Manual / Safety */
-    'mf.crumb.1':                '操作說明 · 01 / 07',
-    'mf.crumb.2':                '操作說明 · 02 / 07',
-    'mf.crumb.3':                '操作說明 · 03 / 07',
-    'mf.crumb.4':                '操作說明 · 04 / 07',
-    'mf.crumb.5':                '操作說明 · 05 / 07',
-    'mf.crumb.6':                '操作說明 · 06 / 07',
-    'mf.crumb.7':                '操作說明 · 07 / 07',
-    'um.safety.pill':            '第 01 章 / 07',
+    'of.crumb.parts':            '產品概覽 · 主部件',
+    'of.crumb.specs':            '產品概覽 · 技術參數',
+    'mf.crumb.1':                '操作說明 · 01 / 06',
+    'mf.crumb.2':                '操作說明 · 02 / 06',
+    'mf.crumb.3':                '操作說明 · 03 / 06',
+    'mf.crumb.4':                '操作說明 · 04 / 06',
+    'mf.crumb.5':                '操作說明 · 05 / 06',
+    'mf.crumb.6':                '操作說明 · 06 / 06',
+    'um.safety.pill':            '第 01 章 / 06',
     'um.safety.title':           '安全須知',
     'um.safety.desc':            '請隨時遵守。機器使用市電並含壓力冷媒，操作不慎可能引致電擊、火災或壓縮機損毀。',
     'um.safety.chip.1':          '220-240V 接地',
@@ -423,9 +430,8 @@
     'um.safety.warn.b':          '可能引致電擊、火災或設備損毀。請妥善保留此手冊以供日後參考。',
 
     /* Manual / Overview */
-    'um.overview.pill':          '第 02 章 / 07',
-    'um.overview.title':         '產品概覽',
-    'um.overview.desc':          '配件、接口位置、機身結構。安裝時可以同時開啟此頁參考。',
+    'um.overview.title':         '主部件說明及跟機配件',
+    'um.overview.desc':          '機身結構、接口位置、開箱配件清單。安裝時可以同時開啟此頁參考。',
     'um.overview.pkg.heading':   '隨機配件',
     'um.overview.p1':            '<strong>抽濕機本體</strong> — 連 5 米電源線、英式 G 型插頭。',
     'um.overview.p2':            '<strong>LCD 控制面板</strong> — 8 米信號線，配搭 86 型暗盒。',
@@ -443,7 +449,7 @@
     'um.overview.x6':            '<strong>電源線出口</strong> — 機身背部，旁設緊急停止按鈕與狀態指示燈。',
 
     /* Manual / Controls */
-    'um.controls.pill':          '第 03 章 / 07',
+    'um.controls.pill':          '第 02 章 / 06',
     'um.controls.title':         '控制面板',
     'um.controls.desc':          '線控面板能完成所有操作 — 開關、模式、風速、目標濕度、時鐘、定時、UV。畫面上 11 個圖示顯示機器狀態。',
     'um.controls.icons.heading': '顯示圖示',
@@ -479,7 +485,7 @@
     'um.controls.note.b':        '每當啟動條件成立，風扇立即運轉，壓縮機於 3 秒後啟動。屬設計延遲，並非故障。',
 
     /* Manual / Operation */
-    'um.operation.pill':         '第 04 章 / 07',
+    'um.operation.pill':         '第 03 章 / 06',
     'um.operation.title':        '操作',
     'um.operation.desc':         '模式、定時、風速、除霜、水泵循環 — 日常運行的所有細節。',
     'um.op.power.heading':       '開機 / 關機',
@@ -507,7 +513,7 @@
     'um.op.warn.b':              '壓縮機停止後，需待 3 分鐘才會自動重啟。此延遲保護壓縮機 — 請勿以斷電方式「強制」啟動。',
 
     /* Manual / App */
-    'um.app.pill':               '第 05 章 / 07',
+    'um.app.pill':               '第 04 章 / 06',
     'um.app.title':              'App 配對',
     'um.app.desc':               '連接 Tuya Smart 應用程式以遠端控制。手機需連接 2.4 GHz WiFi — 5 GHz 無法配對。',
     'um.app.steps.heading':      '配對步驟',
@@ -520,7 +526,7 @@
     'um.app.note.b':             'App 功能依賴網絡狀況與 Tuya 雲端服務。如因您的網絡、路由器或 Tuya 平台中斷而影響使用，生產商不承擔責任。',
 
     /* Manual / Maintenance */
-    'um.maint.pill':             '第 06 章 / 07',
+    'um.maint.pill':             '第 05 章 / 06',
     'um.maint.title':            '保養與故障代碼',
     'um.maint.desc':             '大部份「壞了」的機器，其實是濾網髒了或排水阻塞。定期保養可使機器長期維持滿效。',
     'um.maint.filter.heading':   '清洗濾網',
@@ -554,7 +560,7 @@
     'um.maint.warn.b':           '如清洗濾網及檢查排水無法解決問題，請聯絡售後或授權維修中心。',
 
     /* Manual / Warranty */
-    'um.warranty.pill':          '第 07 章 / 07',
+    'um.warranty.pill':          '第 06 章 / 06',
     'um.warranty.title':         '有限保修',
     'um.warranty.desc':          '由 2024 年 1 月 1 日起生效。以下為原廠保修卡的摘要 — 申索時請出示正本保修卡。',
     'um.warranty.cover.heading': '保修範圍',
@@ -673,7 +679,9 @@
      ============================================================ */
   const PAGES = {
     'home':                    { titleKey:null,                              titleEN:'dba<em>diy</em>',     crumb:'',                       parent:null },
-    'models':                  { titleKey:'home.tile.models.title',          titleEN:'Models',              crumb:'',                       parent:'home' },
+    'overview':                { titleKey:'home.tile.models.title',          titleEN:'Product overview',    crumb:'',                       parent:'home' },
+    'overview/parts':          { titleKey:'um.overview.title',               titleEN:'Parts & accessories', crumbKey:'of.crumb.parts', crumbEN:'Overview · Parts', parent:'overview' },
+    'overview/specs':          { titleKey:'ov.specs.title',                  titleEN:'Technical specs',     crumbKey:'of.crumb.specs', crumbEN:'Overview · Specs', parent:'overview' },
     'troubleshooting':         { titleKey:'home.tile.troubleshooting.title', titleEN:'Troubleshooting',     crumb:'',                       parent:'home' },
     'maintenance':             { titleKey:'home.tile.maintenance.title',     titleEN:'Maintenance',         crumb:'',                       parent:'home' },
     'install':                 { titleKey:'install.title',                   titleEN:'Installation',        crumb:'',                       parent:'home' },
@@ -685,13 +693,12 @@
     'install/power':           { titleKey:'ipw.title',                       titleEN:'Power',               crumbKey:'sf.crumb.6', crumbEN:'Install · 06 / 07', parent:'install' },
     'install/commissioning':   { titleKey:'icm.title',                       titleEN:'Acceptance test',     crumbKey:'sf.crumb.7', crumbEN:'Install · 07 / 07', parent:'install' },
     'manual':                  { titleKey:'manual.title',                    titleEN:'User Manual',         crumb:'',                       parent:'home' },
-    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety',              crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 07', parent:'manual' },
-    'manual/overview':         { titleKey:'um.overview.title',               titleEN:'Product overview',    crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 07', parent:'manual' },
-    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'Control panel',       crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 07', parent:'manual' },
-    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 07', parent:'manual' },
-    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 07', parent:'manual' },
-    'manual/maintenance':      { titleKey:'um.maint.title',                  titleEN:'Maintenance',         crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 07', parent:'manual' },
-    'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.7', crumbEN:'Manual · 07 / 07', parent:'manual' },
+    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety',              crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 06', parent:'manual' },
+    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'Control panel',       crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 06', parent:'manual' },
+    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 06', parent:'manual' },
+    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 06', parent:'manual' },
+    'manual/maintenance':      { titleKey:'um.maint.title',                  titleEN:'Maintenance',         crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 06', parent:'manual' },
+    'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 06', parent:'manual' },
   };
 
   /* ============================================================
@@ -771,7 +778,7 @@
      ============================================================ */
   const STEPPER_SETS = {
     install: ['install/preparation','install/hanging','install/drainage','install/ducting','install/controls','install/power','install/commissioning'],
-    manual:  ['manual/safety','manual/overview','manual/controls','manual/operation','manual/app','manual/maintenance','manual/warranty'],
+    manual:  ['manual/safety','manual/controls','manual/operation','manual/app','manual/maintenance','manual/warranty'],
   };
 
   function buildSteppers(){
