@@ -96,18 +96,19 @@
       </div>
     </a>
 
-    <a class="tile" href="#overview/specs" style="--accent:#0f766e">
-      <div class="tile-icon">
-        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="6" y="18" width="36" height="14" rx="2"/>
-          <circle cx="9" cy="25" r="2.4"/>
-          <circle cx="39" cy="25" r="2.4"/>
-          <line x1="14" y1="14" x2="14" y2="18"/>
-          <line x1="34" y1="14" x2="34" y2="18"/>
-        </svg>
+    <a class="tile tile-feature tile-feature-product" href="#overview/specs">
+      <div class="tile-feature-body">
+        <span class="tile-tag" data-i18n="home.product.tag">UTC20 · 55 · 68 · 120</span>
+        <h2 data-i18n="home.tile.models.title">Product overview</h2>
+        <p data-i18n="home.tile.models.desc">Technical specs · UTC20 · 55 · 68 · 120</p>
+        <span class="tile-go">
+          <span data-i18n="home.product.go">View specs</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
       </div>
-      <h3 data-i18n="home.tile.models.title">Product overview</h3>
-      <p data-i18n="home.tile.models.desc">Technical specs · UTC20 · 55 · 68 · 120</p>
+      <div class="tile-feature-photo" aria-hidden="true">
+        <img src="images/products-hero.png" alt="" />
+      </div>
     </a>
 
   </div>
@@ -1213,7 +1214,6 @@
       <span class="chip" data-i18n="um.safety.chip.3">R32 mildly flammable</span>
     </div>
 
-    <h3 class="block-h" data-i18n="um.safety.general.heading">General</h3>
     <ul class="check-list">
       <li data-i18n="um.safety.g1"><strong>Not for unsupervised children</strong> or persons with reduced physical / sensory / mental capability. Supervise children so they don't play with it.</li>
       <li data-i18n="um.safety.g2"><strong>Only a properly grounded 220-240 V ~ 50 Hz outlet.</strong> Don't modify the plug, don't use an extension cord or an adapter — they overheat.</li>
@@ -1230,15 +1230,10 @@
     <ul class="check-list">
       <li data-i18n="um.safety.r1"><strong>Qualified personnel only</strong> for installation and servicing.</li>
       <li data-i18n="um.safety.r2"><strong>Install, operate, store</strong> in a well-ventilated area.</li>
-      <li data-i18n="um.safety.r3"><strong>Don't accelerate defrosting or cleaning</strong> beyond what the manufacturer recommends.</li>
       <li data-i18n="um.safety.r4"><strong>Never pierce or burn</strong> the refrigerant circuit.</li>
       <li data-i18n="um.safety.r5"><strong>Dispose of the unit</strong> per local regulations at end of life.</li>
     </ul>
 
-    <div class="warn-card">
-      <strong data-i18n="um.safety.warn.t">Failure to follow these instructions</strong>
-      <span data-i18n="um.safety.warn.b">can result in electric shock, fire, or equipment damage. Keep this manual for future reference.</span>
-    </div>
   </div>
   <nav class="step-footer">
     <a href="#manual" class="sf-back" aria-label="Back to manual hub">
@@ -1306,17 +1301,18 @@
     </div>
 
     <h3 class="block-h" data-i18n="um.controls.icons.heading">Display icons</h3>
-    <div class="term-table">
-      <div class="term-row"><span class="term-num">1</span><div class="term-body"><strong data-i18n="um.ic.1.t">WiFi connection</strong><small data-i18n="um.ic.1.d">Connected to WiFi or in app-pairing mode.</small></div></div>
+    <img src="images/manual/control-panel.png" alt="DBA LCD control panel with numbered icon callouts" class="panel-fig" loading="lazy" />
+    <div class="term-table term-grid">
+      <div class="term-row"><span class="term-num">1</span><div class="term-body"><strong data-i18n="um.ic.1.t">WiFi connection</strong><small data-i18n="um.ic.1.d">App connected or in pairing mode.</small></div></div>
       <div class="term-row"><span class="term-num">2</span><div class="term-body"><strong data-i18n="um.ic.2.t">Mainboard disconnection</strong><small data-i18n="um.ic.2.d">Communication fault between the panel and the mainboard.</small></div></div>
       <div class="term-row"><span class="term-num">3</span><div class="term-body"><strong data-i18n="um.ic.3.t">Defrosting</strong><small data-i18n="um.ic.3.d">Automatic defrost cycle is active.</small></div></div>
       <div class="term-row"><span class="term-num">4</span><div class="term-body"><strong data-i18n="um.ic.4.t">Timer</strong><small data-i18n="um.ic.4.d">Daily ON/OFF schedule is enabled.</small></div></div>
-      <div class="term-row"><span class="term-num">5</span><div class="term-body"><strong data-i18n="um.ic.5.t">Time display</strong><small data-i18n="um.ic.5.d">Shows current time and timer setpoints.</small></div></div>
-      <div class="term-row"><span class="term-num">6</span><div class="term-body"><strong data-i18n="um.ic.6.t">Humidity</strong><small data-i18n="um.ic.6.d">Current room humidity, in %RH.</small></div></div>
+      <div class="term-row"><span class="term-num">5</span><div class="term-body"><strong data-i18n="um.ic.5.t">Time display</strong><small data-i18n="um.ic.5.d">Shows the current time.</small></div></div>
+      <div class="term-row"><span class="term-num">6</span><div class="term-body"><strong data-i18n="um.ic.6.t">Humidity</strong><small data-i18n="um.ic.6.d">Current room humidity (%RH).</small></div></div>
       <div class="term-row"><span class="term-num">7</span><div class="term-body"><strong data-i18n="um.ic.7.t">Temperature</strong><small data-i18n="um.ic.7.d">Current room temperature, in °C.</small></div></div>
-      <div class="term-row"><span class="term-num">8</span><div class="term-body"><strong data-i18n="um.ic.8.t">Fan speed</strong><small data-i18n="um.ic.8.d">High or low — toggle with the fan button.</small></div></div>
-      <div class="term-row"><span class="term-num">9</span><div class="term-body"><strong data-i18n="um.ic.9.t">Mode</strong><small data-i18n="um.ic.9.d">Dehumidify or ventilation — switch with the mode button.</small></div></div>
-      <div class="term-row"><span class="term-num">10</span><div class="term-body"><strong data-i18n="um.ic.10.t">UV purification</strong><small data-i18n="um.ic.10.d">UV-C lamp on (only if your model is fitted with one).</small></div></div>
+      <div class="term-row"><span class="term-num">8</span><div class="term-body"><strong data-i18n="um.ic.8.t">Fan speed</strong><small data-i18n="um.ic.8.d">Two speeds — press the fan button to switch.</small></div></div>
+      <div class="term-row"><span class="term-num">9</span><div class="term-body"><strong data-i18n="um.ic.9.t">Mode</strong><small data-i18n="um.ic.9.d">Dehumidify mode icon stays lit while active.</small></div></div>
+      <div class="term-row"><span class="term-num">10</span><div class="term-body"><strong data-i18n="um.ic.10.t">UV-C lamp</strong><small data-i18n="um.ic.10.d">UV-C lamp icon stays lit while on.</small></div></div>
       <div class="term-row"><span class="term-num">11</span><div class="term-body"><strong data-i18n="um.ic.11.t">Power on</strong><small data-i18n="um.ic.11.d">Unit is powered on.</small></div></div>
     </div>
 
@@ -1415,6 +1411,8 @@
       <li><span>4</span><div data-i18n="um.app.s4"><strong>In the app, tap "Add Device"</strong> — Tuya will discover the dehumidifier automatically.</div></li>
       <li><span>5</span><div data-i18n="um.app.s5"><strong>Enter your WiFi name and password.</strong> The app adds the device and opens the mobile control panel.</div></li>
     </ol>
+
+    <img src="images/manual/app-pairing.png" alt="Tuya app pairing steps screenshot" class="app-screens" loading="lazy" />
 
     <div class="warn-card warn-card-soft">
       <strong data-i18n="um.app.note.t">Third-party service</strong>
