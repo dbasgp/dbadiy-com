@@ -457,12 +457,7 @@ img,svg{display:block;max-width:100%;}
 .tile-feature-cases h2{ color:#7c2d12; }
 .tile-feature-cases p{ color:#7c4b2a; }
 .tile-feature-cases .tile-go{ color:#7c2d12; }
-/* The cases photo is a real scene, not a product cutout — crop to fill, rounded */
 .tile-feature-cases .tile-feature-photo img{
-  max-width:88%;
-  max-height:88%;
-  object-fit:cover;
-  border-radius:14px;
   filter:drop-shadow(0 10px 18px rgba(124,45,18,0.22));
 }
 
