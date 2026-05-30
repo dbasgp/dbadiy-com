@@ -93,7 +93,6 @@
     /* Install hub */
     'install.eyebrow':           '參考自官方 DBA UTC 安裝卡',
     'install.title':             '安裝指南',
-    'install.desc':              '由空白天花到部機正常運作 — 七個步驟。請點選一個項目進入。',
     'install.step.prep.t':       '準備工作',
     'install.step.prep.d':       '通電測試、規劃。',
     'install.step.hang.t':       '吊裝',
@@ -106,8 +105,7 @@
     'install.step.ctrl.d':       '控制面板、濕度感應器。',
     'install.step.pow.t':        '電源',
     'install.step.pow.d':        '13 A 220 V、2.5 mm²。',
-    'install.marquee.tag':       '全屋抽濕',
-    'install.marquee.t':         '一台主機，分風管至每個房間。',
+    'install.marquee.t':         'DBA 天花式抽濕系統',
     'id.fig.pump':               '自動抽水排水 — 揚程可達 1.8 米，內置止回閥。',
     'ico.fig.lcd':               '86×86 mm 牆面 LCD 控制板用作日常操作；塗鴉智能 App 可遙距控制；RS485 Modbus 可接 BMS。',
     'install.step.com.t':        '驗收測試',
