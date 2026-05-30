@@ -541,11 +541,9 @@
     'um.warranty.cl2':           '<strong>由原廠或授權服務商</strong>執行維修服務。',
     'um.warranty.cl3':           '<strong>如需運送維修</strong>，包裝、運費及運輸風險由客戶承擔。',
     'um.warranty.contact.heading':'維修聯絡',
-    'um.warranty.k1':            '<strong>香港</strong> — 德百信綠色科技（香港）有限公司 · +852 2541 1611 · dba@dba.hk',
+    'um.warranty.k1':            '<strong>香港</strong> — Debiasia Green Technology (HK) Co. Ltd. · +852 2541 1611 · dba@dba.hk',
     'um.warranty.k2':            '<strong>新加坡</strong> — DBA Electric Pte. Ltd. · +65 6772 9962 · dba@dba.sg',
     'um.warranty.note':          '在法律允許的最大範圍內，原廠的總責任不會超過產品的原始購買價。原廠保留隨時修改本保修條款的權利，恕不另行通知。',
-    'um.warranty.done.t':        '操作說明閱讀完畢。',
-    'um.warranty.done.b':        '下次需要查故障代碼、按鍵說明或設定範圍，手機開啟對應章節即可。',
 
     /* Troubleshooting */
     'ts.eyebrow':                '如感覺異常',
