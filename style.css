@@ -1774,14 +1774,17 @@ img,svg{display:block;max-width:100%;}
 .cases-head p{font-size:13.5px;color:var(--ink-3);max-width:42ch;}
 /* ---- PDF showcase cards ---- */
 .ref-pdf-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  display:flex;
+  flex-direction:column;
   gap:10px;
   margin-bottom:18px;
 }
+body:not(.lang-zh) .ref-pdf-cn{ display:none; }
+.lang-zh .ref-pdf-en{ display:none; }
 .ref-pdf-card{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
+  align-items:center;
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:var(--radius-md);
@@ -1793,7 +1796,8 @@ img,svg{display:block;max-width:100%;}
 }
 .ref-pdf-card:active{ border-color:var(--accent); box-shadow:0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent); }
 .ref-pdf-thumb{
-  width:100%;
+  flex:0 0 72px;
+  width:72px;
   aspect-ratio:3/4;
   overflow:hidden;
   background:#f1f5f9;
@@ -1801,14 +1805,14 @@ img,svg{display:block;max-width:100%;}
 .ref-pdf-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
 .ref-pdf-info{
   display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:6px;
-  padding:10px 12px;
+  flex-direction:column;
+  gap:2px;
+  padding:14px 14px;
+  flex:1;
 }
-.ref-pdf-label{ font-size:12.5px; font-weight:700; color:var(--ink); flex:1; }
-.ref-pdf-sub{ font-size:11px; color:var(--ink-3); display:none; }
-.ref-pdf-dl{ width:18px; height:18px; flex:0 0 18px; color:var(--accent); }
+.ref-pdf-label{ font-size:13px; font-weight:700; color:var(--ink); }
+.ref-pdf-sub{ font-size:11px; color:var(--ink-3); }
+.ref-pdf-dl{ width:22px; height:22px; flex:0 0 22px; color:var(--accent); margin-right:16px; }
 
 /* ---- Cases photo gallery ---- */
 .cases-gallery{
@@ -1831,7 +1835,6 @@ img,svg{display:block;max-width:100%;}
 .cases-gallery figure.wide{ grid-column:span 2; aspect-ratio:2/1; }
 @media(min-width:560px){
   .cases-gallery{ grid-template-columns:repeat(4, 1fr); gap:5px; }
-  .ref-pdf-sub{ display:block; }
 }
 
 /* ============== DUCTING ROWS ============== */
