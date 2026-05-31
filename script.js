@@ -27,7 +27,6 @@
     /* Models */
     'models.eyebrow':            '四種尺寸，同一輕薄機身',
     'models.title':              'Ultra Thin 超薄系列',
-    'models.desc':               '同一天花機身、同一控制系統、內置排水泵。容量由 20 至 120 L/day。',
     'models.utc20.desc':         '單一房間或工作室規格。R410A 雪種，單進風口。',
     'models.utc55.desc':         '介於 UTC20 與 UTC68 之間的中型款。採用 R32 雪種（輕度可燃）。',
     'models.utc55.refr':         'R32 · 0.3 kg（輕度可燃）',
