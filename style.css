@@ -2077,6 +2077,7 @@ img,svg{display:block;max-width:100%;}
 .term-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:6px;}
 @media(max-width:480px){.term-grid{grid-template-columns:1fr;}}
 .panel-fig{width:100%; max-width:600px; display:block; margin:16px auto; border-radius:12px;}
+.panel-fig-full{max-width:100%;}
 .app-screens{width:100%; display:block; margin:20px 0; border-radius:10px;}
 
 /* ============== Common specs strip (models) ============== */
