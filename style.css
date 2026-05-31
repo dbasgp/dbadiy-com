@@ -1340,29 +1340,6 @@ img,svg{display:block;max-width:100%;}
   border-bottom:1px solid var(--line);
   margin-bottom:18px;
   position:relative;
-  overflow:hidden;
-}
-.step-hero::before{
-  content:'';
-  position:absolute;
-  top:-60px;
-  right:-40px;
-  width:260px;
-  height:260px;
-  border-radius:50%;
-  background:radial-gradient(closest-side, color-mix(in srgb, var(--accent) 40%, transparent), transparent);
-  filter:blur(36px);
-  opacity:0.55;
-  pointer-events:none;
-  z-index:0;
-}
-.step-hero::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, transparent) 0%, transparent 55%);
-  pointer-events:none;
-  z-index:0;
 }
 .step-hero > *{ position:relative; z-index:1; }
 .step-pill{
