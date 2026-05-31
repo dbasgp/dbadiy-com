@@ -445,7 +445,7 @@
     /* Manual / Operation */
     'um.operation.pill':         '第 02 章 / 08',
     'um.operation.title':        '操作',
-    'um.operation.desc':         '模式、定時、風速、除霜、水泵循環 — 日常運行的所有細節。',
+    'um.operation.desc':         '開關機、模式、定時、濕度設定、風速、',
     'um.op.power.heading':       '開機 / 關機',
     'um.op.p1':                  '<strong>待機狀態下：</strong>按電源鍵 → 機器啟動，風扇預設高速。',
     'um.op.p2':                  '<strong>運行中：</strong>按電源鍵 → 進入待機，按鍵與部份圖示熄滅。',
