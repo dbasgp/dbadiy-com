@@ -74,7 +74,7 @@
     'models.share.cert.t':       'CE · CB · RoHS · ISO 9001',
     'models.share.cert.d':       '全系列具多區國際認證。',
     'models.marquee.tag':        '簡約設計',
-    'models.marquee.t':          '20 cm 超薄機身，完全隱藏天花。',
+    'models.marquee.t':          '20 cm 超薄機身，隱藏式安裝於假天花上。',
     'models.catfeat.house.t':    '一機抽濕全屋',
     'models.catfeat.house.d':    '由天花夾層分風管至每個房間，一台 UTC68 或 UTC120 已可覆蓋整個單位。',
     'models.catfeat.uv.t':       'UV-C 紫外線殺菌',
