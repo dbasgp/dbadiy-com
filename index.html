@@ -1452,10 +1452,6 @@
         <div class="maint-cadence" data-i18n="mn.y.cadence">Yearly</div>
         <h3 data-i18n="mn.y.title">Coil &amp; drain service</h3>
         <p data-i18n="mn.y.body">Power off at the breaker first. Wipe the casing with a soft, clean, dry cloth — or a cloth lightly dampened with mild detergent for stubborn soiling, then wipe clean with a plain damp cloth. <strong>Never rinse or wash the unit with running water</strong> — it will cause insulation failure and risk of shock. Run a litre of water through the drain pan to confirm the pump still clears quickly.</p>
-        <ul class="check-list check-list-tight">
-          <li data-i18n="mn.y.1">Don't use solvents, abrasive powders, or polishing agents — they damage the surface.</li>
-          <li data-i18n="mn.y.2">Wipe the coil fins with a soft brush only. Never bend the fins.</li>
-        </ul>
       </article>
 
     </div>
@@ -1616,27 +1612,6 @@
 
       <details class="trouble">
         <summary>
-          <span class="trouble-tag" data-i18n="ts.4.tag">Panel</span>
-          <span class="trouble-title" data-i18n="ts.4.title">Fault code on the LCD</span>
-          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
-        </summary>
-        <div class="trouble-body">
-          <p data-i18n="ts.4.intro">From the official manual. Power-cycle the breaker for 60 seconds before assuming any code is real.</p>
-          <ul>
-            <li data-i18n="ts.4.b1"><strong>E1</strong> — Evaporator coil temperature sensor fault. Unit falls back to timed defrost. Reseat the sensor connection; if persists, call service.</li>
-            <li data-i18n="ts.4.b2"><strong>E2</strong> — Temperature &amp; humidity sensor fault. The unit cannot regulate without it. Reseat the 5 m sensor cable at terminals 1–3.</li>
-            <li data-i18n="ts.4.b3"><strong>E3</strong> — Water full protection. The drain pan or pump is not clearing. Check the pump outlet, U-trap, and pipe slope.</li>
-            <li data-i18n="ts.4.b4"><strong>E4</strong> — Low refrigerant pressure protection. Call service — do not reset repeatedly.</li>
-            <li data-i18n="ts.4.b5"><strong>E7</strong> — Water leak sensor triggered. Find and dry the leak, then the code clears.</li>
-            <li data-i18n="ts.4.b6"><strong>E8</strong> — High exhaust temperature protection. Usually airflow restriction — check filter and ducting.</li>
-            <li data-i18n="ts.4.b7"><strong>E9</strong> — Discharge temperature sensor fault. Call service.</li>
-          </ul>
-          <p data-i18n="ts.4.foot">If a code persists after a full power cycle, call service with the code and the unit's factory serial number.</p>
-        </div>
-      </details>
-
-      <details class="trouble">
-        <summary>
           <span class="trouble-tag" data-i18n="ts.5.tag">No power</span>
           <span class="trouble-title" data-i18n="ts.5.title">Panel dark, unit unresponsive</span>
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
@@ -1661,6 +1636,66 @@
             <li data-i18n="ts.6.b1">Filter — rinse it. This is the cause 80% of the time.</li>
             <li data-i18n="ts.6.b2">Run the UV-C lamp continuously for a few cycles (selectable from the panel).</li>
             <li data-i18n="ts.6.b3">If it persists, schedule a yearly coil wipe-down — the coil itself can grow biofilm over time.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.7.tag">壓縮機</span>
+          <span class="trouble-title" data-i18n="ts.7.title">Fan runs but compressor never kicks in</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.7.b1">Is the target humidity already below the room reading? The compressor only runs when the room is above the setpoint.</li>
+            <li data-i18n="ts.7.b2">Confirm the unit is in dehumidify mode, not fan-only mode.</li>
+            <li data-i18n="ts.7.b3">After the compressor stops there is a 3-minute restart delay by design — wait it out before concluding there's a fault.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.8.tag">App</span>
+          <span class="trouble-title" data-i18n="ts.8.title">Tuya Smart app can't find the unit</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.8.b1">Phone must be on 2.4 GHz WiFi — the unit does not support 5 GHz or auto-band networks.</li>
+            <li data-i18n="ts.8.b2">Re-enter pairing mode: hold the fan-speed button on the panel until the WiFi icon flashes.</li>
+            <li data-i18n="ts.8.b3">If still failing, restart your router and make sure the Tuya app is updated to the latest version.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.9.tag">效果</span>
+          <span class="trouble-title" data-i18n="ts.9.title">Unit runs all the time but can't reach the target humidity</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.9.b1">Check for continuous moisture sources: open windows, fresh renovation, wet paint, or drying laundry inside.</li>
+            <li data-i18n="ts.9.b2">Confirm the filter is clean and that both the return and supply vents are unobstructed.</li>
+            <li data-i18n="ts.9.b3">The UTC20 and UTC55 have limited coverage. If the space is large, a higher-capacity model may be needed.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="trouble">
+        <summary>
+          <span class="trouble-tag" data-i18n="ts.10.tag">除霜</span>
+          <span class="trouble-title" data-i18n="ts.10.title">Defrost icon keeps appearing</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="trouble-body">
+          <ol>
+            <li data-i18n="ts.10.b1">Defrost is automatic and normal — it runs for up to 8 minutes whenever the coil drops below −1 °C.</li>
+            <li data-i18n="ts.10.b2">Frequent defrost in warm weather may indicate low refrigerant or a blocked filter restricting airflow over the coil.</li>
+            <li data-i18n="ts.10.b3">If the unit defrosts more than once per hour at room temperature, call service.</li>
           </ol>
         </div>
       </details>
