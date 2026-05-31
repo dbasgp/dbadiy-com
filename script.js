@@ -494,8 +494,8 @@
     'um.app.note.b':             'App 功能依賴網絡狀況與 Tuya 雲端服務。如因您的網絡、路由器或 Tuya 平台中斷而影響使用，生產商不承擔責任。',
 
     /* Manual / Maintenance */
-    'um.maint.pill':             '第 04 章 / 08',
-    'um.rs485.pill':             '第 05 章 / 08',
+    'um.rs485.pill':             '第 04 章 / 08',
+    'um.maint.pill':             '第 05 章 / 08',
     'um.rs485.title':            'RS485 Modbus 連接',
     'um.rs485.desc':             'RS485 Modbus 通訊協議規格，適用於接入 BMS、HMI 或 PLC。',
     'um.ts.pill':                '第 06 章 / 08',
@@ -615,26 +615,18 @@
     /* Maintenance */
     'mn.eyebrow':                '機器保養得宜，可用十年',
     'mn.title':                  '日常保養',
-    'mn.desc':                   '一年三項工作。每項皆不超過十分鐘。',
-    'mn.m.cadence':              '每 2 星期',
-    'mn.m.title':                '清潔濾網',
-    'mn.m.body':                 '官方建議：濾網 <strong>至少每兩星期</strong> 檢查一次。打開檢修口、抽出濾網。輕拍或用吸塵機去除塵埃，或以暖水（≤ 40 °C）配少量中性洗潔劑清洗，沖乾淨，完全風乾後再裝回。',
-    'mn.m.1':                    '塵埃多的環境：每星期檢查，或必要時每日檢查。',
-    'mn.m.2':                    '切勿讓濾網接觸直射陽光或熱源 — 會變形。',
-    'mn.m.3':                    '切勿裝回潮濕的濾網 — 第一日便會開始滋生生物膜，風量會下降。',
-    'mn.q.cadence':              '每季',
-    'mn.q.title':                '目視檢查',
-    'mn.q.body':                 '從檢修口觀察五分鐘。檢查安裝後有否移位或變化。',
-    'mn.q.1':                    '排水管接駁位 — 是否有潮濕或礦物結晶？',
-    'mn.q.2':                    '送風管的保溫 — 是否完好乾爽？',
-    'mn.q.3':                    '螺桿螺母 — 以手指試探有否鬆動。',
-    'mn.q.4':                    '面板顯示的濕度 vs 室內獨立濕度計 — 差異應於 3% 之內。',
+    'mn.desc':                   '',
+    'mn.m.cadence':              '每3-6個月',
+    'mn.m.title':                '清洗隔塵網',
+    'mn.m.body':                 '建議至少每3個月檢查一次。隔塵網位於入風口位置。',
+    'mn.m.1':                    '打開隔塵網蓋板，抽出隔塵網。',
+    'mn.m.2':                    '水洗或用吸塵機去除塵埃，完全風乾後再裝。',
+    'mn.m.3':                    '商用或塵埃多的環境：建議每月檢查。',
     'mn.y.cadence':              '每年',
     'mn.y.title':                '蒸發器與排水保養',
-    'mn.y.body':                 '先從斷路器關閉電源。以柔軟、潔淨、乾燥的布料抹拭機殼 — 若有頑垢，可用蘸有溫和清潔劑的布抹拭，再以清水濕布擦淨。<strong>切勿以流水沖洗機身</strong> — 會導致絕緣失效，存在觸電風險。倒入一公升水至水盤，確認水泵仍能迅速清空。',
+    'mn.y.body':                 '如使用環境惡劣或沒有定期保養，有機會導致蒸發器堵塞致抽濕效能下降，或排水堵塞導致漏水。建議每年安排一次上門檢查，DBA技術人員會檢測抽濕性能，水泵，水位感應器等等的部件，確保抽濕及排水運作正常。',
     'mn.y.1':                    '請勿使用溶劑、磨砂粉或拋光劑 — 會損壞表面。',
     'mn.y.2':                    '只可以軟毛刷抹拭蒸發器鰭片。切勿屈到鰭片。',
-    'mn.y.3':                    '如機型配備 UV-C 燈，每 18 – 24 個月需更換。',
     'mn.warn.t':                 '如住於廚房上層或臨近海邊，',
     'mn.warn.b':                 '所有保養間隔均需減半。油煙與鹽霧令蒸發器積污速度加快一倍。',
 
@@ -678,8 +670,8 @@
     'manual/controls':         { titleKey:'um.controls.title',               titleEN:'LCD control panel',   crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 08', parent:'manual' },
     'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 08', parent:'manual' },
     'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 08', parent:'manual' },
-    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 08', parent:'manual' },
-    'manual/rs485':            { titleKey:'um.rs485.title',                  titleEN:'RS485 Modbus',        crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 08', parent:'manual' },
+    'manual/rs485':            { titleKey:'um.rs485.title',                  titleEN:'RS485 Modbus',        crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 08', parent:'manual' },
+    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 08', parent:'manual' },
     'manual/troubleshooting':  { titleKey:'ts.title',                        titleEN:'Troubleshooting',     crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 08', parent:'manual' },
     'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety notes',        crumbKey:'mf.crumb.7', crumbEN:'Manual · 07 / 08', parent:'manual' },
     'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.8', crumbEN:'Manual · 08 / 08', parent:'manual' },
@@ -762,7 +754,7 @@
      ============================================================ */
   const STEPPER_SETS = {
     install: ['install/parts','install/preparation','install/hanging','install/drainage','install/ducting','install/controls','install/power','install/commissioning'],
-    manual:  ['manual/controls','manual/operation','manual/app','manual/maintenance','manual/rs485','manual/troubleshooting','manual/safety','manual/warranty'],
+    manual:  ['manual/controls','manual/operation','manual/app','manual/rs485','manual/maintenance','manual/troubleshooting','manual/safety','manual/warranty'],
   };
 
   function buildSteppers(){

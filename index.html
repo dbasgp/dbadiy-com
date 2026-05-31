@@ -1171,15 +1171,15 @@
         <h3 data-i18n="manual.step.app.t">App pairing</h3>
         <p data-i18n="manual.step.app.d">Tuya Smart, 2.4 GHz WiFi.</p>
       </a>
-      <a href="#manual/maintenance" class="step-card" style="--n:4;--accent:#2563eb">
+      <a href="#manual/rs485" class="step-card" style="--n:4;--accent:#2563eb">
         <span class="step-n">04</span>
-        <h3 data-i18n="manual.step.maint.t">Routine maintenance</h3>
-        <p data-i18n="manual.step.maint.d">Filter, coil, drain — three intervals.</p>
-      </a>
-      <a href="#manual/rs485" class="step-card" style="--n:5;--accent:#16a34a">
-        <span class="step-n">05</span>
         <h3 data-i18n="manual.step.rs485.t">RS485 Modbus</h3>
         <p data-i18n="manual.step.rs485.d">RS485 wiring, Modbus RTU protocol.</p>
+      </a>
+      <a href="#manual/maintenance" class="step-card" style="--n:5;--accent:#16a34a">
+        <span class="step-n">05</span>
+        <h3 data-i18n="manual.step.maint.t">Routine maintenance</h3>
+        <p data-i18n="manual.step.maint.d">Filter, coil, drain — three intervals.</p>
       </a>
       <a href="#manual/troubleshooting" class="step-card" style="--n:6;--accent:#2563eb">
         <span class="step-n">06</span>
@@ -1421,15 +1421,15 @@
   </div>
   <nav class="step-footer">
     <a href="#manual/operation" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.maint.title">Maintenance</span></div>
-    <a href="#manual/maintenance" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.rs485.title">RS485 Modbus</span></div>
+    <a href="#manual/rs485" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
 <!-- ====== MANUAL / MAINTENANCE ====== -->
-<section class="screen install-step" data-screen="manual/maintenance" data-step="4">
+<section class="screen install-step" data-screen="manual/maintenance" data-step="5">
   <div class="screen-pad">
-    <div class="stepper" data-active="3" data-set="manual"></div>
+    <div class="stepper" data-active="4" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
       <span class="step-pill" data-i18n="um.maint.pill">Chapter 04 of 08</span>
       <h2 data-i18n="mn.title">Routine maintenance</h2>
@@ -1450,25 +1450,12 @@
       </article>
 
       <article class="maint-card">
-        <div class="maint-cadence" data-i18n="mn.q.cadence">Quarterly</div>
-        <h3 data-i18n="mn.q.title">Eyes-on check</h3>
-        <p data-i18n="mn.q.body">Five minutes through the hatch. You're looking for things that have moved or changed since the install.</p>
-        <ul class="check-list check-list-tight">
-          <li data-i18n="mn.q.1">Drain pipe joints — any sign of dampness or mineral crust?</li>
-          <li data-i18n="mn.q.2">Insulation on the supply duct — still intact and dry?</li>
-          <li data-i18n="mn.q.3">Rod nuts — finger-test for any that have loosened.</li>
-          <li data-i18n="mn.q.4">Panel humidity reading vs. a separate hygrometer in the room — should agree within 3%.</li>
-        </ul>
-      </article>
-
-      <article class="maint-card">
         <div class="maint-cadence" data-i18n="mn.y.cadence">Yearly</div>
         <h3 data-i18n="mn.y.title">Coil &amp; drain service</h3>
         <p data-i18n="mn.y.body">Power off at the breaker first. Wipe the casing with a soft, clean, dry cloth — or a cloth lightly dampened with mild detergent for stubborn soiling, then wipe clean with a plain damp cloth. <strong>Never rinse or wash the unit with running water</strong> — it will cause insulation failure and risk of shock. Run a litre of water through the drain pan to confirm the pump still clears quickly.</p>
         <ul class="check-list check-list-tight">
           <li data-i18n="mn.y.1">Don't use solvents, abrasive powders, or polishing agents — they damage the surface.</li>
           <li data-i18n="mn.y.2">Wipe the coil fins with a soft brush only. Never bend the fins.</li>
-          <li data-i18n="mn.y.3">If the unit has a UV-C lamp, replace every 18 – 24 months.</li>
         </ul>
       </article>
 
@@ -1480,9 +1467,9 @@
     </div>
   </div>
   <nav class="step-footer">
-    <a href="#manual/app" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.rs485.title">RS485 Modbus</span></div>
-    <a href="#manual/rs485" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a href="#manual/rs485" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ts.title">Troubleshooting</span></div>
+    <a href="#manual/troubleshooting" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
@@ -1535,9 +1522,9 @@
 </section>
 
 <!-- ====== MANUAL / RS485 ====== -->
-<section class="screen install-step" data-screen="manual/rs485" data-step="5">
+<section class="screen install-step" data-screen="manual/rs485" data-step="4">
   <div class="screen-pad">
-    <div class="stepper" data-active="4" data-set="manual"></div>
+    <div class="stepper" data-active="3" data-set="manual"></div>
     <div class="step-hero" style="--accent:#2563eb">
       <span class="step-pill" data-i18n="um.rs485.pill">Chapter 05 of 08</span>
       <h2 data-i18n="um.rs485.title">RS485 Modbus</h2>
@@ -1547,16 +1534,14 @@
     <h3 class="block-h" data-i18n="ico.comm.heading">RS485 &amp; WiFi</h3>
     <ul class="check-list">
       <li data-i18n="ico.comm.rs485"><strong>RS485 Modbus</strong> — A/B ports behind the LCD panel, next to GND/+5V/TX/RX. <strong>9600 bps</strong>. Standard Modbus RTU register map for BMS, HMI, PLC.</li>
-      <li data-i18n="ico.comm.wifi"><strong>WiFi via Tuya Smart app</strong> — phone on 2.4 GHz WiFi (not 5 GHz). Hold the fan-speed button on the panel until the WiFi indicator flashes, then add the device from the app.</li>
-      <li data-i18n="ico.comm.status"><strong>Status indicator LED + emergency stop button</strong> on the rear of the unit, next to the power cord outlet — for local diagnostics and a quick local kill switch.</li>
     </ul>
     <img src="images/manual/dba.rs485.png" alt="RS485 Modbus wiring diagram" class="panel-fig" loading="lazy" />
     <a href="images/installation/DBA-UTC-GEC.RS485.Protocol.pdf" class="dl-link" download data-i18n="rs485.dl">Download RS485 Protocol PDF</a>
   </div>
   <nav class="step-footer">
-    <a href="#manual/maintenance" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
-    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="ts.title">Troubleshooting</span></div>
-    <a href="#manual/troubleshooting" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a href="#manual/app" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="mn.title">Maintenance</span></div>
+    <a href="#manual/maintenance" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
 </section>
 
@@ -1694,7 +1679,7 @@
     </div>
   </div>
   <nav class="step-footer">
-    <a href="#manual/rs485" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
+    <a href="#manual/maintenance" class="sf-back" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></a>
     <div class="sf-meta"><span data-i18n="sf.next">Next</span> · <span data-i18n="um.safety.title">Safety notes</span></div>
     <a href="#manual/safety" class="sf-next"><span data-i18n="sf.go">Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </nav>
