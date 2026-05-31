@@ -666,6 +666,7 @@
      ============================================================ */
   const PAGES = {
     'home':                    { titleKey:null,                              titleEN:'dba<em>diy</em>',     crumb:'',                       parent:null },
+    'cases':                   { titleKey:'cases.title',                     titleEN:'Project Showcase',    crumb:'',                       parent:'home' },
     'overview/specs':          { titleKey:'ov.specs.title',                  titleEN:'Technical specs',     crumb:'',                       parent:'home' },
     'install':                 { titleKey:'install.title',                   titleEN:'Installation',        crumb:'',                       parent:'home' },
     'install/parts':           { titleKey:'um.overview.title',               titleEN:'Parts & accessories', crumbKey:'sf.crumb.1', crumbEN:'Install · 01 / 08', parent:'install' },
