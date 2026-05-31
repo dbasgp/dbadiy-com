@@ -1778,6 +1778,7 @@ img,svg{display:block;max-width:100%;}
   flex-direction:column;
   gap:10px;
   margin-bottom:18px;
+  max-width:460px;
 }
 body:not(.lang-zh) .ref-pdf-cn{ display:none; }
 .lang-zh .ref-pdf-en{ display:none; }
