@@ -332,6 +332,8 @@
     'manual.title':              '操作說明',
     'manual.desc':               '八章內容，由淺入深 — LCD控制面板、操作、App、保養、RS485、故障排除、注意事項、保修。',
     'manual.start':              '從第 1 章開始',
+    'manual.dl.label':           '操作說明書',
+    'manual.dl.sub':             '完整 PDF · DBA UTC',
     'manual.step.safety.t':      '注意事項',
     'manual.step.safety.d':      '接地、雪種、R32 注意事項。',
     'manual.step.ctrl.t':        'LCD控制面板',
