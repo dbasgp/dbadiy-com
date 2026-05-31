@@ -803,7 +803,16 @@ img,svg{display:block;max-width:100%;}
   grid-template-columns:repeat(4, 1fr);
   gap:6px;
   margin:6px 0 22px;
-  padding:0;
+  padding:6px 0;
+  position:sticky;
+  top:calc(var(--hdr-h) + var(--safe-top));
+  z-index:20;
+  background:var(--bg);
+  border-bottom:1px solid var(--line);
+  margin-left:-18px;
+  margin-right:-18px;
+  padding-left:18px;
+  padding-right:18px;
 }
 .cap-pin{
   position:relative;
