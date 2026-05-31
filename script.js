@@ -451,6 +451,7 @@
     'um.op.p2':                  '<strong>運行中：</strong>按電源鍵 → 進入待機，按鍵與部份圖示熄滅。',
     'um.op.p3':                  '當環境濕度高於目標濕度，風扇立即運轉，壓縮機 3 秒後啟動。',
     'um.op.mode.heading':        '運作模式',
+    'um.op.mode.intro':          '按模式鍵（M）切換抽濕或通風模式。',
     'um.op.m1':                  '<strong>抽濕模式</strong>（開機預設）— 壓縮機按目標濕度 %RH 循環運作。',
     'um.op.m2':                  '<strong>通風模式</strong> — 只開風扇，壓縮機停止運作。',
     'um.op.fan.heading':         '風速切換',
