@@ -270,6 +270,7 @@
     'ico.comm.heading':          'RS485 Modbus 與 WiFi App',
     'ico.comm.rs485':            '<strong>RS485 Modbus</strong> — A/B 端口位於 LCD 控制面板後方，與 GND/+5V/TX/RX 並排。<strong>9600 bps</strong>。標準 Modbus RTU 暫存器對應，可接入 BMS、HMI 或 PLC。',
     'ico.comm.wifi':             '<strong>手機 App 控制（塗鴉智能 App）</strong> — 手機連接 2.4 GHz WiFi（不可使用 5 GHz）。長按面板上的風速按鈕，直至 WiFi 圖示閃爍，然後於 App 內添加裝置。',
+    'ico.status.heading':        '狀態指示燈及緊急停止',
     'ico.comm.status':           '<strong>狀態指示燈及緊急停止按鈕</strong> — 位於機身後側電源線出線口旁，方便本地查看機器狀態及就地緊急停機。',
     'ico.warn.t':                '切勿對端子 8–13 施加任何電壓。',
     'ico.warn.b':                '端子 8–13 為被動乾接點輸入。任何外部電源（即使只有 5V）都會反饋至主板，燒毀控制器。只可接無電壓的開關、感應探頭或感應線。',
