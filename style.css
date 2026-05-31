@@ -610,8 +610,8 @@ img,svg{display:block;max-width:100%;}
 }
 .marquee-tall{ aspect-ratio: 4 / 3; }
 .marquee-bleed{ margin-left:-18px; margin-right:-18px; border-radius:0; }
-.marquee-video{ aspect-ratio:unset; overflow:hidden; }
-.marquee-video video{ width:100%; height:auto; display:block; }
+.marquee-video{ aspect-ratio:16/9; overflow:hidden; }
+.marquee-video video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 @media(min-width:560px){
   .marquee{ aspect-ratio: 12 / 5; }
   .marquee-tall{ aspect-ratio: 16 / 7; }
