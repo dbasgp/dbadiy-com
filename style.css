@@ -824,7 +824,7 @@ img,svg{display:block;max-width:100%;}
   -webkit-backdrop-filter:blur(8px);
 }
 .lang-zh .mcard-sku{ letter-spacing:0.04em; }
-.mbadge-icon{ height:32px; width:auto; object-fit:contain; display:block; }
+.mbadge-icon{ height:48px; width:auto; object-fit:contain; display:block; }
 .mcard-big{
   display:flex;
   align-items:flex-end;
