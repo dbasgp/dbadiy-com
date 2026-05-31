@@ -857,7 +857,7 @@
      Haptic + edge swipe back
      ============================================================ */
   document.addEventListener('click', (e) => {
-    const tappable = e.target.closest('.tile, .step-card, .official-link, .contact-act, .sf-next, .sf-back, .next-link, #back-btn, .lang-toggle, .sd');
+    const tappable = e.target.closest('.tile, .step-card, .official-link, .contact-act, .contact-row, .sf-next, .sf-back, .next-link, #back-btn, .lang-toggle, .sd');
     if (!tappable) return;
     if (navigator.vibrate) navigator.vibrate(8);
   }, { passive: true });
