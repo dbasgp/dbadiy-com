@@ -1432,13 +1432,15 @@ img,svg{display:block;max-width:100%;}
 }
 .check-list li.check-with-fig > img{
   display:block;
-  width:100%;
+  width:calc(100% + 50px + 14px);
+  margin-left:-50px;
+  margin-right:-14px;
+  margin-bottom:-14px;
   height:auto;
-  max-height:280px;
+  max-height:320px;
   object-fit:contain;
-  margin:4px auto 0;
-  padding:10px 0 4px;
   border-top:1px dashed var(--line-2);
+  border-radius:0 0 var(--radius-sm) var(--radius-sm);
 }
 
 /* Numbered step list */
