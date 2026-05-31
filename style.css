@@ -385,6 +385,10 @@ img,svg{display:block;max-width:100%;}
   display:block;
   filter:drop-shadow(0 14px 22px rgba(15, 23, 42, 0.22));
 }
+.tile-feature-alt .tile-feature-photo img{
+  max-width:115%;
+  max-height:115%;
+}
 .tile-tag{
   align-self:flex-start;
   font-size:11px;
