@@ -268,7 +268,7 @@
     'ico.term.intro':            '控制盒位於機器出風口左側。<strong>端子 1–7</strong> 為溫濕度感應器與控制面板的低壓訊號。<strong>端子 8–13 為被動乾接點輸入</strong> — 切勿對任何端子施加外部電壓，否則會對主板造成損壞。',
     'ico.t1.t':                  '溫濕度感應器',
     'ico.t1.d':                  '<strong>GND</strong> · <strong>+5V</strong> · <strong>DATA</strong>。溫濕度感應器配備 5 米信號線，亦可使用其他多芯屏蔽信號線，建議長度不超過 20 米。',
-    'ico.t2.t':                  '有線控制盒',
+    'ico.t2.t':                  'LCD控制面板',
     'ico.t2.d':                  '<strong>RX</strong> · <strong>TX</strong> · <strong>+5V</strong> · <strong>GND</strong>。控制面板配備 8 米信號線，亦可使用其他多芯屏蔽信號線，建議長度不超過 20 米。',
     'ico.t3.t':                  '遠端開關（乾接點）',
     'ico.t3.d':                  '以任何 <strong>無電壓</strong> 的開關短接兩個端子 — 第三方開關控制。<br><strong>NO</strong>（預設）：短接 = 開機、開路 = 關機。<br><strong>NC</strong>：短接 = 關機、開路 = 開機（可於控制面板高級參數上切換，操作詳情請諮詢 DBA 客服）。',
@@ -326,7 +326,7 @@
 
 
     /* Home / Manual tile */
-    'home.manual.tag':           '7 章 · 官方手冊',
+    'home.manual.tag':           '8 章 · 官方手冊',
     'home.manual.title':         '操作說明',
     'home.manual.desc':          '安全、產品結構、控制面板、操作、應用程式配對、保養、保修。',
     'home.manual.go':            '開啟手冊',
@@ -340,11 +340,11 @@
     /* Manual hub */
     'manual.eyebrow':            '出自官方 DBA UTC 產品手冊',
     'manual.title':              '操作說明',
-    'manual.desc':               '七章內容，由淺入深 — 控制面板、操作、App、保養、故障排除、注意事項、保修。',
+    'manual.desc':               '八章內容，由淺入深 — LCD控制面板、操作、App、保養、RS485、故障排除、注意事項、保修。',
     'manual.start':              '從第 1 章開始',
     'manual.step.safety.t':      '注意事項',
     'manual.step.safety.d':      '接地、冷媒、R32 注意事項。',
-    'manual.step.ctrl.t':        '控制面板',
+    'manual.step.ctrl.t':        'LCD控制面板',
     'manual.step.ctrl.d':        '圖示與按鍵說明。',
     'manual.step.op.t':          '操作',
     'manual.step.op.d':          '模式、定時、除霜、風速。',
@@ -352,6 +352,8 @@
     'manual.step.app.d':         'Tuya Smart · 2.4 GHz WiFi。',
     'manual.step.maint.t':       '日常保養',
     'manual.step.maint.d':       '濾網、蒸發器、排水 — 三個週期。',
+    'manual.step.rs485.t':       'RS485 Modbus',
+    'manual.step.rs485.d':       'RS485 接線、Modbus RTU 通訊協議。',
     'manual.step.ts.t':          '故障排除',
     'manual.step.ts.d':          '症狀、故障代碼、何時致電維修。',
     'manual.step.war.t':         '保修',
@@ -359,14 +361,15 @@
 
     /* Manual / Safety */
     'ipt.pill':                  '步驟 01 / 08',
-    'mf.crumb.1':                '操作說明 · 01 / 07',
-    'mf.crumb.2':                '操作說明 · 02 / 07',
-    'mf.crumb.3':                '操作說明 · 03 / 07',
-    'mf.crumb.4':                '操作說明 · 04 / 07',
-    'mf.crumb.5':                '操作說明 · 05 / 07',
-    'mf.crumb.6':                '操作說明 · 06 / 07',
-    'mf.crumb.7':                '操作說明 · 07 / 07',
-    'um.safety.pill':            '第 06 章 / 07',
+    'mf.crumb.1':                '操作說明 · 01 / 08',
+    'mf.crumb.2':                '操作說明 · 02 / 08',
+    'mf.crumb.3':                '操作說明 · 03 / 08',
+    'mf.crumb.4':                '操作說明 · 04 / 08',
+    'mf.crumb.5':                '操作說明 · 05 / 08',
+    'mf.crumb.6':                '操作說明 · 06 / 08',
+    'mf.crumb.7':                '操作說明 · 07 / 08',
+    'mf.crumb.8':                '操作說明 · 08 / 08',
+    'um.safety.pill':            '第 07 章 / 08',
     'um.safety.title':           '注意事項',
     'um.safety.desc':            '請務必仔細閱讀並遵守以下安全指示。操作不當可能導致觸電、火災或設備損壞。',
     'um.safety.chip.1':          '220-240V 接地',
@@ -411,8 +414,8 @@
     'um.overview.x6':            '<strong>電源線出線口</strong> — 位於機身側板，旁設緊急停止按鈕與狀態指示燈。',
 
     /* Manual / Controls */
-    'um.controls.pill':          '第 01 章 / 07',
-    'um.controls.title':         '控制面板',
+    'um.controls.pill':          '第 01 章 / 08',
+    'um.controls.title':         'LCD控制面板',
     'um.controls.desc':          '線控面板能完成所有操作 — 開關、模式、風速、目標濕度、時鐘、定時、UV。畫面上 11 個圖示顯示機器狀態。',
     'um.controls.icons.heading': '顯示圖示',
     'um.ic.1.t':                 'WiFi 連線',
@@ -447,7 +450,7 @@
     'um.controls.note.b':        '每當啟動條件成立，風扇立即運轉，壓縮機於 3 秒後啟動。屬設計延遲，並非故障。',
 
     /* Manual / Operation */
-    'um.operation.pill':         '第 02 章 / 07',
+    'um.operation.pill':         '第 02 章 / 08',
     'um.operation.title':        '操作',
     'um.operation.desc':         '模式、定時、風速、除霜、水泵循環 — 日常運行的所有細節。',
     'um.op.power.heading':       '開機 / 關機',
@@ -478,7 +481,7 @@
     'um.op.warn.b':              '壓縮機停止後，需待 3 分鐘才會自動重啟。此延遲保護壓縮機 — 請勿以斷電方式「強制」啟動。',
 
     /* Manual / App */
-    'um.app.pill':               '第 03 章 / 07',
+    'um.app.pill':               '第 03 章 / 08',
     'um.app.title':              'App 配對',
     'um.app.desc':               '連接 Tuya Smart 應用程式以遠端控制。手機需連接 2.4 GHz WiFi — 5 GHz 無法配對。',
     'um.app.steps.heading':      '配對步驟',
@@ -491,8 +494,11 @@
     'um.app.note.b':             'App 功能依賴網絡狀況與 Tuya 雲端服務。如因您的網絡、路由器或 Tuya 平台中斷而影響使用，生產商不承擔責任。',
 
     /* Manual / Maintenance */
-    'um.maint.pill':             '第 04 章 / 07',
-    'um.ts.pill':                '第 05 章 / 07',
+    'um.maint.pill':             '第 04 章 / 08',
+    'um.rs485.pill':             '第 05 章 / 08',
+    'um.rs485.title':            'RS485 Modbus 連接',
+    'um.rs485.desc':             'RS485 Modbus 通訊協議規格，適用於接入 BMS、HMI 或 PLC。',
+    'um.ts.pill':                '第 06 章 / 08',
     'um.maint.title':            '保養與故障代碼',
     'um.maint.desc':             '大部份「壞了」的機器，其實是濾網髒了或排水阻塞。定期保養可使機器長期維持滿效。',
     'um.maint.filter.heading':   '清洗濾網',
@@ -526,7 +532,7 @@
     'um.maint.warn.b':           '如清洗隔塵網及檢查排水無法解決問題，請聯絡DBA售後服務。',
 
     /* Manual / Warranty */
-    'um.warranty.pill':          '第 07 章 / 07',
+    'um.warranty.pill':          '第 08 章 / 08',
     'um.warranty.title':         '有限保修',
     'um.warranty.desc':          '由 2024 年 1 月 1 日起生效。以下為原廠保修卡的摘要 — 申索時請出示正本保修卡。',
     'um.warranty.cover.heading': '保修範圍',
@@ -669,13 +675,14 @@
     'install/power':           { titleKey:'ipw.title',                       titleEN:'Power',               crumbKey:'sf.crumb.7', crumbEN:'Install · 07 / 08', parent:'install' },
     'install/commissioning':   { titleKey:'icm.title',                       titleEN:'Acceptance test',     crumbKey:'sf.crumb.8', crumbEN:'Install · 08 / 08', parent:'install' },
     'manual':                  { titleKey:'manual.title',                    titleEN:'User Manual',         crumb:'',                       parent:'home' },
-    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'Control panel',       crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 07', parent:'manual' },
-    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 07', parent:'manual' },
-    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 07', parent:'manual' },
-    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 07', parent:'manual' },
-    'manual/troubleshooting':  { titleKey:'ts.title',                        titleEN:'Troubleshooting',     crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 07', parent:'manual' },
-    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety notes',        crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 07', parent:'manual' },
-    'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.7', crumbEN:'Manual · 07 / 07', parent:'manual' },
+    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'LCD control panel',   crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 08', parent:'manual' },
+    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 08', parent:'manual' },
+    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 08', parent:'manual' },
+    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 08', parent:'manual' },
+    'manual/rs485':            { titleKey:'um.rs485.title',                  titleEN:'RS485 Modbus',        crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 08', parent:'manual' },
+    'manual/troubleshooting':  { titleKey:'ts.title',                        titleEN:'Troubleshooting',     crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 08', parent:'manual' },
+    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety notes',        crumbKey:'mf.crumb.7', crumbEN:'Manual · 07 / 08', parent:'manual' },
+    'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.8', crumbEN:'Manual · 08 / 08', parent:'manual' },
   };
 
   /* ============================================================
@@ -755,7 +762,7 @@
      ============================================================ */
   const STEPPER_SETS = {
     install: ['install/parts','install/preparation','install/hanging','install/drainage','install/ducting','install/controls','install/power','install/commissioning'],
-    manual:  ['manual/controls','manual/operation','manual/app','manual/maintenance','manual/troubleshooting','manual/safety','manual/warranty'],
+    manual:  ['manual/controls','manual/operation','manual/app','manual/maintenance','manual/rs485','manual/troubleshooting','manual/safety','manual/warranty'],
   };
 
   function buildSteppers(){
