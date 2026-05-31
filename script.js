@@ -298,7 +298,7 @@
     'ipw.chip.2':                '3 × 2.5 mm²',
     'ipw.chip.3':                '16 A 專用斷路器',
     'ipw.wiring.heading':        '配線要求',
-    'ipw.w1':                    '<strong>電線</strong> — 由配電箱拉至機身端子排，最少 3 × 2.5 mm²。',
+    'ipw.w1':                    '<strong>電線</strong> — 由配電箱拉至機身，最少 3 × 2.5 mm²。',
     'ipw.w2':                    '<strong>斷路器</strong> — 專用 16 A C 型 MCB。如當地法例要求，可改用 RCBO。',
     'ipw.w4':                    '<strong>隔離開關</strong> — 裝於檢修口附近，方便日後維修時就地切斷電源。',
     'ipw.warn.t':                '機器帶電時切勿打開機殼。',
