@@ -652,6 +652,7 @@
     'ct.hk.org':                 '迪比亞環保科技(香港)有限公司',
     'ct.hk.addr':                '香港葵涌工業街 10–14 號華發工業大廈後座 4 樓 04 室',
     'ct.note':                   '一般於一個工作日內回覆。住宅與工業項目皆歡迎洽詢。',
+    'disc.text':                 '本網頁所載資料僅供參考，如與實際產品有差異，一切以實物為準。本公司保留最終解釋權。',
   };
 
   /* Crumb labels for install sub-screens */
@@ -886,6 +887,13 @@
      ============================================================ */
   function boot(){
     buildSteppers();
+    document.querySelectorAll('.screen-pad').forEach(pad => {
+      const d = document.createElement('p');
+      d.className = 'page-disc';
+      d.setAttribute('data-i18n', 'disc.text');
+      d.textContent = 'Information on this page is for reference only. In case of any discrepancy with the actual product, the physical product shall prevail. The company reserves the right of final interpretation.';
+      pad.appendChild(d);
+    });
     applyLang(LANG);
     show(getHashId(), 0);
   }

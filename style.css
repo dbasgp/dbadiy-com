@@ -1403,6 +1403,15 @@ img,svg{display:block;max-width:100%;}
   line-height:1.25;
 }
 .prose{font-size:14.5px; color:var(--ink-2);}
+.page-disc{
+  font-size:10.5px;
+  color:var(--ink-3);
+  line-height:1.55;
+  margin-top:32px;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  text-align:center;
+}
 
 /* ============== BENCH CARD (5-min test) ============== */
 .bench-card{
