@@ -336,9 +336,9 @@
     /* Manual hub */
     'manual.eyebrow':            '出自官方 DBA UTC 產品手冊',
     'manual.title':              '操作說明',
-    'manual.desc':               '七章內容，由淺入深 — 安全、控制面板、操作、App、保養、故障排除、保修。',
+    'manual.desc':               '七章內容，由淺入深 — 控制面板、操作、App、保養、故障排除、注意事項、保修。',
     'manual.start':              '從第 1 章開始',
-    'manual.step.safety.t':      '安全',
+    'manual.step.safety.t':      '注意事項',
     'manual.step.safety.d':      '接地、冷媒、R32 注意事項。',
     'manual.step.ctrl.t':        '控制面板',
     'manual.step.ctrl.d':        '圖示與按鍵說明。',
@@ -362,8 +362,8 @@
     'mf.crumb.5':                '操作說明 · 05 / 07',
     'mf.crumb.6':                '操作說明 · 06 / 07',
     'mf.crumb.7':                '操作說明 · 07 / 07',
-    'um.safety.pill':            '第 01 章 / 07',
-    'um.safety.title':           '安全須知',
+    'um.safety.pill':            '第 06 章 / 07',
+    'um.safety.title':           '注意事項',
     'um.safety.desc':            '請務必仔細閱讀並遵守以下安全指示。操作不當可能導致觸電、火災或設備損壞。',
     'um.safety.chip.1':          '220-240V 接地',
     'um.safety.chip.2':          '禁用拖板',
@@ -407,7 +407,7 @@
     'um.overview.x6':            '<strong>電源線出口</strong> — 機身背部，旁設緊急停止按鈕與狀態指示燈。',
 
     /* Manual / Controls */
-    'um.controls.pill':          '第 02 章 / 07',
+    'um.controls.pill':          '第 01 章 / 07',
     'um.controls.title':         '控制面板',
     'um.controls.desc':          '線控面板能完成所有操作 — 開關、模式、風速、目標濕度、時鐘、定時、UV。畫面上 11 個圖示顯示機器狀態。',
     'um.controls.icons.heading': '顯示圖示',
@@ -443,7 +443,7 @@
     'um.controls.note.b':        '每當啟動條件成立，風扇立即運轉，壓縮機於 3 秒後啟動。屬設計延遲，並非故障。',
 
     /* Manual / Operation */
-    'um.operation.pill':         '第 03 章 / 07',
+    'um.operation.pill':         '第 02 章 / 07',
     'um.operation.title':        '操作',
     'um.operation.desc':         '模式、定時、風速、除霜、水泵循環 — 日常運行的所有細節。',
     'um.op.power.heading':       '開機 / 關機',
@@ -474,7 +474,7 @@
     'um.op.warn.b':              '壓縮機停止後，需待 3 分鐘才會自動重啟。此延遲保護壓縮機 — 請勿以斷電方式「強制」啟動。',
 
     /* Manual / App */
-    'um.app.pill':               '第 04 章 / 07',
+    'um.app.pill':               '第 03 章 / 07',
     'um.app.title':              'App 配對',
     'um.app.desc':               '連接 Tuya Smart 應用程式以遠端控制。手機需連接 2.4 GHz WiFi — 5 GHz 無法配對。',
     'um.app.steps.heading':      '配對步驟',
@@ -487,8 +487,8 @@
     'um.app.note.b':             'App 功能依賴網絡狀況與 Tuya 雲端服務。如因您的網絡、路由器或 Tuya 平台中斷而影響使用，生產商不承擔責任。',
 
     /* Manual / Maintenance */
-    'um.maint.pill':             '第 05 章 / 07',
-    'um.ts.pill':                '第 06 章 / 07',
+    'um.maint.pill':             '第 04 章 / 07',
+    'um.ts.pill':                '第 05 章 / 07',
     'um.maint.title':            '保養與故障代碼',
     'um.maint.desc':             '大部份「壞了」的機器，其實是濾網髒了或排水阻塞。定期保養可使機器長期維持滿效。',
     'um.maint.filter.heading':   '清洗濾網',
@@ -665,12 +665,12 @@
     'install/power':           { titleKey:'ipw.title',                       titleEN:'Power',               crumbKey:'sf.crumb.7', crumbEN:'Install · 07 / 08', parent:'install' },
     'install/commissioning':   { titleKey:'icm.title',                       titleEN:'Acceptance test',     crumbKey:'sf.crumb.8', crumbEN:'Install · 08 / 08', parent:'install' },
     'manual':                  { titleKey:'manual.title',                    titleEN:'User Manual',         crumb:'',                       parent:'home' },
-    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety',              crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 07', parent:'manual' },
-    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'Control panel',       crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 07', parent:'manual' },
-    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 07', parent:'manual' },
-    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 07', parent:'manual' },
-    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 07', parent:'manual' },
-    'manual/troubleshooting':  { titleKey:'ts.title',                        titleEN:'Troubleshooting',     crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 07', parent:'manual' },
+    'manual/controls':         { titleKey:'um.controls.title',               titleEN:'Control panel',       crumbKey:'mf.crumb.1', crumbEN:'Manual · 01 / 07', parent:'manual' },
+    'manual/operation':        { titleKey:'um.operation.title',              titleEN:'Operation',           crumbKey:'mf.crumb.2', crumbEN:'Manual · 02 / 07', parent:'manual' },
+    'manual/app':              { titleKey:'um.app.title',                    titleEN:'App pairing',         crumbKey:'mf.crumb.3', crumbEN:'Manual · 03 / 07', parent:'manual' },
+    'manual/maintenance':      { titleKey:'mn.title',                        titleEN:'Routine maintenance', crumbKey:'mf.crumb.4', crumbEN:'Manual · 04 / 07', parent:'manual' },
+    'manual/troubleshooting':  { titleKey:'ts.title',                        titleEN:'Troubleshooting',     crumbKey:'mf.crumb.5', crumbEN:'Manual · 05 / 07', parent:'manual' },
+    'manual/safety':           { titleKey:'um.safety.title',                 titleEN:'Safety notes',        crumbKey:'mf.crumb.6', crumbEN:'Manual · 06 / 07', parent:'manual' },
     'manual/warranty':         { titleKey:'um.warranty.title',               titleEN:'Warranty',            crumbKey:'mf.crumb.7', crumbEN:'Manual · 07 / 07', parent:'manual' },
   };
 
@@ -751,7 +751,7 @@
      ============================================================ */
   const STEPPER_SETS = {
     install: ['install/parts','install/preparation','install/hanging','install/drainage','install/ducting','install/controls','install/power','install/commissioning'],
-    manual:  ['manual/safety','manual/controls','manual/operation','manual/app','manual/maintenance','manual/troubleshooting','manual/warranty'],
+    manual:  ['manual/controls','manual/operation','manual/app','manual/maintenance','manual/troubleshooting','manual/safety','manual/warranty'],
   };
 
   function buildSteppers(){
