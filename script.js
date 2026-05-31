@@ -837,7 +837,10 @@
   }
 
   backBtn.addEventListener('click', goBack);
-  window.addEventListener('hashchange', () => navigate(getHashId()));
+  window.addEventListener('hashchange', () => {
+    const raw = (location.hash || '').replace(/^#/, '');
+    if (PAGES[raw]) navigate(raw);
+  });
 
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
@@ -845,7 +848,11 @@
     const href = a.getAttribute('href');
     if (!href || href === '#') return;
     const id = href.slice(1);
-    if (!PAGES[id]) return;
+    if (!PAGES[id]) {
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior:'smooth' }); }
+      return;
+    }
     if (id === currentId) { e.preventDefault(); return; }
     e.preventDefault();
     if (location.hash === href) navigate(id);
