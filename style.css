@@ -1587,6 +1587,9 @@ img,svg{display:block;max-width:100%;}
   flex-direction:column;
   gap:12px;
   overflow:hidden;
+  background:#fff;
+  border-color:var(--line);
+  box-shadow:var(--shadow-sm);
 }
 .check-list li.check-with-fig > span{
   display:block;
