@@ -623,11 +623,8 @@ img,svg{display:block;max-width:100%;}
   margin-bottom:22px;
 }
 .catfeat{
-  display:grid;
-  grid-template-columns:96px 1fr;
-  gap:14px;
-  align-items:center;
-  padding:10px 14px 10px 10px;
+  display:flex;
+  flex-direction:column;
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:18px;
@@ -635,10 +632,11 @@ img,svg{display:block;max-width:100%;}
   overflow:hidden;
 }
 .catfeat img{
-  grid-row:1 / span 2;
-  width:96px; height:96px;
+  width:100%;
+  height:180px;
   object-fit:cover;
-  border-radius:12px;
+  object-position:center;
+  display:block;
   background:#0b1220;
 }
 .catfeat h4{
@@ -646,11 +644,13 @@ img,svg{display:block;max-width:100%;}
   font-weight:700;
   letter-spacing:-0.005em;
   color:var(--ink);
+  padding:12px 14px 4px;
 }
 .catfeat p{
   font-size:12.5px;
   color:var(--ink-3);
   line-height:1.45;
+  padding:0 14px 14px;
 }
 @media(min-width:560px){
   .cat-deck{ grid-template-columns:1fr 1fr; gap:14px; }
