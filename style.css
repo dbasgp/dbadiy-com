@@ -1564,6 +1564,12 @@ img,svg{display:block;max-width:100%;}
   color:var(--ink-3);
   text-align:center;
 }
+.fig-lifestyle img{
+  object-fit:cover;
+  height:280px;
+  max-height:280px;
+  object-position:center 75%;
+}
 
 /* ============== PHOTO GALLERY (swipe strip) ============== */
 .photo-gallery{
