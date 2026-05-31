@@ -325,7 +325,7 @@
     /* Home / Cases tile */
     'home.cases.tag':            '實際工程 · 案例分享',
     'home.cases.title':          '工程案例',
-    'home.cases.desc':           '住宅、商業、儲物、酒窖 — 完工項目的相片與簡要說明。',
+    'home.cases.desc':           '住宅、商業、倉庫、工廠 — 項目施工及完工相片。',
     'home.cases.go':             '查看案例',
 
     /* Manual hub */
