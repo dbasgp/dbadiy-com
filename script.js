@@ -453,6 +453,8 @@
     'um.op.mode.heading':        '運作模式',
     'um.op.m1':                  '<strong>抽濕模式</strong>（開機預設）— 壓縮機按目標濕度 %RH 循環運作。',
     'um.op.m2':                  '<strong>通風模式</strong> — 只開風扇，壓縮機停止運作。',
+    'um.op.fan.heading':         '風速切換',
+    'um.op.fan.body':            '開機後風扇預設高速。按風速鍵可在高速與低速之間切換，面板風速指示條顯示當前風速。',
     'um.op.clock.heading':       '時鐘與定時',
     'um.op.c1':                  '<strong>長按模式鍵（M）3 秒</strong>進入時鐘設定。',
     'um.op.c2':                  '<strong>▲ / ▼ 調整小時，</strong>按 M 鍵移至分鐘。',
