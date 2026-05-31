@@ -14,7 +14,7 @@
     'home.feature.desc':         '主機及跟機配件、準備、吊裝、排水、風管、控制、電源、驗收測試。',
     'home.feature.go':           '開始查看',
     'home.tile.models.title':    '產品概覽',
-    'home.tile.models.desc':     'UTC20 · 55 · 68 · 120 技術參數',
+    'home.tile.models.desc':     '技術參數、功能',
     'home.product.tag':          'UTC20 · 55 · 68 · 120',
     'home.product.go':           '查看規格',
     'ov.specs.title':            '產品技術參數',
