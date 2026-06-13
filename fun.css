@@ -1,189 +1,208 @@
 /* ============================================================
-   DBA DIY — "Playful Clay" theme layer over style.css
-   Applies the UI/UX Pro Max recommendation: Claymorphism +
-   playful indigo / energetic orange + Fredoka/Nunito.
-   Goal: make the whole browse feel fun and intuitive.
-   Loaded after style.css; overrides design tokens + key
-   interactive components. Bilingual-safe (zh keeps Noto Sans TC).
+   DBA DIY — "Calm / Apple-like" theme layer over style.css
+   Restrained, premium, monochrome. One subtle accent.
+   Replaces the earlier colourful treatment. Loaded after
+   style.css. Bilingual-safe (zh keeps Noto Sans TC).
    ============================================================ */
 
 :root {
-  /* playful palette */
-  --primary: #4f46e5;          /* indigo brand */
-  --primary-deep: #3730a3;
-  --primary-soft: #eef2ff;
-  --cta: #f97316;              /* energetic orange — actions */
-  --cta-deep: #ea580c;
-  --cta-soft: #ffedd5;
-  --teal: #0d9488;   --teal-deep: #0f766e;  --teal-soft: #ccfbf1;
-  --green: #16a34a;  --green-soft: #dcfce7;
-  --amber: #f59e0b;  --amber-soft: #fef3c7;
-  --violet: #8b5cf6; --violet-soft: #f3e8ff;
-  --red: #ef4444;    --red-soft: #fee2e2;
-  --pink: #ec4899;   --pink-soft: #fce7f3;
+  /* neutral Apple-ish system */
+  --primary: #0071e3;          /* single restrained accent (links/active) */
+  --primary-deep: #0058b0;
+  --primary-soft: #f0f6ff;
+
+  /* fold every loud semantic colour back toward neutral so per-card
+     accents in the HTML stop shouting */
+  --teal: #4b5563;   --teal-deep: #374151;  --teal-soft: #f3f4f6;
+  --green: #4b5563;  --green-soft: #f3f4f6;
+  --amber: #6b7280;  --amber-soft: #f3f4f6;
+  --violet: #4b5563; --violet-soft: #f3f4f6;
+  --pink: #4b5563;   --pink-soft: #f3f4f6;
+  --red: #d1453b;    --red-soft: #fdeceb;
 
   /* surfaces */
-  --bg: #eef1fb;
-  --bg-deep: #e3e7f7;
+  --bg: #fbfbfd;
+  --bg-deep: #f5f5f7;
   --surface: #ffffff;
-  --line: #e6e8f6;
-  --line-2: #d4d8ef;
+  --ink: #1d1d1f;
+  --ink-2: #424245;
+  --ink-3: #6e6e73;
+  --ink-4: #86868b;
+  --line: #e6e6ea;
+  --line-2: #d2d2d7;
 
-  /* chunky clay rounding */
-  --radius-lg: 26px;
-  --radius-md: 18px;
-  --radius-sm: 13px;
+  /* Apple-ish rounding */
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-sm: 11px;
 
-  /* soft, slightly tinted clay shadows */
-  --shadow-sm: 0 2px 6px rgba(79, 70, 229, 0.08), 0 1px 2px rgba(13, 23, 33, 0.05);
-  --shadow-md: 0 8px 22px rgba(79, 70, 229, 0.13), 0 3px 8px rgba(13, 23, 33, 0.06);
-  --shadow-lg: 0 20px 46px rgba(79, 70, 229, 0.18), 0 6px 14px rgba(13, 23, 33, 0.08);
+  /* very subtle, neutral shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 14px 38px rgba(0, 0, 0, 0.10);
 
-  --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-/* ---------- playful, colourful background ---------- */
+/* ---------- clean, quiet canvas (no colour blobs) ---------- */
 body {
-  background:
-    radial-gradient(820px 520px at 100% -120px, rgba(79, 70, 229, 0.12), transparent 60%),
-    radial-gradient(700px 460px at -140px 8%, rgba(249, 115, 22, 0.10), transparent 60%),
-    radial-gradient(760px 520px at 50% 118%, rgba(13, 148, 136, 0.10), transparent 62%),
-    radial-gradient(640px 460px at 110% 60%, rgba(236, 72, 153, 0.07), transparent 60%),
-    var(--bg) !important;
+  background: var(--bg) !important;
 }
 
-/* ---------- friendly typography ---------- */
-html { font-family: 'Nunito', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-h1, h2, h3, h4, h5 { font-family: 'Fredoka', 'Manrope', sans-serif; font-weight: 700; letter-spacing: 0; }
-/* keep Traditional Chinese on its proper face */
+/* ---------- refined system typography ---------- */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Manrope', 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+}
+h1, h2, h3, h4, h5 {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Manrope', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.022em;
+}
 body.lang-zh,
 body.lang-zh h1, body.lang-zh h2, body.lang-zh h3, body.lang-zh h4, body.lang-zh h5 {
-  font-family: 'Noto Sans TC', 'Manrope', sans-serif;
+  font-family: 'Noto Sans TC', -apple-system, sans-serif;
 }
 
-/* ============== HOME TILES (chunky clay) ============== */
+/* ---------- kill every decorative colour wash / animated blob ---------- */
+.tile::before,
+.step-card::before,
+.step-card::after,
+.tile-feature::before,
+.tile-feature::after,
+.tile-feature-alt::before,
+.tile-feature-alt::after,
+.step-hero::before,
+.step-hero::after { display: none !important; }
+
+/* ============== HOME TILES ============== */
 .tile {
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  border: 1.5px solid var(--line);
-  box-shadow: var(--shadow-md), inset 0 2px 0 rgba(255, 255, 255, 0.85);
-  transition: transform 0.28s var(--bounce), box-shadow 0.28s var(--bounce), border-color 0.2s;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.2s;
 }
-.tile::before {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 62%);
-}
-.tile:active { transform: scale(0.96); }
+.tile:active { transform: scale(0.985); }
 @media (hover: hover) {
-  .tile:hover {
-    transform: translateY(-5px);
-    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
-    box-shadow: var(--shadow-lg), inset 0 2px 0 rgba(255, 255, 255, 0.9);
-  }
-  .tile:hover .tile-icon { transform: rotate(-6deg) scale(1.08); }
+  .tile:hover { transform: translateY(-3px); border-color: var(--line-2); box-shadow: var(--shadow-md); }
 }
-
 .tile-icon {
-  width: 48px; height: 48px;
-  border-radius: 16px;
-  background: color-mix(in srgb, var(--accent) 18%, white);
-  box-shadow: inset 0 -3px 0 color-mix(in srgb, var(--accent) 16%, transparent),
-              0 4px 10px color-mix(in srgb, var(--accent) 22%, transparent);
-  transition: transform 0.3s var(--bounce);
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: var(--bg-deep);
+  color: var(--ink);
+  box-shadow: none;
 }
-.tile h3 { font-family: 'Fredoka', 'Manrope', sans-serif; font-size: 18px; font-weight: 600; }
+.tile h3 { font-weight: 600; letter-spacing: -0.02em; }
+.tile p { color: var(--ink-3); }
 
-/* per-tile accents — keep it colourful & varied */
-.tile-grid > .tile:nth-child(6n+1) { --accent: var(--primary); }
-.tile-grid > .tile:nth-child(6n+2) { --accent: var(--teal); }
-.tile-grid > .tile:nth-child(6n+3) { --accent: var(--cta); }
-.tile-grid > .tile:nth-child(6n+4) { --accent: var(--violet); }
-.tile-grid > .tile:nth-child(6n+5) { --accent: var(--green); }
-.tile-grid > .tile:nth-child(6n)   { --accent: var(--pink); }
+/* big colourful feature tiles -> calm light cards */
+.tile-feature,
+.tile-feature-alt,
+.tile-feature-product,
+.tile-feature-cases {
+  background: var(--bg-deep) !important;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.tile-feature h2 { color: var(--ink); }
+.tile-feature p { color: var(--ink-3); }
+.tile-go { color: var(--ink); font-weight: 600; }
+.tile-tag {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  font-weight: 600;
+}
 
-/* ============== STEP-FOOTER NAV (the main CTAs) ============== */
+/* ============== STEP OVERVIEW CARDS ============== */
+.step-card {
+  --accent: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.2s;
+}
+@media (hover: hover) {
+  .step-card:hover { transform: translateY(-3px); border-color: var(--line-2); box-shadow: var(--shadow-md); }
+}
+/* refined, quiet numerals */
+.step-n {
+  color: var(--line-2);
+  opacity: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.step-card h3 { font-weight: 600; color: var(--ink); }
+.step-card p { color: var(--ink-3); }
+.step-card-final {
+  background: var(--bg-deep);
+  border-color: var(--line);
+}
+
+/* ============== CTAs ============== */
+/* primary action = clean black pill (Apple) */
 .sf-next {
-  background: linear-gradient(180deg, var(--cta) 0%, var(--cta-deep) 100%);
+  background: var(--ink);
   color: #fff;
-  box-shadow: 0 6px 0 color-mix(in srgb, var(--cta-deep) 70%, #000),
-              0 10px 20px rgba(249, 115, 22, 0.35);
-  transition: transform 0.18s var(--bounce), box-shadow 0.18s var(--bounce), filter 0.18s;
+  box-shadow: none;
+  transition: transform 0.2s var(--ease), background 0.2s, opacity 0.2s;
 }
-.sf-next:hover { filter: brightness(1.05); }
-.sf-next:active {
-  transform: translateY(4px);
-  box-shadow: 0 2px 0 color-mix(in srgb, var(--cta-deep) 70%, #000),
-              0 4px 10px rgba(249, 115, 22, 0.3);
-}
+.sf-next:hover { background: #000; transform: translateY(-1px); }
+.sf-next:active { transform: translateY(0); opacity: 0.9; }
 .sf-back {
   background: var(--surface);
-  border: 1.5px solid var(--line-2);
-  box-shadow: var(--shadow-sm), inset 0 2px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line-2);
+  color: var(--ink);
+  box-shadow: none;
 }
-.sf-back:active { transform: translateY(2px); }
+.sf-back:active { transform: scale(0.96); }
+
+.next-link { color: var(--primary); font-weight: 600; }
 
 /* ============== CHIPS / PILLS / STEPPER ============== */
 .chip {
+  background: var(--bg-deep);
+  color: var(--ink-2);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--primary-soft);
-  color: var(--primary-deep);
-  border: 1.5px solid color-mix(in srgb, var(--primary) 18%, transparent);
-  font-weight: 700;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  box-shadow: none;
 }
 .step-pill {
-  background: var(--cta-soft);
-  color: var(--cta-deep);
+  background: var(--bg-deep);
+  color: var(--ink-3);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
-.step-n {
-  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-deep) 100%);
-  color: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 0 color-mix(in srgb, var(--primary-deep) 80%, #000),
-              0 6px 14px rgba(79, 70, 229, 0.3);
-}
-.stepper .sd-active { background: var(--cta); }
-.stepper .sd-done { background: var(--primary); }
+.stepper .sd-active { background: var(--ink); transform: none; }
+.stepper .sd-done { background: var(--ink-4); }
 
-/* ============== STEP CARDS / SECTION CARDS ============== */
-.step-card,
+/* ============== HEADER + BACK ============== */
+#app-header { background: rgba(251, 251, 253, 0.8); }
+#back-btn { border-radius: 12px; }
+#back-btn:active { background: var(--bg-deep); }
+
+/* ============== SECTION CARDS ============== */
 .bench-card,
 .warn-card,
+.warn-card-soft,
 .cases-block,
 .ref-pdf-card,
 .tile-contact {
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-}
-.step-card {
-  border: 1.5px solid var(--line);
-  transition: transform 0.25s var(--bounce), box-shadow 0.25s var(--bounce);
-}
-@media (hover: hover) {
-  .step-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
 }
 
-/* ============== HEADER + BACK BUTTON ============== */
-#back-btn { border-radius: 14px; }
-#back-btn:active { background: var(--primary-soft); }
-
-/* next-link & contact CTAs get a friendly accent */
-.next-link { color: var(--cta-deep); font-weight: 700; }
-
-/* ============== MOTION: gentle entrance pop ============== */
-@keyframes fun-pop {
-  0% { transform: scale(0.96); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .tile { animation: fun-pop 0.4s var(--bounce) both; }
-  .tile-grid > .tile:nth-child(2) { animation-delay: 0.04s; }
-  .tile-grid > .tile:nth-child(3) { animation-delay: 0.08s; }
-  .tile-grid > .tile:nth-child(4) { animation-delay: 0.12s; }
-  .tile-grid > .tile:nth-child(5) { animation-delay: 0.16s; }
-  .tile-grid > .tile:nth-child(6) { animation-delay: 0.20s; }
-}
-
+/* ============== MOTION ============== */
 @media (prefers-reduced-motion: reduce) {
-  .tile, .tile-icon, .sf-next, .sf-back, .step-card { transition: none; animation: none; }
+  .tile, .step-card, .sf-next, .sf-back { transition: none; }
 }
