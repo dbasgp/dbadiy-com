@@ -502,12 +502,7 @@ img,svg{display:block;max-width:100%;}
 .tile-feature-knowledge p{ color:#6b21a8; }
 .tile-feature-knowledge .tile-go{ color:#3b0764; }
 .tile-feature-knowledge .tile-feature-photo img{
-  object-fit:cover;
-  max-width:88%;
-  max-height:82%;
-  border-radius:14px;
-  filter:none;
-  box-shadow:0 14px 24px rgba(59,7,100,0.22);
+  filter:drop-shadow(0 12px 20px rgba(59,7,100,0.28));
 }
 
 /* ---- Contact tiles ---- */
