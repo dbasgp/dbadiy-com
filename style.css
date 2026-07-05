@@ -502,6 +502,8 @@ img,svg{display:block;max-width:100%;}
 .tile-feature-knowledge p{ color:#6b21a8; }
 .tile-feature-knowledge .tile-go{ color:#3b0764; }
 .tile-feature-knowledge .tile-feature-photo img{
+  max-width:106%;
+  max-height:106%;
   filter:drop-shadow(0 12px 20px rgba(59,7,100,0.28));
 }
 
