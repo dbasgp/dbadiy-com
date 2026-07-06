@@ -28,7 +28,7 @@
     'models.eyebrow':            '四種尺寸，同一輕薄機身',
     'models.title':              'Ultra Thin 超薄系列',
     'models.utc20.desc':         '單一房間或工作室規格。R410A 雪種，單進風口。',
-    'models.utc55.desc':         '介於 UTC20 與 UTC68 之間的中型款。採用 R32 雪種（輕度可燃）。',
+    'models.utc55.desc':         '介於 UTC20 與 UTC68 之間的中型款。採用歐盟環保標準R32雪種。',
     'models.utc55.refr':         'R32 · 0.3 kg（輕度可燃）',
     'models.utc68.tag':          'DBA-UTC68 · 熱銷',
     'models.utc68.desc':         '全屋抽濕首選。R410A 雪種，單進風口。',
