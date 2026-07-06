@@ -72,7 +72,7 @@
     'models.share.wifi.d':       '塗鴉智能 App · BMS / PLC 經 RS485 通訊 9600 bps。',
     'models.share.dry.t':        '乾接點開關機',
     'models.share.dry.d':        '以無電壓開關遙距開關機，可接 BMS 聯動或消防停機。',
-    'models.share.leak.t':       '漏水感應輸入',
+    'models.share.leak.t':       '漏水感應信號輸入',
     'models.share.leak.d':       '可接駁漏水感應線，偵測到水份即自動停機。',
     'models.share.cert.t':       'CE · CB · RoHS',
     'models.share.cert.d':       '全系列具多區國際認證。',
