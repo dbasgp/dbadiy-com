@@ -81,7 +81,7 @@
     'models.catfeat.uv.t':       'UV-C殺菌燈',
     'models.catfeat.uv.d':       '有效殺滅99.9%細菌和病毒',
     'models.catfeat.lcd.t':      '濕度隨心所控',
-    'models.catfeat.lcd.d':      '配備LCD屏，手機APP，智能家居',
+    'models.catfeat.lcd.d':      '配備LCD屏，手機Tuya應用程式，RS485 Modbus連接智能家居',
     'models.catfeat.pump.t':     '水泵自動排水',
     'models.catfeat.pump.d':     '排水泵揚程1.8米',
     'models.catfeat.motor.t':    '全金屬電機',
