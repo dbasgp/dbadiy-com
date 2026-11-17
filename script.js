@@ -15,7 +15,7 @@
     'home.feature.go':           '開始查看',
     'home.tile.models.title':    '產品概覽',
     'home.tile.models.desc':     '技術參數、功能',
-    'home.product.tag':          'UTC20 · 55 · 68 · 120',
+    'home.product.tag':          'UTC22 · 55 · 68 · 120',
     'home.product.go':           '查看規格',
     'ov.specs.title':            '產品技術參數',
     'home.official.eyebrow':     '官方網站',
@@ -25,10 +25,22 @@
     'home.foot.note':            '教學參考，並非工程認證。',
 
     /* Models */
-    'models.eyebrow':            '四種尺寸，同一輕薄機身',
+    'models.eyebrow':            '五款型號，同一輕薄機身',
     'models.title':              'Ultra Thin 超薄系列',
-    'models.utc20.desc':         '單一房間或工作室規格。R410A 雪種，單進風口。',
-    'models.utc55.desc':         '介於 UTC20 與 UTC68 之間的中型款。採用歐盟環保標準R32雪種。',
+    'models.utc20.desc':         '單一房間或工作室規格。R134a 雪種，單進風口。現已由 UTC22 接替。',
+    'models.utc22.desc':         '單一房間或工作室規格。UTC20 的接替型號，採用 R290 環保雪種，運行噪音降至 37 分貝。',
+    'models.utc22.energy':       '香港一級能源標籤',
+    'models.utc22.refr':         'R290 · 0.1 kg（可燃，A3）',
+    'models.utc22.certs':        '香港一級能源標籤',
+    'install.layout.cap':        '典型天花隱藏式安裝，配合回風及送風風管。',
+    'gate.title':                '請輸入密碼',
+    'gate.desc':                 '安裝指南及使用手冊只供 DBA 客戶及安裝師傅使用。請輸入密碼以繼續。',
+    'gate.go':                   '解鎖',
+    'gate.cancel':               '取消',
+    'gate.help':                 '未有密碼？請 WhatsApp DBA：+852 5488 0850。',
+    'gate.err':                  '密碼不正確，請再試一次。',
+    'models.cat.lbl':            '產品目錄 PDF',
+    'models.utc55.desc':         '介於 UTC22 與 UTC68 之間的中型款。採用歐盟環保標準R32雪種。',
     'models.utc55.refr':         'R32 · 0.3 kg（輕度可燃）',
     'models.utc68.tag':          'DBA-UTC68 · 熱銷',
     'models.utc68.desc':         '全屋抽濕首選。R410A 雪種，單進風口。',
@@ -48,7 +60,7 @@
     'models.spec.refrigerant':   '雪種',
     'models.spec.optemp':        '運作溫度',
     'models.spec.pump':          '排水泵揚程',
-    'models.spec.pump.val':      '1.8 m（內置止回閥）',
+    'models.spec.pump.val':      '1.4 m（內置止回閥）',
     'models.spec.utc120.flange': '196 mm · 雙進風，單出風',
     'models.spec.weight':        '淨重',
     'models.spec.size':          '尺寸（長×闊×高）',
@@ -62,7 +74,7 @@
     'models.utc55.r32badge':     'R32 · A2L',
     'models.utc120.twin':        '雙進風 ⌀196',
     'models.shared.h':           '所有 UTC 系列共通配置',
-    'models.share.pump.t':       '1.8 米排水揚程',
+    'models.share.pump.t':       '1.4 米排水揚程',
     'models.share.pump.d':       '內置水泵與止回閥；DN15 排水口。',
     'models.share.uv.t':         'UV-C 殺菌燈',
     'models.share.uv.d':         '選配紫外光燈，可去除 99.9% 空氣中細菌。',
@@ -85,7 +97,7 @@
     'models.catfeat.lcd.t':      '濕度隨心所控',
     'models.catfeat.lcd.d':      '配備LCD屏，手機Tuya應用程式，RS485 Modbus連接智能家居',
     'models.catfeat.pump.t':     '水泵自動排水',
-    'models.catfeat.pump.d':     '排水泵揚程1.8米',
+    'models.catfeat.pump.d':     '排水泵揚程1.4米',
     'models.catfeat.motor.t':    '全金屬電機',
     'models.catfeat.motor.d':    '採用日本NSK軸承，穩定耐用',
     'models.catfeat.quiet.t':    '寧靜抽濕體驗',
@@ -102,7 +114,7 @@
     'install.step.hang.t':       '吊裝',
     'install.step.hang.d':       'M10 螺桿、水平、減震。',
     'install.step.drain.t':      '排水',
-    'install.step.drain.d':      '水泵揚程 1.8 米。',
+    'install.step.drain.d':      '水泵揚程 1.4 米。',
     'install.step.duct.t':       '風管',
     'install.step.duct.d':       '⌀146 / ⌀196 mm 法蘭。',
     'install.step.ctrl.t':       '控制',
@@ -110,7 +122,7 @@
     'install.step.pow.t':        '電源',
     'install.step.pow.d':        '13 A 220 V、2.5 mm²。',
     'install.marquee.t':         'DBA 天花式抽濕系統',
-    'id.fig.pump':               '自動抽水排水 — 揚程可達 1.8 米，內置止回閥。',
+    'id.fig.pump':               '自動抽水排水 — 揚程可達 1.4 米，內置止回閥。',
     'ico.fig.lcd':               '86×86 mm 牆面 LCD 控制板用作日常操作；塗鴉智能 App 可遙距控制；RS485 Modbus 可接 BMS。',
     'install.step.com.t':        '驗收測試',
     'cases.eyebrow':             '實際工程',
@@ -146,7 +158,7 @@
     'ip.bench.ok':               '沒有錯誤代碼？可以開始安裝。',
 
     'ip.plan.heading':           '開工之前，請確保：',
-    'ip.plan.1':                 '<strong>確認天花夾層高度</strong> — UTC20 需要 200mm、UTC68 需要 240mm、UTC120 需要 310mm — 並上下預留 2-30mm 空隙，避免機身貼合樓板及假天花。',
+    'ip.plan.1':                 '<strong>確認天花夾層高度</strong> — UTC20 / UTC22 需要 201mm、UTC55 需要 238mm、UTC68 需要 240mm、UTC120 需要 310mm — 並上下預留 2-30mm 空隙，避免機身貼合樓板及假天花。',
     'ip.plan.2':                 '<strong>確定吊裝位置</strong> — 標出四條螺桿固定於樓板的位置，避開樓板內已有的管線。',
     'ip.plan.3':                 '<strong>選定檢修口位置</strong> — 尺寸建議採用 450 × 450 mm 或 600 × 600 mm，正對著機身的維修板那一面（即排水出口側）。',
     'ip.plan.4':                 '<strong>提早規劃風喉路徑</strong> — 繪出回風與送風路徑，標出彎位並計算數量，每個 90° 彎位約扣減 10 Pa。',
@@ -209,8 +221,8 @@
     /* Install / Drainage */
     'id.pill':                   '步驟 04 / 08',
     'id.title':                  '排水',
-    'id.desc':                   'UTC 系列內置自動排水泵，揚程達 1.8 米。',
-    'id.chip.1':                 '揚程 1.8 米排水泵',
+    'id.desc':                   'UTC 系列內置自動排水泵，揚程達 1.4 米。',
+    'id.chip.1':                 '揚程 1.4 米排水泵',
     'id.chip.4':                 '機身排水口 DN15 規格',
     'id.chip.2':                 '內置止回閥',
     'id.chip.3':                 '上行存水彎',
@@ -225,7 +237,7 @@
     'id.sign.heading':           '驗收前',
     'id.sign.body':              '從檢修口慢慢倒入 1–2 公升水至水盤。通電開機，水泵應於一分鐘內啟動並將水抽走。然後觀察整段管路的接駁位至少五分鐘，確保沒有任何漏水的可能。',
 
-    'id.fig':                    '內置水泵可將冷凝水提升至 1.8米。加裝上行存水彎，阻隔倒流與異味。',
+    'id.fig':                    '內置水泵可將冷凝水提升至 1.4 米。加裝上行存水彎，阻隔倒流與異味。',
 
     /* Install / Ducting */
     'ic.pill':                   '步驟 05 / 08',
@@ -349,7 +361,7 @@
     'kn.q11.p1':                 '天花抽濕機安裝後完全隱藏，所以關鍵在於單位有沒有合適的安裝位置。大部分住宅都有 — 常見位置包括走廊假天花、浴室假天花，或儲物室、廚房上方的燈槽。',
     'kn.q11.b1':                 '<strong>天花深度</strong> — 假天花內需要約 20–30 cm 深度（視乎型號）。走廊及浴室的假天花一般已經足夠。',
     'kn.q11.b2':                 '<strong>檢修口</strong> — 機身下方需設一個小型天花檢修口，與隱藏式冷氣所用的相同；清洗濾網時經此取出。',
-    'kn.q11.b3':                 '<strong>去水位</strong> — 冷凝水由內置水泵自動排走，揚程達 1.8 米，因此主機毋須緊貼去水位安裝。',
+    'kn.q11.b3':                 '<strong>去水位</strong> — 冷凝水由內置水泵自動排走，揚程達 1.4 米，因此主機毋須緊貼去水位安裝。',
     'kn.q11.b4':                 '<strong>電源</strong> — 需由配電箱拉一組獨立迴路，屬安裝工程的一部分。',
     'kn.q11.p2':                 '如果單位正在裝修，以上對師傅來說都是常規工序；已入伙的單位則視乎天花結構而定 — 提供平面圖及現場相片，我們一般已可初步確認是否可行。技術細節可參閱<a href="#install">安裝指南</a>。',
     'kn.q11.fig':                '隱藏於假天花燈槽內的主機。',
@@ -370,10 +382,10 @@
     'kn.q14.p3':                 '此外，同一溫度下，乾燥空氣的體感較涼：26°C、55% 濕度的環境，一般比 24°C、75% 更舒適，因為汗水能夠正常蒸發。多數用家的實際感受是全屋更清爽，而非更熱。',
     'kn.q15.tag':                '型號選擇',
     'kn.q15.q':                  '應該選哪個型號？',
-    'kn.q15.b1':                 '<strong>200–400 呎</strong>（開放式或單房）— UTC20',
-    'kn.q15.b2':                 '<strong>400–600 呎</strong> — UTC55',
-    'kn.q15.b3':                 '<strong>500–1,000 呎</strong>（一般全屋）— UTC68，最常用的型號',
-    'kn.q15.b4':                 '<strong>1,000–1,500 呎</strong>（大單位、小型辦公室）— UTC120',
+    'kn.q15.b1':                 '<strong>200–400 呎</strong>（開放式或單房）— UTC22（前身為 UTC20）',
+    'kn.q15.b2':                 '<strong>800–1,000 呎</strong> — UTC55（R32）',
+    'kn.q15.b3':                 '<strong>800–1,000 呎</strong>（一般全屋）— UTC68，最常用的型號',
+    'kn.q15.b4':                 '<strong>1,300–1,500 呎</strong>（大單位、小型辦公室）— UTC120',
     'kn.q15.p1':                 '如在兩個型號之間猶豫，建議選較大的一級：機器以部分負載運行時較寧靜，耗電相差不大，壓縮機壽命亦較長。若空間長期低溫（冷氣長開、酒藏），實際抽濕量會下降三成或以上，同樣應選大一級。',
     'kn.q15.p2':                 '四個型號的詳細規格，請參閱<a href="#overview/specs">產品概覽</a>。',
 
@@ -443,7 +455,7 @@
     'kn.q42.p2':                 '比規格更重要的是安裝質素：吊桿上的橡膠減震墊及法蘭位的軟管段，可阻止震動傳入樓宇結構。安裝妥當的話，天花若出現「咯咯」聲，代表有部件鬆脫，而非機器本身嘈吵 — 可參閱<a href="#manual/troubleshooting">故障排除</a>。',
     'kn.q43.tag':                '去水',
     'kn.q43.q':                  '抽出來的水去了哪裏？',
-    'kn.q43.p1':                 '經排水管直接排走 — 全自動，毋須倒水，亦沒有水箱。內置水泵揚程達 1.8 米，排水管可先向上再橫越天花，接駁至最近的去水位。',
+    'kn.q43.p1':                 '經排水管直接排走 — 全自動，毋須倒水，亦沒有水箱。內置水泵揚程達 1.4 米，排水管可先向上再橫越天花，接駁至最近的去水位。',
     'kn.q43.p2':                 '安全保護屬標準配置：去水一旦受阻，水滿感應器會令機器停機，並於控制面板顯示故障代碼，避免滿溢；天花內亦可加裝漏水感應線，偵測到水份即自動停機。',
     'kn.q43.fig':                '機身內部 — 冷凝水匯集於水盤，由內置水泵排出至去水位。',
     'kn.q44.tag':                '保養',
@@ -500,8 +512,8 @@
     'um.safety.g6':              '<strong>切勿暴露於易燃氣體、腐蝕物質、大量灰塵或直接水浸。</strong>不適用於爆炸性或高度腐蝕的環境。',
     'um.safety.g7':              '<strong>電源線損壞</strong>必須由原廠、其指定服務商或同等資格人士更換。',
     'um.safety.g8':              '<strong>運作異常</strong>（異響、異味、冒煙）— 立即切斷電源並聯絡售後。',
-    'um.safety.ref.heading':     '雪種 — R410A 與 R32',
-    'um.safety.ref.intro':       '雪種類型印於機身銘牌。如機型使用 R32 或 R290，請注意以下事項：',
+    'um.safety.ref.heading':     '雪種 — R410A、R32 與 R290',
+    'um.safety.ref.intro':       '雪種類型印於機身銘牌。R410A 不可燃；R32 屬輕度可燃（A2L）；UTC22 使用的 R290 屬可燃（A3），但充注量僅 0.1 kg。如機型使用 R32 或 R290，請注意以下事項：',
     'um.safety.r1':              '<strong>僅由合資格人員</strong>進行安裝與維修。',
     'um.safety.r2':              '<strong>安裝、操作、儲存</strong>於通風良好的環境。',
     'um.safety.r3':              '<strong>切勿以非原廠建議的方式</strong>加速除霜或清潔。',
@@ -740,7 +752,7 @@
     'ts.9.title':                '機器持續運行，但濕度始終達不到目標',
     'ts.9.b1':                   '檢查有否持續濕氣來源：開窗、新裝修、未乾油漆、室內晾衣。',
     'ts.9.b2':                   '確認濾網清潔，並檢查出入風口有無遮擋。',
-    'ts.9.b3':                   'UTC20 及 UTC55 的建議覆蓋面積有限，如房間過大，可能需要更高容量機型。',
+    'ts.9.b3':                   'UTC20 及 UTC22 的建議覆蓋面積有限，如房間過大，可能需要更高容量機型。',
     'ts.10.tag':                 '除霜',
     'ts.10.title':               '除霜圖示頻繁出現',
     'ts.10.b1':                  '除霜屬自動程序，屬正常現象，每次最多 8 分鐘，當蒸發器低於 −1°C 自動觸發。',
@@ -846,6 +858,11 @@
     document.body.classList.toggle('lang-zh', lang === 'zh');
     langBtn.setAttribute('data-active', lang);
 
+    document.querySelectorAll('img[data-src-zh]').forEach(img => {
+      if (!img.hasAttribute('data-src-en')) img.setAttribute('data-src-en', img.getAttribute('src'));
+      img.setAttribute('src', lang === 'zh' ? img.getAttribute('data-src-zh') : img.getAttribute('data-src-en'));
+    });
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (!el.hasAttribute('data-i18n-en')) {
@@ -925,7 +942,68 @@
     return PAGES[raw] ? raw : 'home';
   }
 
+  /* ---- Access code gate: installation + user manual ---- */
+  const GATE_KEY = 'dbadiy.access';
+  const GATE_HASH = '2a8afc5c';   // fnv-1a of the access code
+  let gateUnlocked = false;
+  try { gateUnlocked = localStorage.getItem(GATE_KEY) === GATE_HASH; } catch(_){}
+  let gatePending = null;
+  const gateEl = document.getElementById('gate');
+  const gateInput = document.getElementById('gate-input');
+  const gateErr = document.getElementById('gate-err');
+
+  function fnv(str){
+    let h = 0x811c9dc5;
+    for (let i = 0; i < str.length; i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    return h.toString(16).padStart(8, '0');
+  }
+  function isLocked(id){
+    return !gateUnlocked && /^(install|manual)(\/|$)/.test(id);
+  }
+  function openGate(id){
+    gatePending = id;
+    gateErr.textContent = '';
+    gateInput.value = '';
+    gateEl.hidden = false;
+    document.body.classList.add('gate-open');
+    setTimeout(() => gateInput.focus(), 60);
+  }
+  function closeGate(){
+    gateEl.hidden = true;
+    document.body.classList.remove('gate-open');
+    gatePending = null;
+    const want = '#' + currentId;
+    if (location.hash !== want) history.replaceState(null, '', want);
+  }
+  document.getElementById('gate-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const code = gateInput.value.trim().toLowerCase();
+    if (fnv(code) === GATE_HASH) {
+      gateUnlocked = true;
+      try { localStorage.setItem(GATE_KEY, GATE_HASH); } catch(_){}
+      const target = gatePending;
+      gateEl.hidden = true;
+      document.body.classList.remove('gate-open');
+      gatePending = null;
+      if (location.hash !== '#' + target) history.replaceState(null, '', '#' + target);
+      navigate(target);
+    } else {
+      gateErr.textContent = (LANG === 'zh' && T['gate.err']) ? T['gate.err'] : 'That code is not right. Please try again.';
+      gateInput.select();
+      gateEl.querySelector('.gate-card').classList.remove('shake');
+      void gateEl.offsetWidth;
+      gateEl.querySelector('.gate-card').classList.add('shake');
+    }
+  });
+  gateEl.querySelectorAll('[data-gate-close]').forEach(b => b.addEventListener('click', closeGate));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !gateEl.hidden) closeGate(); });
+
   function show(id, direction){
+    if (isLocked(id)) {
+      if (!document.querySelector('.screen.active')) show('home', 0);
+      openGate(id);
+      return;
+    }
     const next = document.querySelector(`.screen[data-screen="${id}"]`);
     if (!next) return;
     screens.forEach(s => s.classList.remove('active','slide-in-right','slide-in-left'));

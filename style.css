@@ -2693,3 +2693,68 @@ body:not(.lang-zh) .ref-pdf-cn{ display:none; }
   .bench-dot{animation:none;}
   *{transition:none !important;}
 }
+
+/* ============================================================
+   UTC22 accent, catalog links, install layout figure
+   ============================================================ */
+.mcard[data-acc="green"]{ --mc:#15803d; --mc-deep:#14532d; --mc-soft:#dcfce7; --mc-photo:linear-gradient(160deg, #0b1f12 0%, #14532d 55%, #15803d 130%); }
+.cap-pin[data-acc="green"]{ --cap-glow:#15803d; }
+.capacity-strip{ grid-template-columns:repeat(5, 1fr); }
+.mcard-cats{
+  display:flex; align-items:center; flex-wrap:wrap; gap:8px;
+  margin:0 18px; padding:12px 0 18px; border-top:1px solid var(--line);
+  font-size:13px; color:var(--ink-3);
+}
+.mcard-cats span{ margin-right:auto; font-weight:600; }
+.mcard-cats a{
+  display:inline-flex; align-items:center; min-height:40px; padding:0 14px;
+  border-radius:999px; border:1px solid var(--line-2); background:var(--surface);
+  color:var(--ink); font-weight:600; text-decoration:none;
+}
+.mcard-cats a:active{ background:var(--bg-deep); }
+.layout-fig{ margin:0 0 20px; }
+.layout-fig img{ display:block; width:100%; height:auto; border-radius:var(--radius-md); box-shadow:var(--shadow-sm); }
+.layout-fig figcaption{ margin-top:8px; font-size:13px; color:var(--ink-3); text-align:center; }
+
+/* ============================================================
+   Access code gate
+   ============================================================ */
+body.gate-open{ overflow:hidden; }
+.gate{ position:fixed; inset:0; z-index:1000; display:flex; align-items:center; justify-content:center; padding:20px; }
+.gate[hidden]{ display:none; }
+.gate-backdrop{ position:absolute; inset:0; background:rgba(13,23,33,0.55); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); }
+.gate-card{
+  position:relative; width:100%; max-width:360px; background:var(--surface);
+  border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); padding:26px 22px 20px; text-align:center;
+}
+.gate-icon{ width:52px; height:52px; margin:0 auto 12px; border-radius:16px; display:grid; place-items:center; background:var(--teal-soft); color:var(--teal-deep); }
+.gate-icon svg{ width:26px; height:26px; }
+.gate-card h2{ margin:0 0 6px; font-size:20px; color:var(--ink); }
+.gate-card > p{ margin:0 0 16px; font-size:14px; line-height:1.5; color:var(--ink-3); }
+#gate-input{
+  width:100%; height:52px; border-radius:var(--radius-sm); border:1.5px solid var(--line-2);
+  background:var(--bg); font-size:20px; letter-spacing:0.18em; text-align:center; color:var(--ink);
+  font-family:inherit;
+}
+#gate-input:focus{ outline:none; border-color:var(--teal); box-shadow:0 0 0 3px var(--teal-soft); }
+.gate-card .gate-err{ min-height:20px; margin:6px 0 4px; font-size:13px; color:var(--red); }
+.gate-go{
+  width:100%; height:50px; border:0; border-radius:var(--radius-sm); background:var(--ink); color:#fff;
+  font-size:16px; font-weight:700; font-family:inherit; cursor:pointer;
+}
+.gate-go:active{ transform:scale(0.98); }
+.gate-cancel{
+  width:100%; height:44px; margin-top:6px; border:0; background:none; color:var(--ink-3);
+  font-size:14px; font-weight:600; font-family:inherit; cursor:pointer;
+}
+.gate-card .gate-help{ margin:8px 0 0; font-size:12px; color:var(--ink-4); }
+.gate-card.shake{ animation:gate-shake .35s; }
+@keyframes gate-shake{ 0%,100%{transform:translateX(0)} 25%{transform:translateX(-8px)} 75%{transform:translateX(8px)} }
+@media (prefers-reduced-motion: reduce){ .gate-card.shake{ animation:none; } }
+
+@media (max-width:480px){
+  .capacity-strip{ gap:4px; }
+  .cap-pin{ padding:10px 6px 8px; }
+  .cap-num{ font-size:21px; }
+  .cap-meta{ font-size:9.5px; line-height:1.25; letter-spacing:0.02em; }
+}
