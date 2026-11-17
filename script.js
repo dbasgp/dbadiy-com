@@ -943,22 +943,24 @@
   }
 
   /* ---- Access code gate: installation + user manual ---- */
-  const GATE_KEY = 'dbadiy.access';
-  const GATE_HASH = '2a8afc5c';   // fnv-1a of the access code
-  let gateUnlocked = false;
-  try { gateUnlocked = localStorage.getItem(GATE_KEY) === GATE_HASH; } catch(_){}
+  // Daily code: "dba" + YYMMDD in Hong Kong time (e.g. 17 Nov 2026 -> dba261117).
+  // Once entered, access lasts 24 hours on that device.
+  const GATE_KEY = 'dbadiy.access.until';
+  const GATE_TTL = 24 * 60 * 60 * 1000;
+  let gateUntil = 0;
+  try { gateUntil = parseInt(localStorage.getItem(GATE_KEY) || '0', 10) || 0; } catch(_){}
+  function todayCode(){
+    const hk = new Date(Date.now() + 8 * 3600 * 1000);   // UTC+8, no DST
+    const p = n => String(n).padStart(2, '0');
+    return 'dba' + p(hk.getUTCFullYear() % 100) + p(hk.getUTCMonth() + 1) + p(hk.getUTCDate());
+  }
   let gatePending = null;
   const gateEl = document.getElementById('gate');
   const gateInput = document.getElementById('gate-input');
   const gateErr = document.getElementById('gate-err');
 
-  function fnv(str){
-    let h = 0x811c9dc5;
-    for (let i = 0; i < str.length; i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
-    return h.toString(16).padStart(8, '0');
-  }
   function isLocked(id){
-    return !gateUnlocked && /^(install|manual)(\/|$)/.test(id);
+    return Date.now() >= gateUntil && /^(install|manual)(\/|$)/.test(id);
   }
   function openGate(id){
     gatePending = id;
@@ -978,9 +980,9 @@
   document.getElementById('gate-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const code = gateInput.value.trim().toLowerCase();
-    if (fnv(code) === GATE_HASH) {
-      gateUnlocked = true;
-      try { localStorage.setItem(GATE_KEY, GATE_HASH); } catch(_){}
+    if (code === todayCode()) {
+      gateUntil = Date.now() + GATE_TTL;
+      try { localStorage.setItem(GATE_KEY, String(gateUntil)); localStorage.removeItem('dbadiy.access'); } catch(_){}
       const target = gatePending;
       gateEl.hidden = true;
       document.body.classList.remove('gate-open');
